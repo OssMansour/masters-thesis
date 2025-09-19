@@ -1,0 +1,40 @@
+2025-08-15 20:37:06,810 - INFO - ================================================================================
+2025-08-15 20:37:06,810 - INFO - DHP PENDULUM TRAINING SESSION STARTED
+2025-08-15 20:37:06,810 - INFO - ================================================================================
+2025-08-15 20:37:06,810 - INFO - HYPERPARAMETERS:
+2025-08-15 20:37:06,810 - INFO - ----------------------------------------
+2025-08-15 20:37:06,810 - INFO - action_size              : 1
+2025-08-15 20:37:06,811 - INFO - activation               : relu
+2025-08-15 20:37:06,811 - INFO - best_episode_gui         : False
+2025-08-15 20:37:06,811 - INFO - episode_length           : 200
+2025-08-15 20:37:06,811 - INFO - excitation_amplitude     : 0.2
+2025-08-15 20:37:06,811 - INFO - excitation_steps         : 7500
+2025-08-15 20:37:06,811 - INFO - fixed_target             : 0
+2025-08-15 20:37:06,811 - INFO - gamma                    : 0.95
+2025-08-15 20:37:06,811 - INFO - gui                      : False
+2025-08-15 20:37:06,811 - INFO - hidden_layer_size        : [64, 64, 32]
+2025-08-15 20:37:06,811 - INFO - log_interval             : 50
+2025-08-15 20:37:06,811 - INFO - lr_actor                 : 0.005
+2025-08-15 20:37:06,811 - INFO - lr_critic                : 0.01
+2025-08-15 20:37:06,811 - INFO - max_steps                : 200
+2025-08-15 20:37:06,811 - INFO - normalize_states         : True
+2025-08-15 20:37:06,811 - INFO - num_episodes             : 1500
+2025-08-15 20:37:06,811 - INFO - predict_delta            : False
+2025-08-15 20:37:06,811 - INFO - record                   : False
+2025-08-15 20:37:06,811 - INFO - record_best_episodes     : True
+2025-08-15 20:37:06,811 - INFO - recording_fps            : 30
+2025-08-15 20:37:06,811 - INFO - reference_size           : 2
+2025-08-15 20:37:06,811 - INFO - rls_action_size          : 1
+2025-08-15 20:37:06,811 - INFO - rls_covariance           : 100.0
+2025-08-15 20:37:06,811 - INFO - rls_gamma                : 0.9995
+2025-08-15 20:37:06,811 - INFO - rls_state_size           : 2
+2025-08-15 20:37:06,811 - INFO - save_interval            : 200
+2025-08-15 20:37:06,811 - INFO - split                    : False
+2025-08-15 20:37:06,811 - INFO - state_bounds             : {'theta': [-3.141592653589793, 3.141592653589793], 'theta_dot': [-8.0, 8.0]}
+2025-08-15 20:37:06,811 - INFO - state_size               : 2
+2025-08-15 20:37:06,812 - INFO - target_network           : True
+2025-08-15 20:37:06,812 - INFO - tau                      : 0.001
+2025-08-15 20:37:06,812 - INFO - update_cycles            : 2
+2025-08-15 20:37:06,812 - INFO - ----------------------------------------
+2025-08-15 20:37:06,812 - INFO - Log file: /home/osos/Mohamed_Masters_Thesis/DHP_pendulum/training_logs/dhp_pendulum_training_20250815_203706.log
+2025-08-15 20:37:06,812 - INFO - ================================================================================

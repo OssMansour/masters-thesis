@@ -1,0 +1,44 @@
+2025-09-08 18:36:58,485 - INFO - ================================================================================
+2025-09-08 18:36:58,485 - INFO - DHP SPLIT ARCHITECTURE TRAINING SESSION STARTED
+2025-09-08 18:36:58,485 - INFO - ================================================================================
+2025-09-08 18:36:58,485 - INFO - HYPERPARAMETERS:
+2025-09-08 18:36:58,485 - INFO - ----------------------------------------
+2025-09-08 18:36:58,485 - INFO - action_size              : 4
+2025-09-08 18:36:58,485 - INFO - enable_best_model        : True
+2025-09-08 18:36:58,485 - INFO - gamma                    : 0.95
+2025-09-08 18:36:58,485 - INFO - hidden_layer_size        : [64, 64]
+2025-09-08 18:36:58,485 - INFO - lr_actor                 : 0.0001
+2025-09-08 18:36:58,485 - INFO - lr_critic                : 0.001
+2025-09-08 18:36:58,485 - INFO - reference_size           : 3
+2025-09-08 18:36:58,485 - INFO - split                    : False
+2025-09-08 18:36:58,485 - INFO - state_size               : 8
+2025-09-08 18:36:58,485 - INFO - target_network           : True
+2025-09-08 18:36:58,485 - INFO - tau                      : 0.001
+2025-09-08 18:36:58,485 - INFO - ----------------------------------------
+2025-09-08 18:36:58,485 - INFO - Log file: /home/osos/Mohamed_Masters_Thesis/DHP_drone_updated/DHP/training_logs/dhp_split_training_20250908_183658.log
+2025-09-08 18:36:58,485 - INFO - ================================================================================
+2025-09-08 18:36:58,487 - WARNING - From /home/osos/Mohamed_Masters_Thesis/DHP_drone_updated/msc-thesis/agents/dhp.py:474: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2025-09-08 18:36:58,638 - WARNING - From /home/osos/Mohamed_Masters_Thesis/DHP_drone_updated/msc-thesis/agents/dhp.py:117: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2025-09-08 18:36:58,639 - WARNING - From /home/osos/Mohamed_Masters_Thesis/DHP_drone_updated/msc-thesis/agents/dhp.py:119: The name tf.placeholder_with_default is deprecated. Please use tf.compat.v1.placeholder_with_default instead.
+
+2025-09-08 18:36:58,644 - WARNING - From /home/osos/Mohamed_Masters_Thesis/DHP_drone_updated/msc-thesis/agents/dhp.py:141: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2025-09-08 18:36:58,644 - WARNING - From /home/osos/Mohamed_Masters_Thesis/DHP_drone_updated/msc-thesis/agents/dhp.py:145: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+2025-09-08 18:36:58,645 - WARNING - From /home/osos/anaconda3/envs/DHP/lib/python3.7/site-packages/tensorflow_core/python/layers/core.py:187: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+2025-09-08 18:36:58,674 - WARNING - From /home/osos/Mohamed_Masters_Thesis/DHP_drone_updated/msc-thesis/agents/dhp.py:150: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+2025-09-08 18:36:58,687 - WARNING - From /home/osos/Mohamed_Masters_Thesis/DHP_drone_updated/msc-thesis/agents/dhp.py:156: The name tf.train.GradientDescentOptimizer is deprecated. Please use tf.compat.v1.train.GradientDescentOptimizer instead.
+
+2025-09-08 18:36:58,718 - WARNING - From /home/osos/Mohamed_Masters_Thesis/DHP_drone_updated/msc-thesis/agents/dhp.py:173: The name tf.assign is deprecated. Please use tf.compat.v1.assign instead.
+
+2025-09-08 18:36:58,848 - WARNING - From /home/osos/Mohamed_Masters_Thesis/DHP_drone_updated/msc-thesis/agents/dhp.py:483: The name tf.summary.merge_all is deprecated. Please use tf.compat.v1.summary.merge_all instead.
+
+2025-09-08 18:36:58,848 - WARNING - From /home/osos/Mohamed_Masters_Thesis/DHP_drone_updated/msc-thesis/agents/dhp.py:484: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2025-09-08 18:36:58,861 - INFO - Restoring parameters from /home/osos/Mohamed_Masters_Thesis/DHP_drone_updated/DHP/trained_models/dhp_cf2x_best

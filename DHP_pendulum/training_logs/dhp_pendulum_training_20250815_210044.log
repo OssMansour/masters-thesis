@@ -1,0 +1,170 @@
+2025-08-15 21:00:44,173 - INFO - ================================================================================
+2025-08-15 21:00:44,173 - INFO - DHP PENDULUM TRAINING SESSION STARTED
+2025-08-15 21:00:44,173 - INFO - ================================================================================
+2025-08-15 21:00:44,173 - INFO - HYPERPARAMETERS:
+2025-08-15 21:00:44,173 - INFO - ----------------------------------------
+2025-08-15 21:00:44,173 - INFO - action_size              : 1
+2025-08-15 21:00:44,173 - INFO - activation               : relu
+2025-08-15 21:00:44,173 - INFO - best_episode_gui         : False
+2025-08-15 21:00:44,173 - INFO - episode_length           : 200
+2025-08-15 21:00:44,173 - INFO - excitation_amplitude     : 0.2
+2025-08-15 21:00:44,174 - INFO - excitation_steps         : 7500
+2025-08-15 21:00:44,174 - INFO - fixed_target             : 0.7853981633974483
+2025-08-15 21:00:44,174 - INFO - gamma                    : 0.95
+2025-08-15 21:00:44,174 - INFO - gui                      : False
+2025-08-15 21:00:44,174 - INFO - hidden_layer_size        : [64, 64, 32]
+2025-08-15 21:00:44,174 - INFO - log_interval             : 50
+2025-08-15 21:00:44,174 - INFO - lr_actor                 : 0.005
+2025-08-15 21:00:44,174 - INFO - lr_critic                : 0.01
+2025-08-15 21:00:44,174 - INFO - max_steps                : 200
+2025-08-15 21:00:44,174 - INFO - normalize_states         : True
+2025-08-15 21:00:44,174 - INFO - num_episodes             : 1500
+2025-08-15 21:00:44,174 - INFO - predict_delta            : False
+2025-08-15 21:00:44,174 - INFO - record                   : False
+2025-08-15 21:00:44,174 - INFO - record_best_episodes     : True
+2025-08-15 21:00:44,174 - INFO - recording_fps            : 30
+2025-08-15 21:00:44,174 - INFO - reference_size           : 2
+2025-08-15 21:00:44,174 - INFO - rls_action_size          : 1
+2025-08-15 21:00:44,174 - INFO - rls_covariance           : 100.0
+2025-08-15 21:00:44,174 - INFO - rls_gamma                : 0.9995
+2025-08-15 21:00:44,174 - INFO - rls_state_size           : 2
+2025-08-15 21:00:44,174 - INFO - save_interval            : 200
+2025-08-15 21:00:44,174 - INFO - split                    : False
+2025-08-15 21:00:44,174 - INFO - state_bounds             : {'theta': [-3.141592653589793, 3.141592653589793], 'theta_dot': [-8.0, 8.0]}
+2025-08-15 21:00:44,175 - INFO - state_size               : 2
+2025-08-15 21:00:44,175 - INFO - target_network           : True
+2025-08-15 21:00:44,175 - INFO - tau                      : 0.001
+2025-08-15 21:00:44,175 - INFO - update_cycles            : 2
+2025-08-15 21:00:44,175 - INFO - ----------------------------------------
+2025-08-15 21:00:44,175 - INFO - Log file: /home/osos/Mohamed_Masters_Thesis/DHP_pendulum/training_logs/dhp_pendulum_training_20250815_210044.log
+2025-08-15 21:00:44,175 - INFO - ================================================================================
+2025-08-15 21:00:44,175 - INFO - 
+==================================================
+2025-08-15 21:00:44,175 - INFO - STARTING DHP TRAINING FOR PENDULUM
+2025-08-15 21:00:44,175 - INFO - ==================================================
+2025-08-15 21:00:44,178 - WARNING - From /home/osos/Mohamed_Masters_Thesis/msc-thesis/agents/dhp.py:70: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2025-08-15 21:00:44,291 - WARNING - From /home/osos/Mohamed_Masters_Thesis/msc-thesis/agents/dhp.py:100: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2025-08-15 21:00:44,292 - WARNING - From /home/osos/Mohamed_Masters_Thesis/msc-thesis/agents/dhp.py:102: The name tf.placeholder_with_default is deprecated. Please use tf.compat.v1.placeholder_with_default instead.
+
+2025-08-15 21:00:44,295 - WARNING - From /home/osos/Mohamed_Masters_Thesis/msc-thesis/agents/dhp.py:124: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2025-08-15 21:00:44,296 - WARNING - From /home/osos/Mohamed_Masters_Thesis/msc-thesis/agents/dhp.py:128: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+2025-08-15 21:00:44,296 - WARNING - From /home/osos/anaconda3/envs/DHP/lib/python3.7/site-packages/tensorflow_core/python/layers/core.py:187: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+2025-08-15 21:00:44,332 - WARNING - From /home/osos/Mohamed_Masters_Thesis/msc-thesis/agents/dhp.py:133: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+2025-08-15 21:00:44,351 - WARNING - From /home/osos/Mohamed_Masters_Thesis/msc-thesis/agents/dhp.py:139: The name tf.train.GradientDescentOptimizer is deprecated. Please use tf.compat.v1.train.GradientDescentOptimizer instead.
+
+2025-08-15 21:00:44,391 - WARNING - From /home/osos/Mohamed_Masters_Thesis/msc-thesis/agents/dhp.py:156: The name tf.assign is deprecated. Please use tf.compat.v1.assign instead.
+
+2025-08-15 21:00:44,481 - WARNING - From /home/osos/Mohamed_Masters_Thesis/msc-thesis/agents/dhp.py:79: The name tf.summary.merge_all is deprecated. Please use tf.compat.v1.summary.merge_all instead.
+
+2025-08-15 21:00:44,481 - WARNING - From /home/osos/Mohamed_Masters_Thesis/msc-thesis/agents/dhp.py:80: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2025-08-15 21:00:44,503 - WARNING - From /home/osos/Mohamed_Masters_Thesis/msc-thesis/agents/dhp.py:81: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+2025-08-15 21:00:44,591 - INFO - 
+Training for 400 episodes...
+2025-08-15 21:00:44,591 - INFO - Episode | Reward  | Avg Cost | Pos Error | Success | Time
+2025-08-15 21:00:44,591 - INFO - ------------------------------------------------------------
+2025-08-15 21:00:46,381 - INFO -       0 | -1006.24 |   34.475 |    1.6009 |   0.000 |    1.8s
+2025-08-15 21:00:59,685 - INFO - CONVERGENCE EPISODE 8: 0.0263 rad
+2025-08-15 21:01:38,548 - INFO - CONVERGENCE EPISODE 32: 0.4048 rad
+2025-08-15 21:01:46,612 - INFO - CONVERGENCE EPISODE 37: 0.3900 rad
+2025-08-15 21:01:53,185 - INFO - CONVERGENCE EPISODE 41: 0.1640 rad
+2025-08-15 21:01:58,392 - INFO - CONVERGENCE EPISODE 44: 0.4964 rad
+2025-08-15 21:02:08,541 - INFO -      50 | -1227.83 |   20.430 |    1.3909 |   0.000 |   84.0s
+2025-08-15 21:02:26,760 - INFO - CONVERGENCE EPISODE 61: 0.4564 rad
+2025-08-15 21:02:33,309 - INFO - CONVERGENCE EPISODE 65: 0.2524 rad
+2025-08-15 21:02:38,388 - INFO - CONVERGENCE EPISODE 68: 0.1168 rad
+2025-08-15 21:03:06,589 - INFO - CONVERGENCE EPISODE 83: 0.4006 rad
+2025-08-15 21:03:10,418 - INFO - CONVERGENCE EPISODE 85: 0.3303 rad
+2025-08-15 21:03:26,013 - INFO - CONVERGENCE EPISODE 94: 0.1322 rad
+2025-08-15 21:03:31,219 - INFO - CONVERGENCE EPISODE 97: 0.2612 rad
+2025-08-15 21:03:36,405 - INFO - 
+2025-08-15 21:03:36,406 - INFO - MILESTONE 100 ANALYSIS:
+2025-08-15 21:03:36,406 - INFO -   Recent 50 episodes avg position error: 1.9786 ± 0.8495 rad
+2025-08-15 21:03:36,406 - INFO -   Recent 50 episodes avg cost: 23.700
+2025-08-15 21:03:36,406 - INFO -   Recent 50 episodes success rate: 0.00%
+2025-08-15 21:03:36,406 - INFO -   Convergent episodes ratio (< 0.5 rad): 14.00%
+2025-08-15 21:03:36,406 - INFO -   Total convergent episodes so far: 12
+2025-08-15 21:03:36,406 - INFO -   Best performance: 0.0263 rad at episode 8
+2025-08-15 21:03:36,406 - INFO -   Stable performance not yet achieved
+2025-08-15 21:03:36,406 - INFO - 
+2025-08-15 21:03:36,406 - INFO -     100 | -1065.28 |   34.928 |    2.7286 |   0.000 |  171.8s
+2025-08-15 21:03:44,877 - INFO - CONVERGENCE EPISODE 105: 0.2554 rad
+2025-08-15 21:04:53,042 - INFO - CONVERGENCE EPISODE 145: 0.0864 rad
+2025-08-15 21:04:56,372 - INFO - CONVERGENCE EPISODE 147: 0.3356 rad
+2025-08-15 21:05:01,423 - INFO -     150 | -999.98 |   33.763 |    0.5325 |   0.000 |  256.8s
+2025-08-15 21:05:13,412 - INFO - CONVERGENCE EPISODE 157: 0.0223 rad
+2025-08-15 21:05:42,886 - INFO - CONVERGENCE EPISODE 174: 0.4148 rad
+2025-08-15 21:05:46,225 - INFO - CONVERGENCE EPISODE 176: 0.2574 rad
+2025-08-15 21:06:27,360 - INFO -     200 | -1144.56 |   31.700 |    2.4774 |   0.000 |  342.8s
+2025-08-15 21:06:38,369 - INFO - CONVERGENCE EPISODE 207: 0.3474 rad
+2025-08-15 21:06:48,639 - INFO - CONVERGENCE EPISODE 213: 0.1525 rad
+2025-08-15 21:06:55,452 - INFO - CONVERGENCE EPISODE 217: 0.4321 rad
+2025-08-15 21:07:06,591 - INFO - CONVERGENCE EPISODE 223: 0.4016 rad
+2025-08-15 21:07:11,915 - INFO - CONVERGENCE EPISODE 226: 0.3287 rad
+2025-08-15 21:07:41,084 - INFO - CONVERGENCE EPISODE 244: 0.4466 rad
+2025-08-15 21:07:42,639 - INFO - CONVERGENCE EPISODE 245: 0.0158 rad
+2025-08-15 21:07:50,436 - INFO - 
+2025-08-15 21:07:50,436 - INFO - MILESTONE 250 ANALYSIS:
+2025-08-15 21:07:50,436 - INFO -   Recent 50 episodes avg position error: 1.9296 ± 0.9182 rad
+2025-08-15 21:07:50,436 - INFO -   Recent 50 episodes avg cost: 25.635
+2025-08-15 21:07:50,437 - INFO -   Recent 50 episodes success rate: 2.00%
+2025-08-15 21:07:50,437 - INFO -   Convergent episodes ratio (< 0.5 rad): 14.00%
+2025-08-15 21:07:50,437 - INFO -   Total convergent episodes so far: 25
+2025-08-15 21:07:50,437 - INFO -   Best performance: 0.0158 rad at episode 245
+2025-08-15 21:07:50,437 - INFO -   Stable performance not yet achieved
+2025-08-15 21:07:50,437 - INFO - 
+2025-08-15 21:07:50,437 - INFO -     250 | -1077.39 |   32.438 |    0.9720 |   0.000 |  425.8s
+2025-08-15 21:08:34,006 - INFO - CONVERGENCE EPISODE 276: 0.2721 rad
+2025-08-15 21:09:14,167 - INFO -     300 | -1154.36 |   13.619 |    2.4902 |   0.000 |  509.6s
+2025-08-15 21:10:38,971 - INFO -     350 | -1173.39 |   15.155 |    1.9963 |   0.000 |  594.4s
+2025-08-15 21:11:03,673 - INFO - 
+================================================================================
+2025-08-15 21:11:03,673 - INFO - TRAINING COMPLETED - FINAL ANALYSIS
+2025-08-15 21:11:03,673 - INFO - ================================================================================
+2025-08-15 21:11:03,673 - INFO - Total training time: 619.1 seconds (10.3 minutes)
+2025-08-15 21:11:03,673 - INFO - Final episode reward: 0.00
+2025-08-15 21:11:03,673 - INFO - Final position error: 10.0000 rad
+2025-08-15 21:11:03,673 - INFO - Final success rate: 0.000
+2025-08-15 21:11:03,673 - INFO - Best position error achieved: 0.0158 rad at episode 245
+2025-08-15 21:11:03,674 - INFO - Total convergent episodes (< 0.5 rad): 26/400 (6.50%)
+2025-08-15 21:11:03,674 - INFO - Recent success rate (last 100 episodes): 0.00%
+2025-08-15 21:11:03,674 - INFO - Stable performance achieved: No
+2025-08-15 21:11:03,674 - INFO - Position error statistics:
+2025-08-15 21:11:03,674 - INFO -   Mean: 2.7679 rad (158.6°)
+2025-08-15 21:11:03,674 - INFO -   Std:  2.3532 rad (134.8°)
+2025-08-15 21:11:03,674 - INFO -   Min:  0.0158 rad (0.9°)
+2025-08-15 21:11:03,674 - INFO -   Max:  10.0000 rad (573.0°)
+2025-08-15 21:11:03,674 - INFO -   Median: 2.3172 rad (132.8°)
+2025-08-15 21:11:03,674 - INFO - Performance distribution:
+2025-08-15 21:11:03,674 - INFO -   Excellent (< 0.1 rad / 5.7°): 4 episodes (1.0%)
+2025-08-15 21:11:03,674 - INFO -   Good (0.1-0.3 rad / 5.7°-17.2°): 9 episodes (2.2%)
+2025-08-15 21:11:03,674 - INFO -   Acceptable (0.3-0.5 rad / 17.2°-28.6°): 13 episodes (3.2%)
+2025-08-15 21:11:03,674 - INFO -   Poor (> 0.5 rad / 28.6°): 374 episodes (93.5%)
+2025-08-15 21:11:03,674 - INFO - 
+TRAINING CONFIGURATION EFFECTIVENESS:
+2025-08-15 21:11:03,674 - INFO - ----------------------------------------
+2025-08-15 21:11:03,674 - INFO - Episodes needed for first convergence: 8
+2025-08-15 21:11:03,675 - INFO - Excitation phase ended at episode: 7
+2025-08-15 21:11:03,677 - INFO - Training metrics saved to: /home/osos/Mohamed_Masters_Thesis/DHP_pendulum/training_logs/dhp_pendulum_metrics_20250815_211103.json
+2025-08-15 21:11:03,677 - INFO - 
+BEST MODEL CONFIRMED:
+2025-08-15 21:11:03,677 - INFO -   Episode: 245
+2025-08-15 21:11:03,677 - INFO -   Position Error: 0.0158 rad (0.9°)
+2025-08-15 21:11:03,677 - INFO -   Model files: dhp_pendulum_best_*
+2025-08-15 21:11:03,677 - INFO - ================================================================================
+2025-08-15 21:11:03,678 - INFO - TRAINING SESSION COMPLETED
+2025-08-15 21:11:03,678 - INFO - Detailed log saved to: /home/osos/Mohamed_Masters_Thesis/DHP_pendulum/training_logs/dhp_pendulum_training_20250815_210044.log
+2025-08-15 21:11:03,678 - INFO - ================================================================================
+2025-08-15 21:11:10,564 - INFO - SESSION-BEST EPISODE RECORDED: Episode 245
+2025-08-15 21:11:10,564 - INFO -   Replay error: 0.9291 rad vs training error: 0.0158 rad
+2025-08-15 21:11:10,564 - INFO -   Target angle: 0.785 rad
+2025-08-15 21:11:10,650 - INFO - Model saved with state normalization ENABLED

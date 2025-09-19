@@ -1,0 +1,56 @@
+2025-08-15 21:08:01,415 - INFO - ================================================================================
+2025-08-15 21:08:01,415 - INFO - SAC PENDULUM TRAINING SESSION STARTED
+2025-08-15 21:08:01,415 - INFO - ================================================================================
+2025-08-15 21:08:01,416 - INFO - HYPERPARAMETERS:
+2025-08-15 21:08:01,416 - INFO - ----------------------------------------
+2025-08-15 21:08:01,416 - INFO - batch_size               : 256
+2025-08-15 21:08:01,416 - INFO - buffer_size              : 50000
+2025-08-15 21:08:01,416 - INFO - ent_coef                 : auto
+2025-08-15 21:08:01,416 - INFO - episode_length           : 200
+2025-08-15 21:08:01,416 - INFO - fixed_target             : None
+2025-08-15 21:08:01,416 - INFO - gamma                    : 0.95
+2025-08-15 21:08:01,416 - INFO - gradient_steps           : 1
+2025-08-15 21:08:01,416 - INFO - gui                      : False
+2025-08-15 21:08:01,416 - INFO - learning_rate            : 0.0003
+2025-08-15 21:08:01,416 - INFO - learning_starts          : 1000
+2025-08-15 21:08:01,416 - INFO - log_interval             : 50
+2025-08-15 21:08:01,416 - INFO - max_steps                : 200
+2025-08-15 21:08:01,416 - INFO - normalize_states         : True
+2025-08-15 21:08:01,416 - INFO - policy_layers            : [64, 64]
+2025-08-15 21:08:01,416 - INFO - qf_layers                : [64, 64]
+2025-08-15 21:08:01,416 - INFO - record                   : False
+2025-08-15 21:08:01,416 - INFO - record_best_episodes     : True
+2025-08-15 21:08:01,416 - INFO - recording_fps            : 30
+2025-08-15 21:08:01,416 - INFO - save_interval            : 10000
+2025-08-15 21:08:01,416 - INFO - target_update_interval   : 1
+2025-08-15 21:08:01,416 - INFO - tau                      : 0.005
+2025-08-15 21:08:01,416 - INFO - total_timesteps          : 300000
+2025-08-15 21:08:01,416 - INFO - train_freq               : 1
+2025-08-15 21:08:01,416 - INFO - use_sde                  : False
+2025-08-15 21:08:01,417 - INFO - ----------------------------------------
+2025-08-15 21:08:01,417 - INFO - Log file: /home/osos/Mohamed_Masters_Thesis/DHP_pendulum/training_logs/sac_pendulum_training_20250815_210801.log
+2025-08-15 21:08:01,417 - INFO - ================================================================================
+2025-08-15 21:08:01,417 - INFO - 
+CONFIGURATION OVERRIDES APPLIED:
+2025-08-15 21:08:01,417 - INFO -   total_timesteps: 300000
+2025-08-15 21:08:01,417 - INFO -   episode_length: 200
+2025-08-15 21:08:01,417 - INFO -   max_steps: 200
+2025-08-15 21:08:01,417 - INFO -   log_interval: 50
+2025-08-15 21:08:01,417 - INFO -   save_interval: 10000
+2025-08-15 21:08:01,417 - INFO -   gui: False
+2025-08-15 21:08:01,417 - INFO -   record: False
+2025-08-15 21:08:01,417 - INFO -   normalize_states: True
+2025-08-15 21:08:01,417 - INFO -   record_best_episodes: True
+2025-08-15 21:08:01,417 - INFO -   learning_rate: 0.0003
+2025-08-15 21:08:01,417 - INFO -   buffer_size: 50000
+2025-08-15 21:08:01,417 - INFO -   batch_size: 256
+2025-08-15 21:08:01,417 - INFO -   gamma: 0.95
+2025-08-15 21:08:01,417 - INFO -   tau: 0.005
+2025-08-15 21:08:01,417 - INFO -   ent_coef: auto
+2025-08-15 21:08:01,417 - INFO -   learning_starts: 1000
+2025-08-15 21:08:01,417 - INFO -   policy_layers: [64, 64]
+2025-08-15 21:08:01,417 - INFO -   qf_layers: [64, 64]
+2025-08-15 21:08:01,418 - INFO - 
+==================================================
+2025-08-15 21:08:01,418 - INFO - STARTING SAC TRAINING FOR PENDULUM
+2025-08-15 21:08:01,418 - INFO - ==================================================

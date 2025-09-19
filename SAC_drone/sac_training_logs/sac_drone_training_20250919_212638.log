@@ -1,0 +1,51 @@
+2025-09-19 21:26:38,760 - INFO - ================================================================================
+2025-09-19 21:26:38,760 - INFO - SAC DRONE TRAINING SESSION STARTED
+2025-09-19 21:26:38,760 - INFO - ================================================================================
+2025-09-19 21:26:38,760 - INFO - HYPERPARAMETERS:
+2025-09-19 21:26:38,760 - INFO - ----------------------------------------
+2025-09-19 21:26:38,760 - INFO - action_noise_std         : 0.0
+2025-09-19 21:26:38,760 - INFO - action_size              : 4
+2025-09-19 21:26:38,760 - INFO - batch_size               : 256
+2025-09-19 21:26:38,760 - INFO - buffer_size              : 1000000
+2025-09-19 21:26:38,760 - INFO - dt                       : 0.03333333333333333
+2025-09-19 21:26:38,761 - INFO - ent_coef                 : 0.1
+2025-09-19 21:26:38,761 - INFO - episode_length           : 25.0
+2025-09-19 21:26:38,761 - INFO - gamma                    : 0.99
+2025-09-19 21:26:38,761 - INFO - gradient_steps           : 1
+2025-09-19 21:26:38,761 - INFO - gui                      : True
+2025-09-19 21:26:38,761 - INFO - input_size               : 23
+2025-09-19 21:26:38,761 - INFO - learning_rate            : 0.0001
+2025-09-19 21:26:38,761 - INFO - learning_starts          : 25000
+2025-09-19 21:26:38,761 - INFO - log_interval             : 50
+2025-09-19 21:26:38,761 - INFO - log_path                 : ./sac_training_logs/
+2025-09-19 21:26:38,762 - INFO - model_path               : ./sac_trained_models/
+2025-09-19 21:26:38,762 - INFO - num_envs                 : 4
+2025-09-19 21:26:38,762 - INFO - policy_architecture      : [256, 256]
+2025-09-19 21:26:38,762 - INFO - q_network_architecture   : [256, 256]
+2025-09-19 21:26:38,762 - INFO - randomize_reset          : True
+2025-09-19 21:26:38,762 - INFO - record                   : False
+2025-09-19 21:26:38,762 - INFO - reference_size           : 3
+2025-09-19 21:26:38,762 - INFO - save_interval            : 100
+2025-09-19 21:26:38,762 - INFO - seed                     : 42
+2025-09-19 21:26:38,762 - INFO - state_size               : 20
+2025-09-19 21:26:38,762 - INFO - target_pos               : [0.0, 0.0, 1.0]
+2025-09-19 21:26:38,763 - INFO - target_update_interval   : 1
+2025-09-19 21:26:38,763 - INFO - tau                      : 0.005
+2025-09-19 21:26:38,763 - INFO - total_timesteps          : 500000
+2025-09-19 21:26:38,763 - INFO - train_freq               : 1
+2025-09-19 21:26:38,763 - INFO - trajectory_type          : spiral
+2025-09-19 21:26:38,763 - INFO - use_sde                  : False
+2025-09-19 21:26:38,763 - INFO - use_trajectory           : True
+2025-09-19 21:26:38,763 - INFO - ----------------------------------------
+2025-09-19 21:26:38,763 - INFO - Log file: /home/osos/Mohamed_Masters_Thesis/SAC_drone/sac_training_logs/sac_drone_training_20250919_212638.log
+2025-09-19 21:26:38,763 - INFO - ================================================================================
+2025-09-19 21:26:38,764 - INFO - 
+==================================================
+2025-09-19 21:26:38,764 - INFO - STARTING ROBUST SAC DRONE TRAINING FOR CF2X QUADROTOR
+2025-09-19 21:26:38,764 - INFO - ==================================================
+2025-09-19 21:26:46,424 - INFO - Training Configuration:
+2025-09-19 21:26:46,424 - INFO -   - Total timesteps: 500000 (~666 episodes)
+2025-09-19 21:26:46,424 - INFO -   - Steps per episode: 750
+2025-09-19 21:26:46,425 - INFO -   - Parallel environments: 4
+2025-09-19 21:26:46,425 - INFO -   - Evaluation frequency: 5000 steps
+2025-09-19 21:26:46,425 - INFO -   - Enhanced monitoring and checkpointing enabled

@@ -1,0 +1,52 @@
+{
+  "training_session": {
+    "algorithm": "SAC",
+    "environment": "DHP-Compatible",
+    "timestamp": "20250816_201245",
+    "total_timesteps": 300000,
+    "total_time_seconds": 3911.281655073166,
+    "hyperparameters": {
+      "total_timesteps": 300000,
+      "episode_length": 200,
+      "max_steps": 200,
+      "log_interval": 50,
+      "save_interval": 10000,
+      "gui": false,
+      "record": false,
+      "normalize_states": true,
+      "record_best_episodes": true,
+      "learning_rate": 0.0003,
+      "buffer_size": 50000,
+      "batch_size": 256,
+      "gamma": 0.95,
+      "tau": 0.005,
+      "ent_coef": "auto",
+      "learning_starts": 1000,
+      "policy_layers": [
+        64,
+        64
+      ],
+      "qf_layers": [
+        64,
+        64
+      ]
+    }
+  },
+  "performance_summary": {
+    "best_position_error": 2.169062038467481,
+    "final_avg_reward": -536.4312376759821,
+    "final_avg_error": 2.1690620945540804,
+    "final_avg_cost": 229.9573078190519
+  },
+  "environment_info": {
+    "same_as_dhp": true,
+    "state_normalization": true,
+    "physics_parameters": {
+      "m": 0.1,
+      "L": 0.5,
+      "g": 9.81,
+      "b": 0.3,
+      "Fmax": 4.0
+    }
+  }
+}

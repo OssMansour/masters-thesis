@@ -1,0 +1,373 @@
+2025-09-07 21:52:29,560 - INFO - ================================================================================
+2025-09-07 21:52:29,560 - INFO - DHP SPLIT ARCHITECTURE TRAINING SESSION STARTED
+2025-09-07 21:52:29,560 - INFO - ================================================================================
+2025-09-07 21:52:29,560 - INFO - HYPERPARAMETERS:
+2025-09-07 21:52:29,561 - INFO - ----------------------------------------
+2025-09-07 21:52:29,561 - INFO - action_size              : 4
+2025-09-07 21:52:29,561 - INFO - best_episode_gui         : False
+2025-09-07 21:52:29,561 - INFO - coordination_strength    : 0.1
+2025-09-07 21:52:29,561 - INFO - coordination_warmup_episodes: 400
+2025-09-07 21:52:29,561 - INFO - dt                       : 0.03333333333333333
+2025-09-07 21:52:29,561 - INFO - episode_length           : 20.0
+2025-09-07 21:52:29,561 - INFO - excitation_amplitude     : 0.03
+2025-09-07 21:52:29,561 - INFO - excitation_steps         : 12500
+2025-09-07 21:52:29,561 - INFO - gamma                    : 0.98
+2025-09-07 21:52:29,561 - INFO - gradient_clip_value      : 0.5
+2025-09-07 21:52:29,561 - INFO - gui                      : False
+2025-09-07 21:52:29,561 - INFO - hidden_layer_size        : [64, 64, 32]
+2025-09-07 21:52:29,561 - INFO - log_interval             : 10
+2025-09-07 21:52:29,561 - INFO - lr_actor                 : 0.005
+2025-09-07 21:52:29,561 - INFO - lr_critic                : 0.01
+2025-09-07 21:52:29,561 - INFO - lr_decay                 : 0.9999
+2025-09-07 21:52:29,561 - INFO - normalize_states         : True
+2025-09-07 21:52:29,562 - INFO - num_episodes             : 2500
+2025-09-07 21:52:29,562 - INFO - predict_delta            : False
+2025-09-07 21:52:29,562 - INFO - record                   : False
+2025-09-07 21:52:29,562 - INFO - record_best_episodes     : True
+2025-09-07 21:52:29,562 - INFO - recording_fps            : 30
+2025-09-07 21:52:29,562 - INFO - reference_size           : 8
+2025-09-07 21:52:29,562 - INFO - rls_action_size          : 4
+2025-09-07 21:52:29,562 - INFO - rls_covariance           : 100.0
+2025-09-07 21:52:29,562 - INFO - rls_gamma                : 0.9995
+2025-09-07 21:52:29,562 - INFO - rls_state_size           : 8
+2025-09-07 21:52:29,562 - INFO - save_interval            : 100
+2025-09-07 21:52:29,562 - INFO - split                    : False
+2025-09-07 21:52:29,562 - INFO - state_bounds             : {'z': [0.0, 5.0], 'roll': [-1.5707963267948966, 1.5707963267948966], 'pitch': [-1.5707963267948966, 1.5707963267948966], 'yaw': [-3.141592653589793, 3.141592653589793], 'vz': [-12.0, 12.0], 'wx': [-10.0, 10.0], 'wy': [-10.0, 10.0], 'wz': [-10.0, 10.0]}
+2025-09-07 21:52:29,562 - INFO - state_size               : 8
+2025-09-07 21:52:29,562 - INFO - target_network           : True
+2025-09-07 21:52:29,562 - INFO - target_pos               : [0.5, 0.5, 1.0]
+2025-09-07 21:52:29,562 - INFO - tau                      : 0.001
+2025-09-07 21:52:29,562 - INFO - trajectory_type          : spiral
+2025-09-07 21:52:29,562 - INFO - update_cycles            : 2
+2025-09-07 21:52:29,563 - INFO - use_trajectory           : False
+2025-09-07 21:52:29,563 - INFO - ----------------------------------------
+2025-09-07 21:52:29,563 - INFO - Log file: /home/osos/Mohamed_Masters_Thesis/DHP_drone_updated/DHP/training_logs/dhp_split_training_20250907_215229.log
+2025-09-07 21:52:29,563 - INFO - ================================================================================
+2025-09-07 21:52:29,563 - INFO - 
+TRAJECTORY TRAINING CONFIGURATION:
+2025-09-07 21:52:29,563 - INFO -   num_episodes: 200
+2025-09-07 21:52:29,563 - INFO -   episode_length: 25.0
+2025-09-07 21:52:29,563 - INFO -   excitation_steps: 5000
+2025-09-07 21:52:29,563 - INFO -   log_interval: 10
+2025-09-07 21:52:29,563 - INFO -   save_interval: 50
+2025-09-07 21:52:29,563 - INFO -   gui: False
+2025-09-07 21:52:29,563 - INFO -   record: False
+2025-09-07 21:52:29,563 - INFO -   normalize_states: True
+2025-09-07 21:52:29,563 - INFO -   record_best_episodes: True
+2025-09-07 21:52:29,563 - INFO -   coordination_warmup_episodes: 200
+2025-09-07 21:52:29,564 - INFO -   coordination_strength: 0.15
+2025-09-07 21:52:29,564 - INFO -   use_trajectory: True
+2025-09-07 21:52:29,564 - INFO -   trajectory_type: spiral
+2025-09-07 21:52:29,564 - INFO -   target_pos: [0.0, 0.0, 1.0]
+2025-09-07 21:52:29,564 - INFO - 
+==================================================
+2025-09-07 21:52:29,564 - INFO - STARTING DHP TRAINING FOR CF2X QUADROTOR
+2025-09-07 21:52:29,564 - INFO - ==================================================
+2025-09-07 21:52:29,671 - WARNING - From /home/osos/Mohamed_Masters_Thesis/DHP_drone_updated/msc-thesis/agents/dhp.py:88: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2025-09-07 21:52:29,761 - WARNING - From /home/osos/Mohamed_Masters_Thesis/DHP_drone_updated/msc-thesis/agents/dhp.py:117: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2025-09-07 21:52:29,762 - WARNING - From /home/osos/Mohamed_Masters_Thesis/DHP_drone_updated/msc-thesis/agents/dhp.py:119: The name tf.placeholder_with_default is deprecated. Please use tf.compat.v1.placeholder_with_default instead.
+
+2025-09-07 21:52:29,765 - WARNING - From /home/osos/Mohamed_Masters_Thesis/DHP_drone_updated/msc-thesis/agents/dhp.py:141: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2025-09-07 21:52:29,766 - WARNING - From /home/osos/Mohamed_Masters_Thesis/DHP_drone_updated/msc-thesis/agents/dhp.py:145: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+2025-09-07 21:52:29,767 - WARNING - From /home/osos/anaconda3/envs/DHP/lib/python3.7/site-packages/tensorflow_core/python/layers/core.py:187: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+2025-09-07 21:52:29,792 - WARNING - From /home/osos/Mohamed_Masters_Thesis/DHP_drone_updated/msc-thesis/agents/dhp.py:150: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+2025-09-07 21:52:29,805 - WARNING - From /home/osos/Mohamed_Masters_Thesis/DHP_drone_updated/msc-thesis/agents/dhp.py:156: The name tf.train.GradientDescentOptimizer is deprecated. Please use tf.compat.v1.train.GradientDescentOptimizer instead.
+
+2025-09-07 21:52:29,832 - WARNING - From /home/osos/Mohamed_Masters_Thesis/DHP_drone_updated/msc-thesis/agents/dhp.py:173: The name tf.assign is deprecated. Please use tf.compat.v1.assign instead.
+
+2025-09-07 21:52:29,946 - WARNING - From /home/osos/Mohamed_Masters_Thesis/DHP_drone_updated/msc-thesis/agents/dhp.py:97: The name tf.summary.merge_all is deprecated. Please use tf.compat.v1.summary.merge_all instead.
+
+2025-09-07 21:52:29,947 - WARNING - From /home/osos/Mohamed_Masters_Thesis/DHP_drone_updated/msc-thesis/agents/dhp.py:98: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2025-09-07 21:52:29,959 - WARNING - From /home/osos/Mohamed_Masters_Thesis/DHP_drone_updated/msc-thesis/agents/dhp.py:99: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+2025-09-07 21:52:30,012 - INFO - 
+Training for 200 episodes...
+2025-09-07 21:52:30,012 - INFO - Episode | Reward  | Avg Cost | Pos Error | Duration (Completion) | Time
+2025-09-07 21:52:30,012 - INFO - -------------------------------------------------------------------------------------
+2025-09-07 21:52:30,983 - INFO - 🏆 NEW BEST EPISODE (SMART CRITERIA)! Episode 0
+2025-09-07 21:52:30,983 - INFO -    Position Error: 4.9050m
+2025-09-07 21:52:30,983 - INFO -    Completion: 13.9% (104/750 steps)
+2025-09-07 21:52:30,983 - INFO -    Duration: 3.5s / 25.0s
+2025-09-07 21:52:30,983 - INFO -    Composite Score: -35.18
+2025-09-07 21:52:30,984 - INFO -       0 |   64.90 |   34.951 |    4.9050 |   3.5s (13.9%) |    1.0s
+2025-09-07 21:52:31,736 - INFO - 🏆 NEW BEST EPISODE (SMART CRITERIA)! Episode 1
+2025-09-07 21:52:31,736 - INFO -    Position Error: 4.8031m
+2025-09-07 21:52:31,736 - INFO -    Completion: 14.5% (109/750 steps)
+2025-09-07 21:52:31,736 - INFO -    Duration: 3.6s / 25.0s
+2025-09-07 21:52:31,737 - INFO -    Composite Score: -33.50
+2025-09-07 21:52:32,658 - INFO - 🏆 NEW BEST EPISODE (SMART CRITERIA)! Episode 2
+2025-09-07 21:52:32,658 - INFO -    Position Error: 4.9183m
+2025-09-07 21:52:32,658 - INFO -    Completion: 16.7% (125/750 steps)
+2025-09-07 21:52:32,658 - INFO -    Duration: 4.2s / 25.0s
+2025-09-07 21:52:32,658 - INFO -    Composite Score: -32.52
+2025-09-07 21:52:36,260 - INFO - 🏆 NEW BEST EPISODE (SMART CRITERIA)! Episode 7
+2025-09-07 21:52:36,260 - INFO -    Position Error: 4.6361m
+2025-09-07 21:52:36,260 - INFO -    Completion: 18.7% (140/750 steps)
+2025-09-07 21:52:36,260 - INFO -    Duration: 4.7s / 25.0s
+2025-09-07 21:52:36,260 - INFO -    Composite Score: -27.69
+2025-09-07 21:52:38,989 - INFO -      10 |   47.55 |   44.228 |    5.5579 |   5.7s (22.7%) |    9.0s
+2025-09-07 21:52:39,154 - INFO - NEW BEST PERFORMANCE! Episode 11: 0.5045m
+2025-09-07 21:52:39,215 - INFO - BEST MODEL SAVED! Episode 11, Error: 0.5045m
+2025-09-07 21:52:39,215 - INFO - Best model path: /home/osos/Mohamed_Masters_Thesis/DHP_drone_updated/DHP/trained_models/dhp_cf2x_best
+2025-09-07 21:52:39,215 - INFO - All model files saved successfully!
+2025-09-07 21:52:39,215 - INFO - CONVERGENCE EPISODE 11: 0.5045m
+2025-09-07 21:52:42,437 - INFO - 🏆 NEW BEST EPISODE (SMART CRITERIA)! Episode 13
+2025-09-07 21:52:42,437 - INFO -    Position Error: 6.2033m
+2025-09-07 21:52:42,437 - INFO -    Completion: 59.1% (443/750 steps)
+2025-09-07 21:52:42,437 - INFO -    Duration: 14.8s / 25.0s
+2025-09-07 21:52:42,437 - INFO -    Composite Score: -2.97
+2025-09-07 21:52:42,596 - INFO - NEW BEST PERFORMANCE! Episode 14: 0.5069m
+2025-09-07 21:52:42,634 - INFO - BEST MODEL SAVED! Episode 14, Error: 0.5069m
+2025-09-07 21:52:42,634 - INFO - Best model path: /home/osos/Mohamed_Masters_Thesis/DHP_drone_updated/DHP/trained_models/dhp_cf2x_best
+2025-09-07 21:52:42,634 - INFO - All model files saved successfully!
+2025-09-07 21:52:42,634 - INFO - CONVERGENCE EPISODE 14: 0.5069m
+2025-09-07 21:52:47,351 - INFO - 🏆 NEW BEST EPISODE (SMART CRITERIA)! Episode 18
+2025-09-07 21:52:47,351 - INFO -    Position Error: 4.1879m
+2025-09-07 21:52:47,351 - INFO -    Completion: 42.3% (317/750 steps)
+2025-09-07 21:52:47,351 - INFO -    Duration: 10.6s / 25.0s
+2025-09-07 21:52:47,351 - INFO -    Composite Score: 0.39
+2025-09-07 21:52:47,495 - INFO - NEW BEST PERFORMANCE! Episode 19: 0.3839m
+2025-09-07 21:52:47,536 - INFO - BEST MODEL SAVED! Episode 19, Error: 0.3839m
+2025-09-07 21:52:47,536 - INFO - Best model path: /home/osos/Mohamed_Masters_Thesis/DHP_drone_updated/DHP/trained_models/dhp_cf2x_best
+2025-09-07 21:52:47,536 - INFO - All model files saved successfully!
+2025-09-07 21:52:47,537 - INFO - CONVERGENCE EPISODE 19: 0.3839m
+2025-09-07 21:52:47,697 - INFO - CONVERGENCE EPISODE 20: 0.4782m
+2025-09-07 21:52:47,697 - INFO -      20 |   25.73 |   59.358 |    0.4782 |   0.7s ( 2.7%) |   17.7s
+2025-09-07 21:52:47,842 - INFO - CONVERGENCE EPISODE 21: 0.4004m
+2025-09-07 21:52:47,988 - INFO - CONVERGENCE EPISODE 22: 0.4392m
+2025-09-07 21:52:58,581 - INFO - 🏆 NEW BEST EPISODE (SMART CRITERIA)! Episode 28
+2025-09-07 21:52:58,581 - INFO -    Position Error: 3.7634m
+2025-09-07 21:52:58,581 - INFO -    Completion: 90.4% (678/750 steps)
+2025-09-07 21:52:58,581 - INFO -    Duration: 22.6s / 25.0s
+2025-09-07 21:52:58,581 - INFO -    Composite Score: 102.77
+2025-09-07 21:52:58,581 - INFO - 🎯 NEW BEST COMPLETED EPISODE! Episode 28
+2025-09-07 21:52:58,581 - INFO -    Position Error: 3.7634m (among completed episodes)
+2025-09-07 21:52:58,581 - INFO -    Completion: 90.4% (678/750 steps)
+2025-09-07 21:52:58,581 - INFO -    Duration: 22.6s
+2025-09-07 21:53:00,032 - INFO - NEW BEST PERFORMANCE! Episode 29: 0.6905m
+2025-09-07 21:53:00,073 - INFO - BEST MODEL SAVED! Episode 29, Error: 0.6905m
+2025-09-07 21:53:00,073 - INFO - Best model path: /home/osos/Mohamed_Masters_Thesis/DHP_drone_updated/DHP/trained_models/dhp_cf2x_best
+2025-09-07 21:53:00,073 - INFO - All model files saved successfully!
+2025-09-07 21:53:00,073 - INFO - CONVERGENCE EPISODE 29: 0.6905m
+2025-09-07 21:53:00,261 - INFO - NEW BEST PERFORMANCE! Episode 30: 0.1592m
+2025-09-07 21:53:00,300 - INFO - BEST MODEL SAVED! Episode 30, Error: 0.1592m
+2025-09-07 21:53:00,300 - INFO - Best model path: /home/osos/Mohamed_Masters_Thesis/DHP_drone_updated/DHP/trained_models/dhp_cf2x_best
+2025-09-07 21:53:00,300 - INFO - All model files saved successfully!
+2025-09-07 21:53:00,300 - INFO - CONVERGENCE EPISODE 30: 0.1592m
+2025-09-07 21:53:00,300 - INFO -      30 |   39.09 |   44.692 |    0.1592 |   0.8s ( 3.3%) |   30.3s
+2025-09-07 21:53:00,520 - INFO - CONVERGENCE EPISODE 31: 0.3793m
+2025-09-07 21:53:01,140 - INFO - CONVERGENCE EPISODE 33: 0.4947m
+2025-09-07 21:53:01,880 - INFO - CONVERGENCE EPISODE 36: 0.4735m
+2025-09-07 21:53:02,597 - INFO - CONVERGENCE EPISODE 38: 0.9214m
+2025-09-07 21:53:03,042 - INFO - CONVERGENCE EPISODE 39: 0.9587m
+2025-09-07 21:53:03,344 - INFO - CONVERGENCE EPISODE 40: 0.3632m
+2025-09-07 21:53:03,344 - INFO -      40 |   61.52 |   25.955 |    0.3632 |   1.4s ( 5.5%) |   33.3s
+2025-09-07 21:53:03,712 - INFO - CONVERGENCE EPISODE 41: 0.6549m
+2025-09-07 21:53:03,948 - INFO - CONVERGENCE EPISODE 42: 0.7815m
+2025-09-07 21:53:06,739 - INFO - CONVERGENCE EPISODE 47: 0.3843m
+2025-09-07 21:53:07,089 - INFO - CONVERGENCE EPISODE 48: 0.9965m
+2025-09-07 21:53:08,110 - INFO -      50 |   60.33 |   73.458 |    5.0695 |   2.6s (10.5%) |   38.1s
+2025-09-07 21:53:14,302 - INFO -      60 |   82.32 |   57.907 |    1.5089 |   2.8s (11.1%) |   44.3s
+2025-09-07 21:53:18,561 - INFO - CONVERGENCE EPISODE 67: 0.8853m
+2025-09-07 21:53:19,747 - INFO -      70 |   68.74 |  121.150 |    2.0371 |   1.9s ( 7.6%) |   49.7s
+2025-09-07 21:53:25,581 - INFO - 🏆 NEW BEST EPISODE (SMART CRITERIA)! Episode 73
+2025-09-07 21:53:25,581 - INFO -    Position Error: 0.6538m
+2025-09-07 21:53:25,581 - INFO -    Completion: 100.0% (750/750 steps)
+2025-09-07 21:53:25,581 - INFO -    Duration: 25.0s / 25.0s
+2025-09-07 21:53:25,581 - INFO -    Composite Score: 143.46
+2025-09-07 21:53:25,581 - INFO - 🎯 NEW BEST COMPLETED EPISODE! Episode 73
+2025-09-07 21:53:25,582 - INFO -    Position Error: 0.6538m (among completed episodes)
+2025-09-07 21:53:25,582 - INFO -    Completion: 100.0% (750/750 steps)
+2025-09-07 21:53:25,582 - INFO -    Duration: 25.0s
+2025-09-07 21:53:25,587 - INFO - CONVERGENCE EPISODE 73: 0.6538m
+2025-09-07 21:53:26,813 - INFO - CONVERGENCE EPISODE 74: 0.8315m
+2025-09-07 21:53:31,322 - INFO - CONVERGENCE EPISODE 75: 0.6546m
+2025-09-07 21:53:35,837 - INFO - CONVERGENCE EPISODE 76: 0.6546m
+2025-09-07 21:53:40,291 - INFO - CONVERGENCE EPISODE 77: 0.6545m
+2025-09-07 21:53:44,776 - INFO - CONVERGENCE EPISODE 78: 0.6545m
+2025-09-07 21:53:49,233 - INFO - CONVERGENCE EPISODE 79: 0.6544m
+2025-09-07 21:53:53,587 - INFO - CONVERGENCE EPISODE 80: 0.6543m
+2025-09-07 21:53:53,588 - INFO -      80 |  542.43 |    0.084 |    0.6543 |  25.0s (100.0%) |   83.6s
+2025-09-07 21:53:58,053 - INFO - CONVERGENCE EPISODE 81: 0.6542m
+2025-09-07 21:54:02,543 - INFO - CONVERGENCE EPISODE 82: 0.6541m
+2025-09-07 21:54:02,543 - INFO - STABLE PERFORMANCE ACHIEVED starting at episode 73
+2025-09-07 21:54:07,006 - INFO - CONVERGENCE EPISODE 83: 0.6541m
+2025-09-07 21:54:11,514 - INFO - CONVERGENCE EPISODE 84: 0.6538m
+2025-09-07 21:54:16,107 - INFO - 🏆 NEW BEST EPISODE (SMART CRITERIA)! Episode 85
+2025-09-07 21:54:16,107 - INFO -    Position Error: 0.6538m
+2025-09-07 21:54:16,107 - INFO -    Completion: 100.0% (750/750 steps)
+2025-09-07 21:54:16,107 - INFO -    Duration: 25.0s / 25.0s
+2025-09-07 21:54:16,107 - INFO -    Composite Score: 143.46
+2025-09-07 21:54:16,107 - INFO - 🎯 NEW BEST COMPLETED EPISODE! Episode 85
+2025-09-07 21:54:16,108 - INFO -    Position Error: 0.6538m (among completed episodes)
+2025-09-07 21:54:16,108 - INFO -    Completion: 100.0% (750/750 steps)
+2025-09-07 21:54:16,108 - INFO -    Duration: 25.0s
+2025-09-07 21:54:16,114 - INFO - CONVERGENCE EPISODE 85: 0.6538m
+2025-09-07 21:54:20,586 - INFO - 🏆 NEW BEST EPISODE (SMART CRITERIA)! Episode 86
+2025-09-07 21:54:20,586 - INFO -    Position Error: 0.6537m
+2025-09-07 21:54:20,586 - INFO -    Completion: 100.0% (750/750 steps)
+2025-09-07 21:54:20,586 - INFO -    Duration: 25.0s / 25.0s
+2025-09-07 21:54:20,586 - INFO -    Composite Score: 143.46
+2025-09-07 21:54:20,586 - INFO - 🎯 NEW BEST COMPLETED EPISODE! Episode 86
+2025-09-07 21:54:20,586 - INFO -    Position Error: 0.6537m (among completed episodes)
+2025-09-07 21:54:20,587 - INFO -    Completion: 100.0% (750/750 steps)
+2025-09-07 21:54:20,587 - INFO -    Duration: 25.0s
+2025-09-07 21:54:20,593 - INFO - CONVERGENCE EPISODE 86: 0.6537m
+2025-09-07 21:54:25,106 - INFO - 🏆 NEW BEST EPISODE (SMART CRITERIA)! Episode 87
+2025-09-07 21:54:25,106 - INFO -    Position Error: 0.6537m
+2025-09-07 21:54:25,106 - INFO -    Completion: 100.0% (750/750 steps)
+2025-09-07 21:54:25,106 - INFO -    Duration: 25.0s / 25.0s
+2025-09-07 21:54:25,106 - INFO -    Composite Score: 143.46
+2025-09-07 21:54:25,107 - INFO - 🎯 NEW BEST COMPLETED EPISODE! Episode 87
+2025-09-07 21:54:25,107 - INFO -    Position Error: 0.6537m (among completed episodes)
+2025-09-07 21:54:25,107 - INFO -    Completion: 100.0% (750/750 steps)
+2025-09-07 21:54:25,107 - INFO -    Duration: 25.0s
+2025-09-07 21:54:25,113 - INFO - CONVERGENCE EPISODE 87: 0.6537m
+2025-09-07 21:54:29,563 - INFO - CONVERGENCE EPISODE 88: 0.6538m
+2025-09-07 21:54:34,140 - INFO - CONVERGENCE EPISODE 89: 0.6538m
+2025-09-07 21:54:38,588 - INFO - CONVERGENCE EPISODE 90: 0.6538m
+2025-09-07 21:54:38,589 - INFO -      90 |  542.25 |    0.074 |    0.6538 |  25.0s (100.0%) |  128.6s
+2025-09-07 21:54:43,002 - INFO - CONVERGENCE EPISODE 91: 0.6538m
+2025-09-07 21:54:47,485 - INFO - CONVERGENCE EPISODE 92: 0.6539m
+2025-09-07 21:54:51,978 - INFO - CONVERGENCE EPISODE 93: 0.6539m
+2025-09-07 21:54:56,469 - INFO - CONVERGENCE EPISODE 94: 0.6539m
+2025-09-07 21:55:00,954 - INFO - CONVERGENCE EPISODE 95: 0.6540m
+2025-09-07 21:55:05,409 - INFO - CONVERGENCE EPISODE 96: 0.6540m
+2025-09-07 21:55:09,859 - INFO - CONVERGENCE EPISODE 97: 0.6540m
+2025-09-07 21:55:14,285 - INFO - CONVERGENCE EPISODE 98: 0.6541m
+2025-09-07 21:55:18,854 - INFO - CONVERGENCE EPISODE 99: 0.6541m
+2025-09-07 21:55:24,723 - INFO - CONVERGENCE EPISODE 100: 0.6541m
+2025-09-07 21:55:24,723 - INFO - 
+2025-09-07 21:55:24,723 - INFO - MILESTONE 100 ANALYSIS:
+2025-09-07 21:55:24,723 - INFO -   Recent 50 episodes avg position error: 1.6045 ± 1.4239m
+2025-09-07 21:55:24,723 - INFO -   Recent 50 episodes avg cost: 29.536
+2025-09-07 21:55:24,723 - INFO -   Convergent episodes ratio (< 1.0m): 58.00%
+2025-09-07 21:55:24,723 - INFO -   Total convergent episodes so far: 47
+2025-09-07 21:55:24,724 - INFO -   Best performance: 0.6537m at episode 87
+2025-09-07 21:55:24,724 - INFO -   Stable performance maintained since episode 73
+2025-09-07 21:55:24,724 - INFO - 
+2025-09-07 21:55:24,724 - INFO -     100 |  542.21 |    0.076 |    0.6541 |  25.0s (100.0%) |  174.7s
+2025-09-07 21:55:29,229 - INFO - CONVERGENCE EPISODE 101: 0.6541m
+2025-09-07 21:55:33,806 - INFO - CONVERGENCE EPISODE 102: 0.6541m
+2025-09-07 21:55:38,300 - INFO - CONVERGENCE EPISODE 103: 0.6541m
+2025-09-07 21:55:42,816 - INFO - CONVERGENCE EPISODE 104: 0.6541m
+2025-09-07 21:55:47,316 - INFO - CONVERGENCE EPISODE 105: 0.6542m
+2025-09-07 21:55:51,813 - INFO - CONVERGENCE EPISODE 106: 0.6542m
+2025-09-07 21:55:56,276 - INFO - CONVERGENCE EPISODE 107: 0.6542m
+2025-09-07 21:56:00,741 - INFO - CONVERGENCE EPISODE 108: 0.6542m
+2025-09-07 21:56:05,238 - INFO - CONVERGENCE EPISODE 109: 0.6542m
+2025-09-07 21:56:09,722 - INFO - CONVERGENCE EPISODE 110: 0.6542m
+2025-09-07 21:56:09,722 - INFO -     110 |  542.25 |    0.073 |    0.6542 |  25.0s (100.0%) |  219.7s
+2025-09-07 21:56:14,283 - INFO - CONVERGENCE EPISODE 111: 0.6542m
+2025-09-07 21:56:18,798 - INFO - CONVERGENCE EPISODE 112: 0.6542m
+2025-09-07 21:56:23,346 - INFO - CONVERGENCE EPISODE 113: 0.6542m
+2025-09-07 21:56:27,823 - INFO - CONVERGENCE EPISODE 114: 0.6542m
+2025-09-07 21:56:32,440 - INFO - CONVERGENCE EPISODE 115: 0.6542m
+2025-09-07 21:56:37,503 - INFO - CONVERGENCE EPISODE 116: 0.6542m
+2025-09-07 21:56:42,146 - INFO - CONVERGENCE EPISODE 117: 0.6542m
+2025-09-07 21:56:46,695 - INFO - CONVERGENCE EPISODE 118: 0.6542m
+2025-09-07 21:56:51,166 - INFO - CONVERGENCE EPISODE 119: 0.6542m
+2025-09-07 21:56:55,605 - INFO - CONVERGENCE EPISODE 120: 0.6542m
+2025-09-07 21:56:55,605 - INFO -     120 |  542.23 |    0.087 |    0.6542 |  25.0s (100.0%) |  265.6s
+2025-09-07 21:57:00,032 - INFO - CONVERGENCE EPISODE 121: 0.6542m
+2025-09-07 21:57:04,487 - INFO - CONVERGENCE EPISODE 122: 0.6542m
+2025-09-07 21:57:08,964 - INFO - CONVERGENCE EPISODE 123: 0.6542m
+2025-09-07 21:57:13,504 - INFO - CONVERGENCE EPISODE 124: 0.6542m
+2025-09-07 21:57:17,982 - INFO - CONVERGENCE EPISODE 125: 0.6541m
+2025-09-07 21:57:22,502 - INFO - CONVERGENCE EPISODE 126: 0.6541m
+2025-09-07 21:57:27,164 - INFO - CONVERGENCE EPISODE 127: 0.6544m
+2025-09-07 21:57:31,632 - INFO - 🏆 NEW BEST EPISODE (SMART CRITERIA)! Episode 128
+2025-09-07 21:57:31,632 - INFO -    Position Error: 0.6458m
+2025-09-07 21:57:31,632 - INFO -    Completion: 100.0% (750/750 steps)
+2025-09-07 21:57:31,632 - INFO -    Duration: 25.0s / 25.0s
+2025-09-07 21:57:31,632 - INFO -    Composite Score: 143.54
+2025-09-07 21:57:31,632 - INFO - 🎯 NEW BEST COMPLETED EPISODE! Episode 128
+2025-09-07 21:57:31,632 - INFO -    Position Error: 0.6458m (among completed episodes)
+2025-09-07 21:57:31,632 - INFO -    Completion: 100.0% (750/750 steps)
+2025-09-07 21:57:31,632 - INFO -    Duration: 25.0s
+2025-09-07 21:57:31,640 - INFO - CONVERGENCE EPISODE 128: 0.6458m
+2025-09-07 21:57:36,313 - INFO - CONVERGENCE EPISODE 129: 0.6590m
+2025-09-07 21:57:40,843 - INFO - CONVERGENCE EPISODE 130: 0.6676m
+2025-09-07 21:57:40,843 - INFO -     130 |  542.21 |    0.214 |    0.6676 |  25.0s (100.0%) |  310.8s
+2025-09-07 21:57:45,370 - INFO - CONVERGENCE EPISODE 131: 0.6558m
+2025-09-07 21:57:49,929 - INFO - CONVERGENCE EPISODE 132: 0.6552m
+2025-09-07 21:57:54,503 - INFO - CONVERGENCE EPISODE 133: 0.6510m
+2025-09-07 21:57:59,113 - INFO - CONVERGENCE EPISODE 134: 0.6736m
+2025-09-07 21:58:03,564 - INFO - CONVERGENCE EPISODE 135: 0.6499m
+2025-09-07 21:58:08,138 - INFO - CONVERGENCE EPISODE 136: 0.6605m
+2025-09-07 21:58:11,898 - INFO -     140 |  178.76 |   37.964 |    4.6969 |   5.2s (20.8%) |  341.9s
+2025-09-07 21:58:19,501 - INFO -     150 |  110.27 |   50.924 |    1.4368 |   3.7s (14.8%) |  349.5s
+2025-09-07 21:58:21,241 - INFO - CONVERGENCE EPISODE 152: 0.6733m
+2025-09-07 21:58:25,667 - INFO - CONVERGENCE EPISODE 157: 0.9366m
+2025-09-07 21:58:28,048 - INFO -     160 |  107.41 |   59.351 |    1.7088 |   3.1s (12.5%) |  358.0s
+2025-09-07 21:58:35,397 - INFO -     170 |  111.56 |   83.491 |    1.8440 |   3.9s (15.7%) |  365.4s
+2025-09-07 21:58:38,121 - INFO - NEW BEST PERFORMANCE! Episode 174: 0.2769m
+2025-09-07 21:58:38,163 - INFO - BEST MODEL SAVED! Episode 174, Error: 0.2769m
+2025-09-07 21:58:38,164 - INFO - Best model path: /home/osos/Mohamed_Masters_Thesis/DHP_drone_updated/DHP/trained_models/dhp_cf2x_best
+2025-09-07 21:58:38,164 - INFO - All model files saved successfully!
+2025-09-07 21:58:38,164 - INFO - CONVERGENCE EPISODE 174: 0.2769m
+2025-09-07 21:58:41,970 - INFO -     180 |  102.28 |   24.112 |    4.8568 |   3.5s (14.1%) |  372.0s
+2025-09-07 21:58:44,307 - INFO - CONVERGENCE EPISODE 184: 0.6184m
+2025-09-07 21:58:49,312 - INFO -     190 |   92.80 |   64.563 |    4.0879 |   8.3s (33.2%) |  379.3s
+2025-09-07 21:58:53,873 - INFO - CONVERGENCE EPISODE 197: 0.5255m
+2025-09-07 21:58:54,972 - INFO - CONVERGENCE EPISODE 199: 0.4185m
+2025-09-07 21:58:54,972 - INFO - 
+================================================================================
+2025-09-07 21:58:54,972 - INFO - TRAINING COMPLETED - FINAL ANALYSIS
+2025-09-07 21:58:54,972 - INFO - ================================================================================
+2025-09-07 21:58:54,972 - INFO - Total training time: 385.0 seconds (6.4 minutes)
+2025-09-07 21:58:54,972 - INFO - Final episode reward: 77.99
+2025-09-07 21:58:54,972 - INFO - Final position error: 0.4185m
+2025-09-07 21:58:54,972 - INFO - 
+EPISODE COMPLETION STATISTICS:
+2025-09-07 21:58:54,972 - INFO - Average completion rate: 41.9%
+2025-09-07 21:58:54,972 - INFO - Episodes completed (≥90%): 64/200 (32.0%)
+2025-09-07 21:58:54,972 - INFO - Best completed episode: #128 with error 0.6458m
+2025-09-07 21:58:54,972 - INFO - 
+BEST EPISODE ANALYSIS:
+2025-09-07 21:58:54,972 - INFO - Best overall episode (smart criteria): #174
+2025-09-07 21:58:54,973 - INFO -   Position error: 0.2769m
+2025-09-07 21:58:54,973 - INFO -   Composite score: 143.54
+2025-09-07 21:58:54,973 - INFO - Total convergent episodes (< 1.0m): 89/200 (44.50%)
+2025-09-07 21:58:54,973 - INFO - Stable performance achieved: Yes (from episode 73, duration: 127 episodes)
+2025-09-07 21:58:54,973 - INFO - Position error statistics:
+2025-09-07 21:58:54,973 - INFO -   Mean: 2.1584m
+2025-09-07 21:58:54,973 - INFO -   Std:  1.8030m
+2025-09-07 21:58:54,973 - INFO -   Min:  0.1592m
+2025-09-07 21:58:54,973 - INFO -   Max:  6.2033m
+2025-09-07 21:58:54,973 - INFO -   Median: 1.3049m
+2025-09-07 21:58:54,973 - INFO - Performance distribution:
+2025-09-07 21:58:54,973 - INFO -   Excellent (< 0.5m): 12 episodes (6.0%)
+2025-09-07 21:58:54,973 - INFO -   Good (0.5-1.0m):   77 episodes (38.5%)
+2025-09-07 21:58:54,973 - INFO -   Acceptable (1.0-1.5m): 18 episodes (9.0%)
+2025-09-07 21:58:54,973 - INFO -   Poor (> 1.5m):     93 episodes (46.5%)
+2025-09-07 21:58:54,973 - INFO - 
+TRAINING CONFIGURATION EFFECTIVENESS:
+2025-09-07 21:58:54,973 - INFO - ----------------------------------------
+2025-09-07 21:58:54,973 - INFO - Episodes needed for first convergence: 11
+2025-09-07 21:58:54,973 - INFO - Excitation phase ended at episode: 6
+2025-09-07 21:58:54,975 - INFO - Training metrics saved to: /home/osos/Mohamed_Masters_Thesis/DHP_drone_updated/DHP/training_logs/dhp_split_metrics_20250907_215854.json
+2025-09-07 21:58:54,975 - INFO - 
+BEST MODEL CONFIRMED:
+2025-09-07 21:58:54,975 - INFO -   Episode: 174
+2025-09-07 21:58:54,975 - INFO -   Position Error: 0.2769m
+2025-09-07 21:58:54,975 - INFO -   Model files: dhp_cf2x_best_*
+2025-09-07 21:58:54,975 - INFO - ================================================================================
+2025-09-07 21:58:54,975 - INFO - TRAINING SESSION COMPLETED
+2025-09-07 21:58:54,975 - INFO - Detailed log saved to: /home/osos/Mohamed_Masters_Thesis/DHP_drone_updated/DHP/training_logs/dhp_split_training_20250907_215229.log
+2025-09-07 21:58:54,975 - INFO - ================================================================================
+2025-09-07 21:59:38,361 - INFO - 
+==================================================
+2025-09-07 21:59:38,362 - INFO - STARTING POLICY DEMONSTRATION
+2025-09-07 21:59:38,362 - INFO - ==================================================
+2025-09-07 21:59:43,241 - INFO - Trajectory demonstration completed for spiral trajectory
+2025-09-07 21:59:43,241 - INFO - Training and demonstration session completed successfully!

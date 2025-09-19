@@ -1,0 +1,87 @@
+2025-08-16 11:56:07,050 - INFO - ================================================================================
+2025-08-16 11:56:07,050 - INFO - DHP PENDULUM TRAINING SESSION STARTED
+2025-08-16 11:56:07,050 - INFO - ================================================================================
+2025-08-16 11:56:07,050 - INFO - HYPERPARAMETERS:
+2025-08-16 11:56:07,050 - INFO - ----------------------------------------
+2025-08-16 11:56:07,050 - INFO - action_size              : 1
+2025-08-16 11:56:07,050 - INFO - activation               : tanh
+2025-08-16 11:56:07,050 - INFO - best_episode_gui         : False
+2025-08-16 11:56:07,050 - INFO - episode_length           : 200
+2025-08-16 11:56:07,050 - INFO - excitation_amplitude     : 0.2
+2025-08-16 11:56:07,050 - INFO - excitation_steps         : 7500
+2025-08-16 11:56:07,050 - INFO - gamma                    : 0.95
+2025-08-16 11:56:07,050 - INFO - gui                      : False
+2025-08-16 11:56:07,050 - INFO - hidden_layer_size        : [64, 64, 32]
+2025-08-16 11:56:07,050 - INFO - log_interval             : 50
+2025-08-16 11:56:07,050 - INFO - lr_actor                 : 0.005
+2025-08-16 11:56:07,050 - INFO - lr_critic                : 0.01
+2025-08-16 11:56:07,050 - INFO - max_steps                : 200
+2025-08-16 11:56:07,050 - INFO - normalize_states         : True
+2025-08-16 11:56:07,050 - INFO - num_episodes             : 1500
+2025-08-16 11:56:07,050 - INFO - predict_delta            : False
+2025-08-16 11:56:07,050 - INFO - record                   : False
+2025-08-16 11:56:07,051 - INFO - record_best_episodes     : True
+2025-08-16 11:56:07,051 - INFO - recording_fps            : 30
+2025-08-16 11:56:07,051 - INFO - reference_size           : 2
+2025-08-16 11:56:07,051 - INFO - rls_action_size          : 1
+2025-08-16 11:56:07,051 - INFO - rls_covariance           : 100.0
+2025-08-16 11:56:07,051 - INFO - rls_gamma                : 0.9995
+2025-08-16 11:56:07,051 - INFO - rls_state_size           : 2
+2025-08-16 11:56:07,051 - INFO - save_interval            : 200
+2025-08-16 11:56:07,051 - INFO - split                    : False
+2025-08-16 11:56:07,051 - INFO - state_bounds             : {'theta': [-3.141592653589793, 3.141592653589793], 'theta_dot': [-8.0, 8.0]}
+2025-08-16 11:56:07,051 - INFO - state_size               : 2
+2025-08-16 11:56:07,051 - INFO - target_network           : True
+2025-08-16 11:56:07,051 - INFO - tau                      : 0.001
+2025-08-16 11:56:07,051 - INFO - update_cycles            : 2
+2025-08-16 11:56:07,051 - INFO - ----------------------------------------
+2025-08-16 11:56:07,051 - INFO - Log file: /home/osos/Mohamed_Masters_Thesis/DHP_pendulum/training_logs/dhp_pendulum_training_20250816_115607.log
+2025-08-16 11:56:07,051 - INFO - ================================================================================
+2025-08-16 11:56:07,051 - INFO - 
+==================================================
+2025-08-16 11:56:07,051 - INFO - STARTING DHP TRAINING FOR PENDULUM
+2025-08-16 11:56:07,051 - INFO - ==================================================
+2025-08-16 11:56:07,053 - WARNING - From /home/osos/Mohamed_Masters_Thesis/msc-thesis/agents/dhp.py:70: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2025-08-16 11:56:07,169 - WARNING - From /home/osos/Mohamed_Masters_Thesis/msc-thesis/agents/dhp.py:100: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2025-08-16 11:56:07,172 - WARNING - From /home/osos/Mohamed_Masters_Thesis/msc-thesis/agents/dhp.py:102: The name tf.placeholder_with_default is deprecated. Please use tf.compat.v1.placeholder_with_default instead.
+
+2025-08-16 11:56:07,181 - WARNING - From /home/osos/Mohamed_Masters_Thesis/msc-thesis/agents/dhp.py:124: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2025-08-16 11:56:07,181 - WARNING - From /home/osos/Mohamed_Masters_Thesis/msc-thesis/agents/dhp.py:128: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+2025-08-16 11:56:07,183 - WARNING - From /home/osos/anaconda3/envs/DHP/lib/python3.7/site-packages/tensorflow_core/python/layers/core.py:187: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+2025-08-16 11:56:07,218 - WARNING - From /home/osos/Mohamed_Masters_Thesis/msc-thesis/agents/dhp.py:133: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+2025-08-16 11:56:07,231 - WARNING - From /home/osos/Mohamed_Masters_Thesis/msc-thesis/agents/dhp.py:139: The name tf.train.GradientDescentOptimizer is deprecated. Please use tf.compat.v1.train.GradientDescentOptimizer instead.
+
+2025-08-16 11:56:07,270 - WARNING - From /home/osos/Mohamed_Masters_Thesis/msc-thesis/agents/dhp.py:156: The name tf.assign is deprecated. Please use tf.compat.v1.assign instead.
+
+2025-08-16 11:56:07,375 - WARNING - From /home/osos/Mohamed_Masters_Thesis/msc-thesis/agents/dhp.py:79: The name tf.summary.merge_all is deprecated. Please use tf.compat.v1.summary.merge_all instead.
+
+2025-08-16 11:56:07,376 - WARNING - From /home/osos/Mohamed_Masters_Thesis/msc-thesis/agents/dhp.py:80: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2025-08-16 11:56:07,391 - WARNING - From /home/osos/Mohamed_Masters_Thesis/msc-thesis/agents/dhp.py:81: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+2025-08-16 11:56:07,471 - INFO - 
+Training for 2500 episodes...
+2025-08-16 11:56:07,472 - INFO - Episode | Reward  | Avg Cost | Pos Error | Success | Time
+2025-08-16 11:56:07,472 - INFO - ------------------------------------------------------------
+2025-08-16 11:56:09,135 - INFO -       0 | -18728.15 | 207331025.292 |    3.1280 |   0.000 |    1.7s
+2025-08-16 11:56:25,828 - INFO - CONVERGENCE EPISODE 11: 0.0013 rad
+2025-08-16 11:57:24,746 - INFO -      50 | -15606.82 | 297432812.812 |    1.6850 |   0.000 |   77.3s
+2025-08-16 11:58:53,657 - INFO - 
+2025-08-16 11:58:53,657 - INFO - MILESTONE 100 ANALYSIS:
+2025-08-16 11:58:53,657 - INFO -   Recent 50 episodes avg position error: 1.8120 ± 0.0574 rad
+2025-08-16 11:58:53,658 - INFO -   Recent 50 episodes avg cost: 297680444.726
+2025-08-16 11:58:53,658 - INFO -   Recent 50 episodes success rate: 0.00%
+2025-08-16 11:58:53,658 - INFO -   Convergent episodes ratio (< 0.5 rad): 0.00%
+2025-08-16 11:58:53,658 - INFO -   Total convergent episodes so far: 1
+2025-08-16 11:58:53,658 - INFO -   Best performance: 0.0013 rad at episode 11
+2025-08-16 11:58:53,658 - INFO -   Stable performance not yet achieved
+2025-08-16 11:58:53,658 - INFO - 
+2025-08-16 11:58:53,658 - INFO -     100 | -10044.06 | 297951085.125 |    1.9141 |   0.000 |  166.2s

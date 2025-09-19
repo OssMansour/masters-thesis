@@ -1,0 +1,358 @@
+2025-08-16 13:31:15,985 - INFO - ================================================================================
+2025-08-16 13:31:15,985 - INFO - DHP PENDULUM TRAINING SESSION STARTED
+2025-08-16 13:31:15,985 - INFO - ================================================================================
+2025-08-16 13:31:15,985 - INFO - HYPERPARAMETERS:
+2025-08-16 13:31:15,985 - INFO - ----------------------------------------
+2025-08-16 13:31:15,986 - INFO - action_size              : 1
+2025-08-16 13:31:15,986 - INFO - activation               : tanh
+2025-08-16 13:31:15,986 - INFO - best_episode_gui         : False
+2025-08-16 13:31:15,986 - INFO - episode_length           : 200
+2025-08-16 13:31:15,986 - INFO - excitation_amplitude     : 0.2
+2025-08-16 13:31:15,986 - INFO - excitation_steps         : 7500
+2025-08-16 13:31:15,986 - INFO - gamma                    : 0.95
+2025-08-16 13:31:15,986 - INFO - gui                      : False
+2025-08-16 13:31:15,986 - INFO - hidden_layer_size        : [64, 64, 32]
+2025-08-16 13:31:15,986 - INFO - log_interval             : 50
+2025-08-16 13:31:15,986 - INFO - lr_actor                 : 0.005
+2025-08-16 13:31:15,986 - INFO - lr_critic                : 0.01
+2025-08-16 13:31:15,986 - INFO - max_steps                : 200
+2025-08-16 13:31:15,986 - INFO - normalize_states         : True
+2025-08-16 13:31:15,986 - INFO - num_episodes             : 1500
+2025-08-16 13:31:15,986 - INFO - predict_delta            : False
+2025-08-16 13:31:15,986 - INFO - record                   : False
+2025-08-16 13:31:15,986 - INFO - record_best_episodes     : True
+2025-08-16 13:31:15,986 - INFO - recording_fps            : 30
+2025-08-16 13:31:15,986 - INFO - reference_size           : 2
+2025-08-16 13:31:15,986 - INFO - rls_action_size          : 1
+2025-08-16 13:31:15,986 - INFO - rls_covariance           : 100.0
+2025-08-16 13:31:15,986 - INFO - rls_gamma                : 0.9995
+2025-08-16 13:31:15,987 - INFO - rls_state_size           : 2
+2025-08-16 13:31:15,987 - INFO - save_interval            : 200
+2025-08-16 13:31:15,987 - INFO - split                    : False
+2025-08-16 13:31:15,987 - INFO - state_bounds             : {'theta': [-3.141592653589793, 3.141592653589793], 'theta_dot': [-8.0, 8.0]}
+2025-08-16 13:31:15,987 - INFO - state_size               : 2
+2025-08-16 13:31:15,987 - INFO - target_network           : True
+2025-08-16 13:31:15,987 - INFO - tau                      : 0.001
+2025-08-16 13:31:15,987 - INFO - update_cycles            : 2
+2025-08-16 13:31:15,987 - INFO - ----------------------------------------
+2025-08-16 13:31:15,987 - INFO - Log file: /home/osos/Mohamed_Masters_Thesis/DHP_pendulum/training_logs/dhp_pendulum_training_20250816_133115.log
+2025-08-16 13:31:15,987 - INFO - ================================================================================
+2025-08-16 13:31:15,987 - INFO - 
+==================================================
+2025-08-16 13:31:15,987 - INFO - STARTING DHP TRAINING FOR PENDULUM
+2025-08-16 13:31:15,987 - INFO - ==================================================
+2025-08-16 13:31:15,989 - WARNING - From /home/osos/Mohamed_Masters_Thesis/msc-thesis/agents/dhp.py:70: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2025-08-16 13:31:16,101 - WARNING - From /home/osos/Mohamed_Masters_Thesis/msc-thesis/agents/dhp.py:100: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2025-08-16 13:31:16,104 - WARNING - From /home/osos/Mohamed_Masters_Thesis/msc-thesis/agents/dhp.py:102: The name tf.placeholder_with_default is deprecated. Please use tf.compat.v1.placeholder_with_default instead.
+
+2025-08-16 13:31:16,111 - WARNING - From /home/osos/Mohamed_Masters_Thesis/msc-thesis/agents/dhp.py:124: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2025-08-16 13:31:16,111 - WARNING - From /home/osos/Mohamed_Masters_Thesis/msc-thesis/agents/dhp.py:128: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+2025-08-16 13:31:16,113 - WARNING - From /home/osos/anaconda3/envs/DHP/lib/python3.7/site-packages/tensorflow_core/python/layers/core.py:187: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+2025-08-16 13:31:16,149 - WARNING - From /home/osos/Mohamed_Masters_Thesis/msc-thesis/agents/dhp.py:133: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+2025-08-16 13:31:16,165 - WARNING - From /home/osos/Mohamed_Masters_Thesis/msc-thesis/agents/dhp.py:139: The name tf.train.GradientDescentOptimizer is deprecated. Please use tf.compat.v1.train.GradientDescentOptimizer instead.
+
+2025-08-16 13:31:16,206 - WARNING - From /home/osos/Mohamed_Masters_Thesis/msc-thesis/agents/dhp.py:156: The name tf.assign is deprecated. Please use tf.compat.v1.assign instead.
+
+2025-08-16 13:31:16,295 - WARNING - From /home/osos/Mohamed_Masters_Thesis/msc-thesis/agents/dhp.py:79: The name tf.summary.merge_all is deprecated. Please use tf.compat.v1.summary.merge_all instead.
+
+2025-08-16 13:31:16,295 - WARNING - From /home/osos/Mohamed_Masters_Thesis/msc-thesis/agents/dhp.py:80: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2025-08-16 13:31:16,310 - WARNING - From /home/osos/Mohamed_Masters_Thesis/msc-thesis/agents/dhp.py:81: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+2025-08-16 13:31:16,376 - INFO - 
+Training for 1000 episodes...
+2025-08-16 13:31:16,376 - INFO - Episode | Reward  | Avg Cost | Pos Error | Success | Time
+2025-08-16 13:31:16,376 - INFO - ------------------------------------------------------------
+2025-08-16 13:31:18,101 - INFO -       0 | -15389.77 |    9.691 |    2.9405 |   0.000 |    1.7s
+2025-08-16 13:31:58,506 - INFO -      25 | -11937.16 |    9.246 |    3.1132 |   0.000 |   42.1s
+2025-08-16 13:32:11,303 - INFO - CONVERGENCE EPISODE 33: 0.0017 rad
+2025-08-16 13:32:19,902 - INFO - CONVERGENCE EPISODE 38: 0.0009 rad
+2025-08-16 13:32:21,171 - INFO - CONVERGENCE EPISODE 39: 0.0026 rad
+2025-08-16 13:32:30,735 - INFO - CONVERGENCE EPISODE 45: 0.0014 rad
+2025-08-16 13:32:39,776 - INFO - CONVERGENCE EPISODE 50: 0.0019 rad
+2025-08-16 13:32:39,776 - INFO -      50 | -3883.01 |   11.425 |    0.0019 |   0.000 |   83.4s
+2025-08-16 13:32:39,971 - INFO - CONVERGENCE EPISODE 51: 0.0020 rad
+2025-08-16 13:32:40,246 - INFO - CONVERGENCE EPISODE 52: 0.0004 rad
+2025-08-16 13:32:42,870 - INFO - CONVERGENCE EPISODE 54: 0.0022 rad
+2025-08-16 13:32:47,230 - INFO - CONVERGENCE EPISODE 57: 0.0025 rad
+2025-08-16 13:32:54,583 - INFO - CONVERGENCE EPISODE 62: 0.0020 rad
+2025-08-16 13:33:00,256 - INFO - CONVERGENCE EPISODE 66: 0.0012 rad
+2025-08-16 13:33:00,439 - INFO - CONVERGENCE EPISODE 67: 0.0023 rad
+2025-08-16 13:33:02,556 - INFO - CONVERGENCE EPISODE 69: 0.0013 rad
+2025-08-16 13:33:06,208 - INFO - CONVERGENCE EPISODE 72: 0.0004 rad
+2025-08-16 13:33:11,183 - INFO -      75 | -8494.03 |   12.609 |    2.9390 |   0.000 |  114.8s
+2025-08-16 13:33:14,328 - INFO - CONVERGENCE EPISODE 77: 0.0028 rad
+2025-08-16 13:33:15,129 - INFO - CONVERGENCE EPISODE 78: 0.0001 rad
+2025-08-16 13:33:21,494 - INFO - CONVERGENCE EPISODE 83: 0.0025 rad
+2025-08-16 13:33:30,517 - INFO - CONVERGENCE EPISODE 89: 0.0031 rad
+2025-08-16 13:33:32,485 - INFO - CONVERGENCE EPISODE 91: 0.0020 rad
+2025-08-16 13:33:36,596 - INFO - CONVERGENCE EPISODE 94: 0.0014 rad
+2025-08-16 13:33:46,374 - INFO - 
+2025-08-16 13:33:46,374 - INFO - MILESTONE 100 ANALYSIS:
+2025-08-16 13:33:46,374 - INFO -   Recent 50 episodes avg position error: 2.0908 ± 1.3684 rad
+2025-08-16 13:33:46,374 - INFO -   Recent 50 episodes avg cost: 11.727
+2025-08-16 13:33:46,374 - INFO -   Recent 50 episodes success rate: 0.00%
+2025-08-16 13:33:46,374 - INFO -   Convergent episodes ratio (< 0.5 rad): 30.00%
+2025-08-16 13:33:46,374 - INFO -   Total convergent episodes so far: 20
+2025-08-16 13:33:46,374 - INFO -   Best performance: 0.0001 rad at episode 78
+2025-08-16 13:33:46,374 - INFO -   Stable performance not yet achieved
+2025-08-16 13:33:46,374 - INFO - 
+2025-08-16 13:33:46,374 - INFO -     100 | -8493.28 |   12.578 |    2.9449 |   0.000 |  150.0s
+2025-08-16 13:33:48,024 - INFO - CONVERGENCE EPISODE 101: 0.0006 rad
+2025-08-16 13:33:49,721 - INFO - CONVERGENCE EPISODE 103: 0.0012 rad
+2025-08-16 13:33:54,180 - INFO - CONVERGENCE EPISODE 106: 0.1882 rad
+2025-08-16 13:33:54,336 - INFO - CONVERGENCE EPISODE 107: 0.0004 rad
+2025-08-16 13:34:03,311 - INFO - CONVERGENCE EPISODE 114: 0.0015 rad
+2025-08-16 13:34:11,980 - INFO - CONVERGENCE EPISODE 120: 0.0024 rad
+2025-08-16 13:34:19,270 - INFO -     125 | -8475.00 |   12.060 |    3.0336 |   0.000 |  182.9s
+2025-08-16 13:34:21,604 - INFO - CONVERGENCE EPISODE 127: 0.0011 rad
+2025-08-16 13:34:23,381 - INFO - CONVERGENCE EPISODE 129: 0.0007 rad
+2025-08-16 13:34:23,541 - INFO - CONVERGENCE EPISODE 130: 0.0019 rad
+2025-08-16 13:34:25,023 - INFO - CONVERGENCE EPISODE 131: 0.0182 rad
+2025-08-16 13:34:39,038 - INFO - CONVERGENCE EPISODE 141: 0.0014 rad
+2025-08-16 13:34:43,763 - INFO - CONVERGENCE EPISODE 145: 0.0022 rad
+2025-08-16 13:34:49,731 - INFO - CONVERGENCE EPISODE 149: 0.0030 rad
+2025-08-16 13:34:51,191 - INFO -     150 | -8491.63 |   12.470 |    3.0741 |   0.000 |  214.8s
+2025-08-16 13:34:52,988 - INFO - CONVERGENCE EPISODE 152: 0.0011 rad
+2025-08-16 13:34:58,237 - INFO - CONVERGENCE EPISODE 156: 0.0015 rad
+2025-08-16 13:35:04,810 - INFO - CONVERGENCE EPISODE 161: 0.0007 rad
+2025-08-16 13:35:06,010 - INFO - CONVERGENCE EPISODE 162: 0.0022 rad
+2025-08-16 13:35:08,317 - INFO - CONVERGENCE EPISODE 164: 0.0006 rad
+2025-08-16 13:35:11,709 - INFO - CONVERGENCE EPISODE 167: 0.0026 rad
+2025-08-16 13:35:14,619 - INFO - CONVERGENCE EPISODE 169: 0.0002 rad
+2025-08-16 13:35:15,294 - INFO - CONVERGENCE EPISODE 170: 0.0014 rad
+2025-08-16 13:35:22,560 - INFO -     175 | -8492.50 |   12.531 |    2.9541 |   0.000 |  246.2s
+2025-08-16 13:35:53,814 - INFO - CONVERGENCE EPISODE 197: 0.0028 rad
+2025-08-16 13:35:55,921 - INFO - CONVERGENCE EPISODE 199: 0.0007 rad
+2025-08-16 13:35:57,409 - INFO -     200 | -8492.88 |   12.514 |    2.9575 |   0.000 |  281.0s
+2025-08-16 13:36:10,316 - INFO - CONVERGENCE EPISODE 209: 0.0030 rad
+2025-08-16 13:36:14,132 - INFO - CONVERGENCE EPISODE 212: 0.0025 rad
+2025-08-16 13:36:33,323 - INFO -     225 | -8493.60 |   12.585 |    2.9436 |   0.000 |  316.9s
+2025-08-16 13:36:35,130 - INFO - CONVERGENCE EPISODE 227: 0.0003 rad
+2025-08-16 13:36:37,523 - INFO - CONVERGENCE EPISODE 229: 0.0003 rad
+2025-08-16 13:36:37,869 - INFO - CONVERGENCE EPISODE 230: 0.0019 rad
+2025-08-16 13:36:38,759 - INFO - CONVERGENCE EPISODE 231: 0.0021 rad
+2025-08-16 13:36:42,328 - INFO - CONVERGENCE EPISODE 234: 0.0024 rad
+2025-08-16 13:37:05,099 - INFO - CONVERGENCE EPISODE 250: 0.0012 rad
+2025-08-16 13:37:05,099 - INFO - 
+2025-08-16 13:37:05,099 - INFO - MILESTONE 250 ANALYSIS:
+2025-08-16 13:37:05,099 - INFO -   Recent 50 episodes avg position error: 2.5143 ± 1.0975 rad
+2025-08-16 13:37:05,099 - INFO -   Recent 50 episodes avg cost: 12.324
+2025-08-16 13:37:05,099 - INFO -   Recent 50 episodes success rate: 0.00%
+2025-08-16 13:37:05,099 - INFO -   Convergent episodes ratio (< 0.5 rad): 16.00%
+2025-08-16 13:37:05,099 - INFO -   Total convergent episodes so far: 51
+2025-08-16 13:37:05,099 - INFO -   Best performance: 0.0001 rad at episode 78
+2025-08-16 13:37:05,099 - INFO -   Stable performance not yet achieved
+2025-08-16 13:37:05,099 - INFO - 
+2025-08-16 13:37:05,099 - INFO -     250 | -3883.25 |   11.423 |    0.0012 |   0.000 |  348.7s
+2025-08-16 13:37:06,319 - INFO - CONVERGENCE EPISODE 251: 0.0010 rad
+2025-08-16 13:37:10,976 - INFO - CONVERGENCE EPISODE 255: 0.0018 rad
+2025-08-16 13:37:16,479 - INFO - CONVERGENCE EPISODE 259: 0.0012 rad
+2025-08-16 13:37:22,656 - INFO - CONVERGENCE EPISODE 264: 0.0014 rad
+2025-08-16 13:37:29,387 - INFO - CONVERGENCE EPISODE 269: 0.0026 rad
+2025-08-16 13:37:31,171 - INFO - CONVERGENCE EPISODE 271: 0.0020 rad
+2025-08-16 13:37:31,331 - INFO - CONVERGENCE EPISODE 272: 0.0022 rad
+2025-08-16 13:37:33,680 - INFO - CONVERGENCE EPISODE 274: 0.0014 rad
+2025-08-16 13:37:34,025 - INFO - CONVERGENCE EPISODE 275: 0.0005 rad
+2025-08-16 13:37:34,025 - INFO -     275 | -1891.81 |    9.665 |    0.0005 |   0.000 |  377.6s
+2025-08-16 13:37:37,539 - INFO - CONVERGENCE EPISODE 278: 0.0004 rad
+2025-08-16 13:37:37,922 - INFO - CONVERGENCE EPISODE 279: 0.0008 rad
+2025-08-16 13:37:42,267 - INFO - CONVERGENCE EPISODE 282: 0.0025 rad
+2025-08-16 13:38:04,662 - INFO - CONVERGENCE EPISODE 298: 0.0016 rad
+2025-08-16 13:38:07,608 - INFO -     300 | -8489.57 |   12.661 |    2.9828 |   0.000 |  411.2s
+2025-08-16 13:38:09,437 - INFO - CONVERGENCE EPISODE 302: 0.0030 rad
+2025-08-16 13:38:17,635 - INFO - CONVERGENCE EPISODE 308: 0.0031 rad
+2025-08-16 13:38:17,998 - INFO - CONVERGENCE EPISODE 309: 0.0023 rad
+2025-08-16 13:38:24,546 - INFO - CONVERGENCE EPISODE 314: 0.0004 rad
+2025-08-16 13:38:31,121 - INFO - CONVERGENCE EPISODE 319: 0.0008 rad
+2025-08-16 13:38:34,038 - INFO - CONVERGENCE EPISODE 321: 0.0014 rad
+2025-08-16 13:38:36,345 - INFO - CONVERGENCE EPISODE 323: 0.0020 rad
+2025-08-16 13:38:38,551 - INFO - CONVERGENCE EPISODE 325: 0.0031 rad
+2025-08-16 13:38:38,551 - INFO -     325 | -3883.04 |   11.405 |    0.0031 |   0.000 |  442.2s
+2025-08-16 13:38:41,848 - INFO - CONVERGENCE EPISODE 328: 0.0008 rad
+2025-08-16 13:38:47,879 - INFO - CONVERGENCE EPISODE 333: 0.0019 rad
+2025-08-16 13:39:00,295 - INFO - CONVERGENCE EPISODE 342: 0.0001 rad
+2025-08-16 13:39:01,661 - INFO - CONVERGENCE EPISODE 343: 0.0030 rad
+2025-08-16 13:39:10,688 - INFO - CONVERGENCE EPISODE 349: 0.0016 rad
+2025-08-16 13:39:12,161 - INFO -     350 | -8483.89 |   12.630 |    2.9903 |   0.000 |  475.8s
+2025-08-16 13:39:12,502 - INFO - CONVERGENCE EPISODE 351: 0.0017 rad
+2025-08-16 13:39:12,667 - INFO - CONVERGENCE EPISODE 352: 0.0010 rad
+2025-08-16 13:39:20,662 - INFO - CONVERGENCE EPISODE 358: 0.0014 rad
+2025-08-16 13:39:35,787 - INFO - CONVERGENCE EPISODE 368: 0.0022 rad
+2025-08-16 13:39:36,727 - INFO - CONVERGENCE EPISODE 369: 0.0011 rad
+2025-08-16 13:39:45,550 - INFO -     375 | -8482.03 |   12.264 |    2.9815 |   0.000 |  509.2s
+2025-08-16 13:39:47,041 - INFO - CONVERGENCE EPISODE 376: 0.0010 rad
+2025-08-16 13:39:48,730 - INFO - CONVERGENCE EPISODE 378: 0.0013 rad
+2025-08-16 13:39:57,463 - INFO - CONVERGENCE EPISODE 384: 0.0011 rad
+2025-08-16 13:40:12,300 - INFO - CONVERGENCE EPISODE 395: 0.0030 rad
+2025-08-16 13:40:14,495 - INFO - CONVERGENCE EPISODE 397: 0.0031 rad
+2025-08-16 13:40:18,904 - INFO -     400 | -8468.74 |   12.142 |    3.0136 |   0.000 |  542.5s
+2025-08-16 13:40:24,033 - INFO - CONVERGENCE EPISODE 404: 0.0028 rad
+2025-08-16 13:40:30,700 - INFO - CONVERGENCE EPISODE 409: 0.0005 rad
+2025-08-16 13:40:54,373 - INFO -     425 | -8484.59 |   12.172 |    2.9469 |   0.000 |  578.0s
+2025-08-16 13:40:55,986 - INFO - CONVERGENCE EPISODE 427: 0.0000 rad
+2025-08-16 13:41:01,841 - INFO - CONVERGENCE EPISODE 431: 0.0011 rad
+2025-08-16 13:41:07,470 - INFO - CONVERGENCE EPISODE 435: 0.0009 rad
+2025-08-16 13:41:12,716 - INFO - CONVERGENCE EPISODE 439: 0.0025 rad
+2025-08-16 13:41:14,559 - INFO - CONVERGENCE EPISODE 441: 0.0026 rad
+2025-08-16 13:41:17,838 - INFO - CONVERGENCE EPISODE 444: 0.0000 rad
+2025-08-16 13:41:24,924 - INFO - CONVERGENCE EPISODE 449: 0.0015 rad
+2025-08-16 13:41:26,395 - INFO -     450 | -8478.39 |   12.244 |    2.9864 |   0.000 |  610.0s
+2025-08-16 13:41:34,557 - INFO - CONVERGENCE EPISODE 456: 0.0031 rad
+2025-08-16 13:41:42,289 - INFO - CONVERGENCE EPISODE 462: 0.0028 rad
+2025-08-16 13:41:43,527 - INFO - CONVERGENCE EPISODE 463: 0.0019 rad
+2025-08-16 13:41:59,380 - INFO - CONVERGENCE EPISODE 474: 0.0017 rad
+2025-08-16 13:42:00,830 - INFO -     475 | -8479.66 |   12.251 |    2.9848 |   0.000 |  644.5s
+2025-08-16 13:42:09,858 - INFO - CONVERGENCE EPISODE 482: 0.0018 rad
+2025-08-16 13:42:16,935 - INFO - CONVERGENCE EPISODE 487: 0.0004 rad
+2025-08-16 13:42:19,059 - INFO - CONVERGENCE EPISODE 489: 0.0020 rad
+2025-08-16 13:42:26,371 - INFO - CONVERGENCE EPISODE 495: 0.0025 rad
+2025-08-16 13:42:33,619 - INFO - 
+2025-08-16 13:42:33,619 - INFO - MILESTONE 500 ANALYSIS:
+2025-08-16 13:42:33,619 - INFO -   Recent 50 episodes avg position error: 2.5178 ± 1.0990 rad
+2025-08-16 13:42:33,619 - INFO -   Recent 50 episodes avg cost: 11.835
+2025-08-16 13:42:33,619 - INFO -   Recent 50 episodes success rate: 0.00%
+2025-08-16 13:42:33,619 - INFO -   Convergent episodes ratio (< 0.5 rad): 16.00%
+2025-08-16 13:42:33,619 - INFO -   Total convergent episodes so far: 104
+2025-08-16 13:42:33,619 - INFO -   Best performance: 0.0000 rad at episode 427
+2025-08-16 13:42:33,619 - INFO -   Stable performance not yet achieved
+2025-08-16 13:42:33,620 - INFO - 
+2025-08-16 13:42:33,620 - INFO -     500 | -8484.17 |   12.136 |    2.9536 |   0.000 |  677.2s
+2025-08-16 13:42:40,138 - INFO - CONVERGENCE EPISODE 505: 0.0019 rad
+2025-08-16 13:42:49,525 - INFO - CONVERGENCE EPISODE 511: 0.0004 rad
+2025-08-16 13:42:54,914 - INFO - CONVERGENCE EPISODE 515: 0.0027 rad
+2025-08-16 13:43:05,562 - INFO - CONVERGENCE EPISODE 522: 0.0015 rad
+2025-08-16 13:43:10,493 - INFO -     525 | -8484.39 |   12.165 |    2.9482 |   0.000 |  714.1s
+2025-08-16 13:43:11,875 - INFO - CONVERGENCE EPISODE 526: 0.0007 rad
+2025-08-16 13:43:35,448 - INFO - CONVERGENCE EPISODE 540: 0.0019 rad
+2025-08-16 13:43:44,617 - INFO - CONVERGENCE EPISODE 545: 0.0030 rad
+2025-08-16 13:43:45,619 - INFO - CONVERGENCE EPISODE 546: 0.0028 rad
+2025-08-16 13:43:47,464 - INFO - CONVERGENCE EPISODE 547: 0.0004 rad
+2025-08-16 13:43:49,171 - INFO - CONVERGENCE EPISODE 548: 0.0026 rad
+2025-08-16 13:43:52,682 - INFO -     550 | -8471.54 |   12.200 |    2.9982 |   0.000 |  756.3s
+2025-08-16 13:43:53,046 - INFO - CONVERGENCE EPISODE 551: 0.0009 rad
+2025-08-16 13:43:54,403 - INFO - CONVERGENCE EPISODE 552: 0.0016 rad
+2025-08-16 13:43:56,139 - INFO - CONVERGENCE EPISODE 554: 0.0025 rad
+2025-08-16 13:44:04,951 - INFO - CONVERGENCE EPISODE 560: 0.0019 rad
+2025-08-16 13:44:08,283 - INFO - CONVERGENCE EPISODE 563: 0.0009 rad
+2025-08-16 13:44:17,595 - INFO - CONVERGENCE EPISODE 570: 0.0025 rad
+2025-08-16 13:44:22,715 - INFO - CONVERGENCE EPISODE 574: 0.0011 rad
+2025-08-16 13:44:24,373 - INFO -     575 | -8471.79 |   12.202 |    2.9976 |   0.000 |  788.0s
+2025-08-16 13:44:43,198 - INFO - CONVERGENCE EPISODE 587: 0.0031 rad
+2025-08-16 13:44:44,843 - INFO - CONVERGENCE EPISODE 588: 0.0031 rad
+2025-08-16 13:45:00,485 - INFO - CONVERGENCE EPISODE 597: 0.0015 rad
+2025-08-16 13:45:05,660 - INFO -     600 | -8482.97 |   12.126 |    2.9708 |   0.000 |  829.3s
+2025-08-16 13:45:06,499 - INFO - CONVERGENCE EPISODE 601: 0.0012 rad
+2025-08-16 13:45:07,587 - INFO - CONVERGENCE EPISODE 602: 0.0005 rad
+2025-08-16 13:45:10,711 - INFO - CONVERGENCE EPISODE 604: 0.0024 rad
+2025-08-16 13:45:14,152 - INFO - CONVERGENCE EPISODE 606: 0.0031 rad
+2025-08-16 13:45:22,771 - INFO - CONVERGENCE EPISODE 612: 0.0013 rad
+2025-08-16 13:45:25,154 - INFO - CONVERGENCE EPISODE 614: 0.0028 rad
+2025-08-16 13:45:38,937 - INFO - CONVERGENCE EPISODE 623: 0.0026 rad
+2025-08-16 13:45:40,091 - INFO - CONVERGENCE EPISODE 624: 0.0014 rad
+2025-08-16 13:45:41,238 - INFO - CONVERGENCE EPISODE 625: 0.0012 rad
+2025-08-16 13:45:41,239 - INFO -     625 | -4890.36 |   11.185 |    0.0012 |   0.000 |  864.9s
+2025-08-16 13:45:50,360 - INFO - CONVERGENCE EPISODE 630: 0.0018 rad
+2025-08-16 13:45:56,853 - INFO - CONVERGENCE EPISODE 635: 0.0027 rad
+2025-08-16 13:45:59,253 - INFO - CONVERGENCE EPISODE 637: 0.0013 rad
+2025-08-16 13:46:00,828 - INFO - CONVERGENCE EPISODE 638: 0.0016 rad
+2025-08-16 13:46:01,755 - INFO - CONVERGENCE EPISODE 639: 0.0014 rad
+2025-08-16 13:46:03,837 - INFO - CONVERGENCE EPISODE 641: 0.0024 rad
+2025-08-16 13:46:08,101 - INFO - CONVERGENCE EPISODE 644: 0.0019 rad
+2025-08-16 13:46:10,609 - INFO - CONVERGENCE EPISODE 646: 0.0002 rad
+2025-08-16 13:46:11,587 - INFO - CONVERGENCE EPISODE 647: 0.0001 rad
+2025-08-16 13:46:16,837 - INFO -     650 | -8483.23 |   12.133 |    2.9694 |   0.000 |  900.5s
+2025-08-16 13:46:29,496 - INFO - CONVERGENCE EPISODE 658: 0.0010 rad
+2025-08-16 13:46:31,574 - INFO - CONVERGENCE EPISODE 660: 0.0011 rad
+2025-08-16 13:46:34,275 - INFO - CONVERGENCE EPISODE 662: 0.0004 rad
+2025-08-16 13:46:34,671 - INFO - CONVERGENCE EPISODE 663: 0.0012 rad
+2025-08-16 13:46:55,472 - INFO -     675 | -8483.04 |   12.085 |    3.0749 |   0.000 |  939.1s
+2025-08-16 13:47:13,308 - INFO - CONVERGENCE EPISODE 687: 0.0013 rad
+2025-08-16 13:47:14,978 - INFO - CONVERGENCE EPISODE 689: 0.0007 rad
+2025-08-16 13:47:32,293 - INFO -     700 | -8483.51 |   11.988 |    3.0612 |   0.000 |  975.9s
+2025-08-16 13:47:48,133 - INFO - CONVERGENCE EPISODE 710: 0.0029 rad
+2025-08-16 13:47:53,295 - INFO - CONVERGENCE EPISODE 714: 0.0013 rad
+2025-08-16 13:47:55,747 - INFO - CONVERGENCE EPISODE 716: 0.0016 rad
+2025-08-16 13:47:59,604 - INFO - CONVERGENCE EPISODE 719: 0.0025 rad
+2025-08-16 13:47:59,774 - INFO - CONVERGENCE EPISODE 720: 0.0014 rad
+2025-08-16 13:48:00,186 - INFO - CONVERGENCE EPISODE 721: 0.0010 rad
+2025-08-16 13:48:07,251 - INFO -     725 | -8486.89 |   12.295 |    2.9734 |   0.000 | 1010.9s
+2025-08-16 13:48:08,747 - INFO - CONVERGENCE EPISODE 726: 0.0011 rad
+2025-08-16 13:48:13,647 - INFO - CONVERGENCE EPISODE 729: 0.0022 rad
+2025-08-16 13:48:22,187 - INFO - CONVERGENCE EPISODE 735: 0.0019 rad
+2025-08-16 13:48:28,100 - INFO - CONVERGENCE EPISODE 739: 0.0024 rad
+2025-08-16 13:48:36,359 - INFO - CONVERGENCE EPISODE 745: 0.0027 rad
+2025-08-16 13:48:44,263 - INFO - 
+2025-08-16 13:48:44,264 - INFO - MILESTONE 750 ANALYSIS:
+2025-08-16 13:48:44,264 - INFO -   Recent 50 episodes avg position error: 2.3255 ± 1.2349 rad
+2025-08-16 13:48:44,264 - INFO -   Recent 50 episodes avg cost: 11.704
+2025-08-16 13:48:44,265 - INFO -   Recent 50 episodes success rate: 0.00%
+2025-08-16 13:48:44,265 - INFO -   Convergent episodes ratio (< 0.5 rad): 22.00%
+2025-08-16 13:48:44,266 - INFO -   Total convergent episodes so far: 159
+2025-08-16 13:48:44,266 - INFO -   Best performance: 0.0000 rad at episode 427
+2025-08-16 13:48:44,266 - INFO -   Stable performance not yet achieved
+2025-08-16 13:48:44,266 - INFO - 
+2025-08-16 13:48:44,266 - INFO -     750 | -8487.03 |   12.118 |    3.0650 |   0.000 | 1047.9s
+2025-08-16 13:49:02,556 - INFO - CONVERGENCE EPISODE 762: 0.0020 rad
+2025-08-16 13:49:09,491 - INFO - CONVERGENCE EPISODE 767: 0.0029 rad
+2025-08-16 13:49:22,617 - INFO -     775 | -8487.37 |   12.122 |    3.0638 |   0.000 | 1086.2s
+2025-08-16 13:49:32,402 - INFO - CONVERGENCE EPISODE 782: 0.0019 rad
+2025-08-16 13:49:36,906 - INFO - CONVERGENCE EPISODE 785: 0.0003 rad
+2025-08-16 13:49:41,167 - INFO - CONVERGENCE EPISODE 788: 0.0023 rad
+2025-08-16 13:49:53,732 - INFO - CONVERGENCE EPISODE 796: 0.0022 rad
+2025-08-16 13:49:58,497 - INFO -     800 | -259.31 |    6.632 |   10.0000 |   0.000 | 1122.1s
+2025-08-16 13:49:58,522 - INFO -     825 |    0.00 |    1.000 |   10.0000 |   0.000 | 1122.1s
+2025-08-16 13:49:58,541 - INFO -     850 |    0.00 |    1.000 |   10.0000 |   0.000 | 1122.2s
+2025-08-16 13:49:58,569 - INFO -     875 |    0.00 |    1.000 |   10.0000 |   0.000 | 1122.2s
+2025-08-16 13:49:58,587 - INFO -     900 |    0.00 |    1.000 |   10.0000 |   0.000 | 1122.2s
+2025-08-16 13:49:58,618 - INFO -     925 |    0.00 |    1.000 |   10.0000 |   0.000 | 1122.2s
+2025-08-16 13:49:58,637 - INFO -     950 |    0.00 |    1.000 |   10.0000 |   0.000 | 1122.3s
+2025-08-16 13:49:58,664 - INFO -     975 |    0.00 |    1.000 |   10.0000 |   0.000 | 1122.3s
+2025-08-16 13:49:58,680 - INFO - 
+================================================================================
+2025-08-16 13:49:58,680 - INFO - TRAINING COMPLETED - FINAL ANALYSIS
+2025-08-16 13:49:58,680 - INFO - ================================================================================
+2025-08-16 13:49:58,680 - INFO - Total training time: 1122.3 seconds (18.7 minutes)
+2025-08-16 13:49:58,680 - INFO - Final episode reward: 0.00
+2025-08-16 13:49:58,680 - INFO - Final position error: 10.0000 rad
+2025-08-16 13:49:58,680 - INFO - Final success rate: 0.000
+2025-08-16 13:49:58,680 - INFO - Best position error achieved: 0.0000 rad at episode 427
+2025-08-16 13:49:58,680 - INFO - Total convergent episodes (< 0.5 rad): 165/1000 (16.50%)
+2025-08-16 13:49:58,680 - INFO - Recent success rate (last 100 episodes): 0.00%
+2025-08-16 13:49:58,680 - INFO - Stable performance achieved: No
+2025-08-16 13:49:58,681 - INFO - Position error statistics:
+2025-08-16 13:49:58,681 - INFO -   Mean: 3.8924 rad (223.0°)
+2025-08-16 13:49:58,681 - INFO -   Std:  3.2404 rad (185.7°)
+2025-08-16 13:49:58,681 - INFO -   Min:  0.0000 rad (0.0°)
+2025-08-16 13:49:58,681 - INFO -   Max:  10.0000 rad (573.0°)
+2025-08-16 13:49:58,681 - INFO -   Median: 2.9893 rad (171.3°)
+2025-08-16 13:49:58,682 - INFO - Performance distribution:
+2025-08-16 13:49:58,682 - INFO -   Excellent (< 0.1 rad / 5.7°): 164 episodes (16.4%)
+2025-08-16 13:49:58,682 - INFO -   Good (0.1-0.3 rad / 5.7°-17.2°): 1 episodes (0.1%)
+2025-08-16 13:49:58,682 - INFO -   Acceptable (0.3-0.5 rad / 17.2°-28.6°): 0 episodes (0.0%)
+2025-08-16 13:49:58,682 - INFO -   Poor (> 0.5 rad / 28.6°): 835 episodes (83.5%)
+2025-08-16 13:49:58,682 - INFO - 
+TRAINING CONFIGURATION EFFECTIVENESS:
+2025-08-16 13:49:58,682 - INFO - ----------------------------------------
+2025-08-16 13:49:58,682 - INFO - Episodes needed for first convergence: 33
+2025-08-16 13:49:58,682 - INFO - Excitation phase ended at episode: 100
+2025-08-16 13:49:58,692 - INFO - Training metrics saved to: /home/osos/Mohamed_Masters_Thesis/DHP_pendulum/training_logs/dhp_pendulum_metrics_20250816_134958.json
+2025-08-16 13:49:58,692 - INFO - 
+BEST MODEL CONFIRMED:
+2025-08-16 13:49:58,692 - INFO -   Episode: 427
+2025-08-16 13:49:58,692 - INFO -   Position Error: 0.0000 rad (0.0°)
+2025-08-16 13:49:58,692 - INFO -   Model files: dhp_pendulum_best_*
+2025-08-16 13:49:58,692 - INFO - ================================================================================
+2025-08-16 13:49:58,692 - INFO - TRAINING SESSION COMPLETED
+2025-08-16 13:49:58,692 - INFO - Detailed log saved to: /home/osos/Mohamed_Masters_Thesis/DHP_pendulum/training_logs/dhp_pendulum_training_20250816_133115.log
+2025-08-16 13:49:58,693 - INFO - ================================================================================
+2025-08-16 13:49:58,694 - ERROR - Failed to record session-best episode 427: not enough values to unpack (expected 5, got 4)
+2025-08-16 13:49:58,767 - INFO - Model saved with state normalization ENABLED

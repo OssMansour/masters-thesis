@@ -1,0 +1,69 @@
+2025-08-15 16:54:00,780 - INFO - ================================================================================
+2025-08-15 16:54:00,781 - INFO - DHP PENDULUM TRAINING SESSION STARTED
+2025-08-15 16:54:00,781 - INFO - ================================================================================
+2025-08-15 16:54:00,781 - INFO - HYPERPARAMETERS:
+2025-08-15 16:54:00,781 - INFO - ----------------------------------------
+2025-08-15 16:54:00,781 - INFO - action_size              : 1
+2025-08-15 16:54:00,781 - INFO - activation               : relu
+2025-08-15 16:54:00,781 - INFO - best_episode_gui         : False
+2025-08-15 16:54:00,781 - INFO - episode_length           : 200
+2025-08-15 16:54:00,781 - INFO - excitation_amplitude     : 0.2
+2025-08-15 16:54:00,781 - INFO - excitation_steps         : 7500
+2025-08-15 16:54:00,781 - INFO - fixed_target             : 3.141592653589793
+2025-08-15 16:54:00,781 - INFO - gamma                    : 0.95
+2025-08-15 16:54:00,781 - INFO - gui                      : False
+2025-08-15 16:54:00,781 - INFO - hidden_layer_size        : [64, 64, 32]
+2025-08-15 16:54:00,782 - INFO - log_interval             : 50
+2025-08-15 16:54:00,782 - INFO - lr_actor                 : 0.005
+2025-08-15 16:54:00,782 - INFO - lr_critic                : 0.01
+2025-08-15 16:54:00,782 - INFO - max_steps                : 200
+2025-08-15 16:54:00,782 - INFO - normalize_states         : True
+2025-08-15 16:54:00,782 - INFO - num_episodes             : 1500
+2025-08-15 16:54:00,782 - INFO - predict_delta            : False
+2025-08-15 16:54:00,782 - INFO - record                   : False
+2025-08-15 16:54:00,782 - INFO - record_best_episodes     : True
+2025-08-15 16:54:00,782 - INFO - recording_fps            : 30
+2025-08-15 16:54:00,782 - INFO - reference_size           : 3
+2025-08-15 16:54:00,782 - INFO - rls_action_size          : 1
+2025-08-15 16:54:00,782 - INFO - rls_covariance           : 100.0
+2025-08-15 16:54:00,782 - INFO - rls_gamma                : 0.9995
+2025-08-15 16:54:00,782 - INFO - rls_state_size           : 3
+2025-08-15 16:54:00,782 - INFO - save_interval            : 200
+2025-08-15 16:54:00,783 - INFO - split                    : False
+2025-08-15 16:54:00,783 - INFO - state_bounds             : {'cos_theta': [-1.0, 1.0], 'sin_theta': [-1.0, 1.0], 'theta_dot': [-8.0, 8.0]}
+2025-08-15 16:54:00,783 - INFO - state_size               : 3
+2025-08-15 16:54:00,783 - INFO - target_network           : True
+2025-08-15 16:54:00,783 - INFO - tau                      : 0.001
+2025-08-15 16:54:00,783 - INFO - update_cycles            : 2
+2025-08-15 16:54:00,783 - INFO - ----------------------------------------
+2025-08-15 16:54:00,783 - INFO - Log file: /home/osos/Mohamed_Masters_Thesis/DHP_pendulum/training_logs/dhp_pendulum_training_20250815_165400.log
+2025-08-15 16:54:00,783 - INFO - ================================================================================
+2025-08-15 16:54:00,783 - INFO - 
+CONFIGURATION OVERRIDES APPLIED:
+2025-08-15 16:54:00,783 - INFO -   num_episodes: 400
+2025-08-15 16:54:00,783 - INFO -   episode_length: 200
+2025-08-15 16:54:00,783 - INFO -   max_steps: 200
+2025-08-15 16:54:00,784 - INFO -   excitation_steps: 7500
+2025-08-15 16:54:00,784 - INFO -   excitation_amplitude: 0.2
+2025-08-15 16:54:00,784 - INFO -   log_interval: 50
+2025-08-15 16:54:00,784 - INFO -   save_interval: 200
+2025-08-15 16:54:00,784 - INFO -   gui: False
+2025-08-15 16:54:00,784 - INFO -   record: False
+2025-08-15 16:54:00,784 - INFO -   normalize_states: True
+2025-08-15 16:54:00,784 - INFO -   record_best_episodes: True
+2025-08-15 16:54:00,784 - INFO -   lr_critic: 0.01
+2025-08-15 16:54:00,784 - INFO -   lr_actor: 0.005
+2025-08-15 16:54:00,784 - INFO -   hidden_layer_size: [64, 64, 32]
+2025-08-15 16:54:00,784 - INFO -   gamma: 0.95
+2025-08-15 16:54:00,784 - INFO -   update_cycles: 2
+2025-08-15 16:54:00,784 - INFO -   tau: 0.001
+2025-08-15 16:54:00,785 - INFO - 
+==================================================
+2025-08-15 16:54:00,785 - INFO - STARTING DHP TRAINING FOR PENDULUM
+2025-08-15 16:54:00,785 - INFO - ==================================================
+2025-08-15 16:54:00,788 - WARNING - From /home/osos/Mohamed_Masters_Thesis/msc-thesis/agents/dhp.py:70: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2025-08-15 16:54:00,909 - WARNING - From /home/osos/Mohamed_Masters_Thesis/msc-thesis/agents/dhp.py:100: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2025-08-15 16:54:00,913 - WARNING - From /home/osos/Mohamed_Masters_Thesis/msc-thesis/agents/dhp.py:102: The name tf.placeholder_with_default is deprecated. Please use tf.compat.v1.placeholder_with_default instead.
+

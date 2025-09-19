@@ -1,0 +1,175 @@
+2025-09-19 21:04:03,413 - INFO - ================================================================================
+2025-09-19 21:04:03,413 - INFO - SAC DRONE TRAINING SESSION STARTED
+2025-09-19 21:04:03,413 - INFO - ================================================================================
+2025-09-19 21:04:03,413 - INFO - HYPERPARAMETERS:
+2025-09-19 21:04:03,413 - INFO - ----------------------------------------
+2025-09-19 21:04:03,413 - INFO - action_noise_std         : 0.0
+2025-09-19 21:04:03,413 - INFO - action_size              : 4
+2025-09-19 21:04:03,413 - INFO - batch_size               : 256
+2025-09-19 21:04:03,413 - INFO - buffer_size              : 300000
+2025-09-19 21:04:03,413 - INFO - dt                       : 0.03333333333333333
+2025-09-19 21:04:03,413 - INFO - ent_coef                 : 0.01
+2025-09-19 21:04:03,414 - INFO - episode_length           : 10.0
+2025-09-19 21:04:03,414 - INFO - gamma                    : 0.98
+2025-09-19 21:04:03,414 - INFO - gradient_steps           : 1
+2025-09-19 21:04:03,414 - INFO - gui                      : True
+2025-09-19 21:04:03,414 - INFO - input_size               : 23
+2025-09-19 21:04:03,414 - INFO - learning_rate            : 0.0003
+2025-09-19 21:04:03,414 - INFO - learning_starts          : 10000
+2025-09-19 21:04:03,414 - INFO - log_interval             : 50
+2025-09-19 21:04:03,414 - INFO - log_path                 : ./sac_training_logs/
+2025-09-19 21:04:03,414 - INFO - model_path               : ./sac_trained_models/
+2025-09-19 21:04:03,414 - INFO - num_envs                 : 4
+2025-09-19 21:04:03,414 - INFO - policy_architecture      : [256, 256]
+2025-09-19 21:04:03,414 - INFO - q_network_architecture   : [256, 256]
+2025-09-19 21:04:03,414 - INFO - randomize_reset          : True
+2025-09-19 21:04:03,414 - INFO - record                   : False
+2025-09-19 21:04:03,414 - INFO - reference_size           : 3
+2025-09-19 21:04:03,414 - INFO - save_interval            : 100
+2025-09-19 21:04:03,414 - INFO - seed                     : 42
+2025-09-19 21:04:03,414 - INFO - state_size               : 20
+2025-09-19 21:04:03,414 - INFO - target_pos               : [0.0, 0.0, 1.0]
+2025-09-19 21:04:03,414 - INFO - target_update_interval   : 1
+2025-09-19 21:04:03,415 - INFO - tau                      : 0.005
+2025-09-19 21:04:03,415 - INFO - total_timesteps          : 187500
+2025-09-19 21:04:03,415 - INFO - train_freq               : 1
+2025-09-19 21:04:03,415 - INFO - trajectory_type          : spiral
+2025-09-19 21:04:03,415 - INFO - use_sde                  : False
+2025-09-19 21:04:03,415 - INFO - use_trajectory           : True
+2025-09-19 21:04:03,415 - INFO - ----------------------------------------
+2025-09-19 21:04:03,415 - INFO - Log file: /home/osos/Mohamed_Masters_Thesis/SAC_drone/sac_training_logs/sac_drone_training_20250919_210403.log
+2025-09-19 21:04:03,415 - INFO - ================================================================================
+2025-09-19 21:04:03,415 - INFO - 
+==================================================
+2025-09-19 21:04:03,415 - INFO - STARTING ROBUST SAC DRONE TRAINING FOR CF2X QUADROTOR
+2025-09-19 21:04:03,415 - INFO - ==================================================
+2025-09-19 21:04:12,183 - INFO - Training Configuration:
+2025-09-19 21:04:12,183 - INFO -   - Total timesteps: 15000 (~20 episodes)
+2025-09-19 21:04:12,183 - INFO -   - Steps per episode: 750
+2025-09-19 21:04:12,183 - INFO -   - Parallel environments: 4
+2025-09-19 21:04:12,183 - INFO -   - Evaluation frequency: 5000 steps
+2025-09-19 21:04:12,183 - INFO -   - Enhanced monitoring and checkpointing enabled
+2025-09-19 21:04:12,400 - INFO - NEW BEST PERFORMANCE! Episode 0: 0.1781m
+2025-09-19 21:04:12,412 - INFO - BEST SAC DRONE MODEL SAVED! Episode 0, Error: 0.1781m
+2025-09-19 21:04:12,412 - INFO - Episode    0 | Reward:  616.08 | Pos Error: 0.1781m | Time:    0.2s
+2025-09-19 21:04:12,564 - INFO - STABLE PERFORMANCE ACHIEVED starting at episode 0
+2025-09-19 21:04:12,829 - INFO - NEW BEST PERFORMANCE! Episode 26: 0.1480m
+2025-09-19 21:04:12,840 - INFO - BEST SAC DRONE MODEL SAVED! Episode 26, Error: 0.1480m
+2025-09-19 21:04:13,157 - INFO - Episode   50 | Reward: 9170.20 | Pos Error: 1.4852m | Time:    1.0s
+2025-09-19 21:04:13,658 - INFO - Episode  100 | Reward: 6295.87 | Pos Error: 0.7420m | Time:    1.5s
+2025-09-19 21:04:14,046 - INFO - Episode  150 | Reward: 3206.39 | Pos Error: 2.0920m | Time:    1.9s
+2025-09-19 21:04:14,391 - INFO - Episode  200 | Reward: 14176.14 | Pos Error: 2.9616m | Time:    2.2s
+2025-09-19 21:04:14,775 - INFO - Episode  250 | Reward: 1581.40 | Pos Error: 0.9089m | Time:    2.6s
+2025-09-19 21:04:15,257 - INFO - Episode  300 | Reward:  583.53 | Pos Error: 1.2952m | Time:    3.1s
+2025-09-19 21:04:15,698 - INFO - Episode  350 | Reward:  620.76 | Pos Error: 0.6302m | Time:    3.5s
+2025-09-19 21:04:16,139 - INFO - Episode  400 | Reward: 2242.02 | Pos Error: 0.8645m | Time:    4.0s
+2025-09-19 21:04:16,665 - INFO - Episode  450 | Reward:  750.30 | Pos Error: 0.3801m | Time:    4.5s
+2025-09-19 21:04:17,169 - INFO - NEW BEST PERFORMANCE! Episode 497: 0.1038m
+2025-09-19 21:04:17,185 - INFO - BEST SAC DRONE MODEL SAVED! Episode 497, Error: 0.1038m
+2025-09-19 21:04:17,286 - INFO - Episode  500 | Reward:  713.75 | Pos Error: 0.3718m | Time:    5.1s
+2025-09-19 21:04:17,893 - INFO - Episode  550 | Reward: 1180.52 | Pos Error: 0.4349m | Time:    5.7s
+2025-09-19 21:04:18,384 - INFO - Episode  600 | Reward:  607.36 | Pos Error: 0.5086m | Time:    6.2s
+2025-09-19 21:04:18,980 - INFO - Episode  650 | Reward: 1360.85 | Pos Error: 0.2756m | Time:    6.8s
+2025-09-19 21:04:19,594 - INFO - Episode  700 | Reward:  780.93 | Pos Error: 0.8791m | Time:    7.4s
+2025-09-19 21:04:20,051 - INFO - Episode  750 | Reward:  715.02 | Pos Error: 0.2580m | Time:    7.9s
+2025-09-19 21:04:20,599 - INFO - Episode  800 | Reward:  709.80 | Pos Error: 0.3508m | Time:    8.4s
+2025-09-19 21:04:21,260 - INFO - Episode  850 | Reward:  545.04 | Pos Error: 0.4462m | Time:    9.1s
+2025-09-19 21:04:21,782 - INFO - Episode  900 | Reward: 1234.18 | Pos Error: 1.0748m | Time:    9.6s
+2025-09-19 21:04:22,340 - INFO - Episode  950 | Reward: 2630.65 | Pos Error: 0.8919m | Time:   10.2s
+2025-09-19 21:04:22,805 - INFO - Episode 1000 | Reward:  685.70 | Pos Error: 0.6172m | Time:   10.6s
+2025-09-19 21:04:23,398 - INFO - Episode 1050 | Reward:  806.41 | Pos Error: 0.6125m | Time:   11.2s
+2025-09-19 21:04:23,838 - INFO - Episode 1100 | Reward:  735.88 | Pos Error: 0.5952m | Time:   11.7s
+2025-09-19 21:04:24,316 - INFO - Episode 1150 | Reward: 1136.55 | Pos Error: 0.7466m | Time:   12.1s
+2025-09-19 21:04:24,864 - INFO - Episode 1200 | Reward:  880.88 | Pos Error: 0.5356m | Time:   12.7s
+2025-09-19 21:04:25,485 - INFO - Episode 1250 | Reward: 1186.86 | Pos Error: 1.4330m | Time:   13.3s
+2025-09-19 21:04:25,886 - INFO - Episode 1300 | Reward: 9520.01 | Pos Error: 1.5573m | Time:   13.7s
+2025-09-19 21:04:26,407 - INFO - Episode 1350 | Reward:  771.42 | Pos Error: 0.9780m | Time:   14.2s
+2025-09-19 21:04:26,810 - INFO - Episode 1400 | Reward:  562.94 | Pos Error: 0.2804m | Time:   14.6s
+2025-09-19 21:04:27,412 - INFO - Episode 1450 | Reward:  916.02 | Pos Error: 0.4646m | Time:   15.2s
+2025-09-19 21:04:27,910 - INFO - Episode 1500 | Reward: 6085.31 | Pos Error: 5.1003m | Time:   15.7s
+2025-09-19 21:04:28,431 - INFO - Episode 1550 | Reward: 1819.00 | Pos Error: 0.4502m | Time:   16.2s
+2025-09-19 21:04:28,983 - INFO - Episode 1600 | Reward: 8079.02 | Pos Error: 1.6301m | Time:   16.8s
+2025-09-19 21:04:29,481 - INFO - Episode 1650 | Reward:  760.90 | Pos Error: 0.5594m | Time:   17.3s
+2025-09-19 21:04:30,241 - INFO - Episode 1700 | Reward: 1278.91 | Pos Error: 0.4884m | Time:   18.1s
+2025-09-19 21:04:30,664 - INFO - Episode 1750 | Reward:  609.69 | Pos Error: 0.7447m | Time:   18.5s
+2025-09-19 21:04:31,183 - INFO - Episode 1800 | Reward:  546.24 | Pos Error: 0.5703m | Time:   19.0s
+2025-09-19 21:04:31,756 - INFO - Episode 1850 | Reward: 1131.38 | Pos Error: 1.8243m | Time:   19.6s
+2025-09-19 21:04:32,209 - INFO - Episode 1900 | Reward: 8969.97 | Pos Error: 5.0538m | Time:   20.0s
+2025-09-19 21:04:32,776 - INFO - Episode 1950 | Reward: 3548.75 | Pos Error: 1.3010m | Time:   20.6s
+2025-09-19 21:04:33,236 - INFO - Episode 2000 | Reward:  685.94 | Pos Error: 0.2505m | Time:   21.1s
+2025-09-19 21:04:33,767 - INFO - Episode 2050 | Reward:  579.76 | Pos Error: 0.4699m | Time:   21.6s
+2025-09-19 21:04:34,327 - INFO - Episode 2100 | Reward: 1062.56 | Pos Error: 0.7035m | Time:   22.1s
+2025-09-19 21:04:34,828 - INFO - Episode 2150 | Reward:  800.78 | Pos Error: 0.8349m | Time:   22.6s
+2025-09-19 21:04:35,272 - INFO - Episode 2200 | Reward: 5426.80 | Pos Error: 2.4125m | Time:   23.1s
+2025-09-19 21:04:35,881 - INFO - Episode 2250 | Reward:  831.00 | Pos Error: 0.9634m | Time:   23.7s
+2025-09-19 21:04:36,370 - INFO - Episode 2300 | Reward: 1618.71 | Pos Error: 0.6762m | Time:   24.2s
+2025-09-19 21:04:36,900 - INFO - Episode 2350 | Reward:  440.43 | Pos Error: 0.4442m | Time:   24.7s
+2025-09-19 21:04:37,305 - INFO - Episode 2400 | Reward: 1689.56 | Pos Error: 0.4946m | Time:   25.1s
+2025-09-19 21:04:37,834 - INFO - Episode 2450 | Reward:  811.21 | Pos Error: 0.3058m | Time:   25.7s
+2025-09-19 21:04:38,528 - INFO - Episode 2500 | Reward:  644.35 | Pos Error: 0.9126m | Time:   26.3s
+2025-09-19 21:04:40,512 - INFO - NEW BEST PERFORMANCE! Episode 2548: 0.0897m
+2025-09-19 21:04:40,529 - INFO - BEST SAC DRONE MODEL SAVED! Episode 2548, Error: 0.0897m
+2025-09-19 21:04:40,631 - INFO - Episode 2550 | Reward:  753.55 | Pos Error: 0.0897m | Time:   28.4s
+2025-09-19 21:04:42,260 - INFO - Episode 2600 | Reward: 1527.03 | Pos Error: 0.4270m | Time:   30.1s
+2025-09-19 21:04:44,002 - INFO - Episode 2650 | Reward: 12947.09 | Pos Error: 2.3062m | Time:   31.8s
+2025-09-19 21:04:45,564 - INFO - Episode 2700 | Reward: 8868.76 | Pos Error: 2.7123m | Time:   33.4s
+2025-09-19 21:04:47,105 - INFO - Episode 2750 | Reward: 9990.35 | Pos Error: 1.3562m | Time:   34.9s
+2025-09-19 21:04:48,604 - INFO - Episode 2800 | Reward:  688.46 | Pos Error: 0.6858m | Time:   36.4s
+2025-09-19 21:04:50,209 - INFO - Episode 2850 | Reward:  686.10 | Pos Error: 0.3613m | Time:   38.0s
+2025-09-19 21:04:51,615 - INFO - Episode 2900 | Reward:  992.54 | Pos Error: 0.7068m | Time:   39.4s
+2025-09-19 21:04:53,057 - INFO - Episode 2950 | Reward: 6441.21 | Pos Error: 4.6742m | Time:   40.9s
+2025-09-19 21:04:54,588 - INFO - Episode 3000 | Reward: 19423.04 | Pos Error: 5.8557m | Time:   42.4s
+2025-09-19 21:04:56,072 - INFO - Episode 3050 | Reward:  630.46 | Pos Error: 1.0879m | Time:   43.9s
+2025-09-19 21:04:57,761 - INFO - Episode 3100 | Reward:  742.13 | Pos Error: 1.3154m | Time:   45.6s
+2025-09-19 21:04:59,579 - INFO - Episode 3150 | Reward:  853.18 | Pos Error: 0.5744m | Time:   47.4s
+2025-09-19 21:05:01,240 - INFO - Episode 3200 | Reward: 1873.74 | Pos Error: 0.9090m | Time:   49.1s
+2025-09-19 21:05:03,017 - INFO - Episode 3250 | Reward:  749.61 | Pos Error: 0.2289m | Time:   50.8s
+2025-09-19 21:05:04,601 - INFO - Episode 3300 | Reward:  652.94 | Pos Error: 0.2998m | Time:   52.4s
+2025-09-19 21:05:06,204 - INFO - Episode 3350 | Reward: 1287.92 | Pos Error: 0.3665m | Time:   54.0s
+2025-09-19 21:05:07,820 - INFO - Episode 3400 | Reward:  948.47 | Pos Error: 0.6274m | Time:   55.6s
+2025-09-19 21:05:09,437 - INFO - Episode 3450 | Reward: 5461.92 | Pos Error: 1.0272m | Time:   57.3s
+2025-09-19 21:05:10,930 - INFO - Episode 3500 | Reward:  565.64 | Pos Error: 0.3697m | Time:   58.7s
+2025-09-19 21:05:12,396 - INFO - NEW BEST PERFORMANCE! Episode 3547: 0.0703m
+2025-09-19 21:05:12,441 - INFO - BEST SAC DRONE MODEL SAVED! Episode 3547, Error: 0.0703m
+2025-09-19 21:05:12,532 - INFO - Episode 3550 | Reward:  650.04 | Pos Error: 0.0703m | Time:   60.3s
+2025-09-19 21:05:14,077 - INFO - Episode 3600 | Reward: 6932.74 | Pos Error: 2.0208m | Time:   61.9s
+2025-09-19 21:05:15,496 - INFO - Episode 3650 | Reward:  852.39 | Pos Error: 0.3927m | Time:   63.3s
+2025-09-19 21:05:16,965 - INFO - Episode 3700 | Reward:  788.21 | Pos Error: 0.2849m | Time:   64.8s
+2025-09-19 21:05:18,020 - INFO - 
+================================================================================
+2025-09-19 21:05:18,020 - INFO - SAC DRONE TRAINING COMPLETED - FINAL ANALYSIS
+2025-09-19 21:05:18,020 - INFO - ================================================================================
+2025-09-19 21:05:18,020 - INFO - Total training time: 65.8 seconds (1.1 minutes)
+2025-09-19 21:05:18,021 - INFO - Episodes completed: 3736
+2025-09-19 21:05:18,021 - INFO - Final episode reward: 1161.56
+2025-09-19 21:05:18,021 - INFO - Final position error: 1.2421m
+2025-09-19 21:05:18,021 - INFO - Best position error achieved: 0.0703m at episode 3547
+2025-09-19 21:05:18,021 - INFO - Total convergent episodes (< 1.0m): 2280/3736 (61.03%)
+2025-09-19 21:05:18,021 - INFO - Stable performance achieved: Yes (from episode 0, duration: 3736 episodes)
+2025-09-19 21:05:18,022 - INFO - Position error statistics:
+2025-09-19 21:05:18,022 - INFO -   Mean: 1.2237m
+2025-09-19 21:05:18,022 - INFO -   Std:  1.3231m
+2025-09-19 21:05:18,023 - INFO -   Min:  0.0703m
+2025-09-19 21:05:18,023 - INFO -   Max:  5.8557m
+2025-09-19 21:05:18,023 - INFO -   Median: 0.7426m
+2025-09-19 21:05:18,023 - INFO - Performance distribution:
+2025-09-19 21:05:18,023 - INFO -   Excellent (< 0.5m): 1214 episodes (32.5%)
+2025-09-19 21:05:18,024 - INFO -   Good (0.5-1.0m):   1066 episodes (28.5%)
+2025-09-19 21:05:18,024 - INFO -   Acceptable (1.0-1.5m): 658 episodes (17.6%)
+2025-09-19 21:05:18,024 - INFO -   Poor (> 1.5m):     798 episodes (21.4%)
+2025-09-19 21:05:18,024 - INFO - 
+SAC ALGORITHM ANALYSIS:
+2025-09-19 21:05:18,024 - INFO - ----------------------------------------
+2025-09-19 21:05:18,024 - INFO - Total timesteps trained: 15,000
+2025-09-19 21:05:18,024 - INFO - Replay buffer size: 100,000
+2025-09-19 21:05:18,024 - INFO - Learning started after: 2000 timesteps
+2025-09-19 21:05:18,053 - INFO - Training metrics saved to: /home/osos/Mohamed_Masters_Thesis/SAC_drone/sac_training_logs/sac_drone_metrics_20250919_210518.json
+2025-09-19 21:05:18,054 - INFO - 
+BEST SAC DRONE MODEL CONFIRMED:
+2025-09-19 21:05:18,054 - INFO -   Episode: 3547
+2025-09-19 21:05:18,054 - INFO -   Position Error: 0.0703m
+2025-09-19 21:05:18,054 - INFO -   Model files: sac_drone_best.*
+2025-09-19 21:05:18,054 - INFO - ================================================================================
+2025-09-19 21:05:18,054 - INFO - SAC DRONE TRAINING SESSION COMPLETED
+2025-09-19 21:05:18,054 - INFO - Detailed log saved to: /home/osos/Mohamed_Masters_Thesis/SAC_drone/sac_training_logs/sac_drone_training_20250919_210403.log
+2025-09-19 21:05:18,054 - INFO - ================================================================================

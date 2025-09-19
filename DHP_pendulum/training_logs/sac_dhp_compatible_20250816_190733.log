@@ -1,0 +1,50 @@
+2025-08-16 19:07:33,808 - INFO - ================================================================================
+2025-08-16 19:07:33,808 - INFO - SAC DHP-COMPATIBLE PENDULUM TRAINING SESSION STARTED
+2025-08-16 19:07:33,808 - INFO - ================================================================================
+2025-08-16 19:07:33,808 - INFO - HYPERPARAMETERS:
+2025-08-16 19:07:33,808 - INFO - ----------------------------------------
+2025-08-16 19:07:33,808 - INFO - batch_size               : 256
+2025-08-16 19:07:33,808 - INFO - buffer_size              : 50000
+2025-08-16 19:07:33,808 - INFO - ent_coef                 : auto
+2025-08-16 19:07:33,808 - INFO - episode_length           : 200
+2025-08-16 19:07:33,808 - INFO - gamma                    : 0.95
+2025-08-16 19:07:33,808 - INFO - gui                      : False
+2025-08-16 19:07:33,808 - INFO - learning_rate            : 0.0003
+2025-08-16 19:07:33,808 - INFO - learning_starts          : 1000
+2025-08-16 19:07:33,809 - INFO - log_interval             : 50
+2025-08-16 19:07:33,809 - INFO - max_steps                : 200
+2025-08-16 19:07:33,809 - INFO - normalize_states         : True
+2025-08-16 19:07:33,809 - INFO - policy_layers            : [64, 64]
+2025-08-16 19:07:33,809 - INFO - qf_layers                : [64, 64]
+2025-08-16 19:07:33,809 - INFO - record                   : False
+2025-08-16 19:07:33,809 - INFO - record_best_episodes     : True
+2025-08-16 19:07:33,809 - INFO - save_interval            : 10000
+2025-08-16 19:07:33,809 - INFO - tau                      : 0.005
+2025-08-16 19:07:33,809 - INFO - total_timesteps          : 300000
+2025-08-16 19:07:33,809 - INFO - ----------------------------------------
+2025-08-16 19:07:33,809 - INFO - Log file: /home/osos/Mohamed_Masters_Thesis/DHP_pendulum/training_logs/sac_dhp_compatible_20250816_190733.log
+2025-08-16 19:07:33,809 - INFO - ================================================================================
+2025-08-16 19:07:33,809 - INFO - 
+==================================================
+2025-08-16 19:07:33,809 - INFO - STARTING SAC TRAINING FOR DHP-COMPATIBLE PENDULUM
+2025-08-16 19:07:33,809 - INFO - ==================================================
+2025-08-16 19:07:33,815 - INFO - 
+Training for 300000 timesteps...
+2025-08-16 19:07:33,815 - INFO - This corresponds to approximately 1500 episodes of 200 steps each
+2025-08-16 19:07:33,815 - INFO - Episode | Reward  | Avg Cost | Pos Error | Success | Time
+2025-08-16 19:07:33,815 - INFO - ------------------------------------------------------------
+2025-08-16 20:12:45,096 - INFO - 
+================================================================================
+2025-08-16 20:12:45,096 - INFO - TRAINING COMPLETED - FINAL ANALYSIS
+2025-08-16 20:12:45,096 - INFO - ================================================================================
+2025-08-16 20:12:45,096 - INFO - Total training time: 3910.0 seconds (65.2 minutes)
+2025-08-16 20:12:45,096 - INFO - Final average reward: -536.43
+2025-08-16 20:12:45,096 - INFO - Final average position error: 2.1691 rad
+2025-08-16 20:12:45,096 - INFO - Best position error achieved: 2.1691 rad
+2025-08-16 20:12:45,096 - INFO - Performance classification: NEEDS IMPROVEMENT
+2025-08-16 20:12:45,096 - INFO - Training metrics saved to: /home/osos/Mohamed_Masters_Thesis/DHP_pendulum/training_logs/sac_dhp_compatible_metrics_20250816_201245.json
+2025-08-16 20:12:58,329 - INFO - 
+==================================================
+2025-08-16 20:12:58,329 - INFO - STARTING POLICY DEMONSTRATION
+2025-08-16 20:12:58,329 - INFO - ==================================================
+2025-08-16 20:12:58,773 - INFO - Training and demonstration session completed successfully!

@@ -1,0 +1,89 @@
+2025-08-16 14:28:13,671 - INFO - ================================================================================
+2025-08-16 14:28:13,671 - INFO - DHP PENDULUM TRAINING SESSION STARTED
+2025-08-16 14:28:13,671 - INFO - ================================================================================
+2025-08-16 14:28:13,671 - INFO - HYPERPARAMETERS:
+2025-08-16 14:28:13,671 - INFO - ----------------------------------------
+2025-08-16 14:28:13,671 - INFO - action_size              : 1
+2025-08-16 14:28:13,671 - INFO - activation               : tanh
+2025-08-16 14:28:13,671 - INFO - best_episode_gui         : False
+2025-08-16 14:28:13,671 - INFO - episode_length           : 200
+2025-08-16 14:28:13,671 - INFO - excitation_amplitude     : 0.2
+2025-08-16 14:28:13,671 - INFO - excitation_steps         : 7500
+2025-08-16 14:28:13,671 - INFO - gamma                    : 0.95
+2025-08-16 14:28:13,671 - INFO - gui                      : False
+2025-08-16 14:28:13,671 - INFO - hidden_layer_size        : [64, 64, 32]
+2025-08-16 14:28:13,671 - INFO - log_interval             : 50
+2025-08-16 14:28:13,672 - INFO - lr_actor                 : 0.005
+2025-08-16 14:28:13,672 - INFO - lr_critic                : 0.01
+2025-08-16 14:28:13,672 - INFO - max_steps                : 200
+2025-08-16 14:28:13,672 - INFO - normalize_states         : True
+2025-08-16 14:28:13,672 - INFO - num_episodes             : 1500
+2025-08-16 14:28:13,672 - INFO - predict_delta            : False
+2025-08-16 14:28:13,672 - INFO - record                   : False
+2025-08-16 14:28:13,672 - INFO - record_best_episodes     : True
+2025-08-16 14:28:13,672 - INFO - recording_fps            : 30
+2025-08-16 14:28:13,672 - INFO - reference_size           : 2
+2025-08-16 14:28:13,672 - INFO - render_best_only         : True
+2025-08-16 14:28:13,672 - INFO - render_episode_steps     : 50
+2025-08-16 14:28:13,672 - INFO - render_frequency         : 10
+2025-08-16 14:28:13,672 - INFO - render_realtime          : False
+2025-08-16 14:28:13,672 - INFO - render_training          : False
+2025-08-16 14:28:13,672 - INFO - rls_action_size          : 1
+2025-08-16 14:28:13,672 - INFO - rls_covariance           : 100.0
+2025-08-16 14:28:13,672 - INFO - rls_gamma                : 0.9995
+2025-08-16 14:28:13,672 - INFO - rls_state_size           : 2
+2025-08-16 14:28:13,672 - INFO - save_interval            : 200
+2025-08-16 14:28:13,672 - INFO - split                    : False
+2025-08-16 14:28:13,672 - INFO - state_bounds             : {'theta': [-3.141592653589793, 3.141592653589793], 'theta_dot': [-8.0, 8.0]}
+2025-08-16 14:28:13,673 - INFO - state_size               : 2
+2025-08-16 14:28:13,673 - INFO - target_network           : True
+2025-08-16 14:28:13,673 - INFO - tau                      : 0.001
+2025-08-16 14:28:13,673 - INFO - update_cycles            : 2
+2025-08-16 14:28:13,673 - INFO - ----------------------------------------
+2025-08-16 14:28:13,673 - INFO - Log file: /home/osos/Mohamed_Masters_Thesis/DHP_pendulum/training_logs/dhp_pendulum_training_20250816_142813.log
+2025-08-16 14:28:13,673 - INFO - ================================================================================
+2025-08-16 14:28:13,673 - INFO - 
+==================================================
+2025-08-16 14:28:13,673 - INFO - STARTING DHP TRAINING FOR PENDULUM
+2025-08-16 14:28:13,673 - INFO - ==================================================
+2025-08-16 14:28:13,675 - WARNING - From /home/osos/Mohamed_Masters_Thesis/msc-thesis/agents/dhp.py:70: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2025-08-16 14:28:13,769 - WARNING - From /home/osos/Mohamed_Masters_Thesis/msc-thesis/agents/dhp.py:100: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2025-08-16 14:28:13,771 - WARNING - From /home/osos/Mohamed_Masters_Thesis/msc-thesis/agents/dhp.py:102: The name tf.placeholder_with_default is deprecated. Please use tf.compat.v1.placeholder_with_default instead.
+
+2025-08-16 14:28:13,774 - WARNING - From /home/osos/Mohamed_Masters_Thesis/msc-thesis/agents/dhp.py:124: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2025-08-16 14:28:13,775 - WARNING - From /home/osos/Mohamed_Masters_Thesis/msc-thesis/agents/dhp.py:128: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+2025-08-16 14:28:13,776 - WARNING - From /home/osos/anaconda3/envs/DHP/lib/python3.7/site-packages/tensorflow_core/python/layers/core.py:187: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+2025-08-16 14:28:13,807 - WARNING - From /home/osos/Mohamed_Masters_Thesis/msc-thesis/agents/dhp.py:133: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+2025-08-16 14:28:13,827 - WARNING - From /home/osos/Mohamed_Masters_Thesis/msc-thesis/agents/dhp.py:139: The name tf.train.GradientDescentOptimizer is deprecated. Please use tf.compat.v1.train.GradientDescentOptimizer instead.
+
+2025-08-16 14:28:13,874 - WARNING - From /home/osos/Mohamed_Masters_Thesis/msc-thesis/agents/dhp.py:156: The name tf.assign is deprecated. Please use tf.compat.v1.assign instead.
+
+2025-08-16 14:28:13,969 - WARNING - From /home/osos/Mohamed_Masters_Thesis/msc-thesis/agents/dhp.py:79: The name tf.summary.merge_all is deprecated. Please use tf.compat.v1.summary.merge_all instead.
+
+2025-08-16 14:28:13,969 - WARNING - From /home/osos/Mohamed_Masters_Thesis/msc-thesis/agents/dhp.py:80: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2025-08-16 14:28:13,984 - WARNING - From /home/osos/Mohamed_Masters_Thesis/msc-thesis/agents/dhp.py:81: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+2025-08-16 14:28:14,055 - INFO - 
+Training for 1000 episodes...
+2025-08-16 14:28:14,055 - INFO - Episode | Reward  | Avg Cost | Pos Error | Success | Time
+2025-08-16 14:28:14,055 - INFO - ------------------------------------------------------------
+2025-08-16 14:28:41,655 - INFO -       0 | -4052.24 | 25756.991 |    1.7515 |   0.000 |   27.6s
+2025-08-16 14:29:35,321 - INFO - CONVERGENCE EPISODE 2: 0.4903 rad
+2025-08-16 14:29:55,683 - INFO - CONVERGENCE EPISODE 3: 0.0029 rad
+2025-08-16 14:30:22,389 - INFO - CONVERGENCE EPISODE 4: 0.0372 rad
+2025-08-16 14:30:34,602 - INFO - CONVERGENCE EPISODE 5: 0.0023 rad
+2025-08-16 14:31:01,358 - INFO - CONVERGENCE EPISODE 6: 0.4094 rad
+2025-08-16 14:36:21,605 - INFO - CONVERGENCE EPISODE 18: 0.0026 rad
+2025-08-16 14:38:34,684 - INFO - CONVERGENCE EPISODE 23: 0.0527 rad
+2025-08-16 14:39:28,181 - INFO -      25 | -6351.07 | 879085.598 |    1.7171 |   0.000 |  674.1s
+2025-08-16 14:40:22,184 - INFO - CONVERGENCE EPISODE 27: 0.3350 rad
+2025-08-16 14:40:49,199 - INFO - CONVERGENCE EPISODE 28: 0.3118 rad

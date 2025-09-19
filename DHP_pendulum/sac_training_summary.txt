@@ -1,0 +1,13 @@
+SAC Pendulum Training Summary
+========================================
+Date: 2025-08-16 00:48:40
+Episodes trained: 30
+Best episode: 1100
+Best position error: 0.020724 rad (1.19°)
+Convergent episodes: 10
+Convergence rate: 33.3%
+State normalization: True
+Network layers: [64, 64]
+Learning rate: 0.0003
+Training time: 11529.1 seconds
+Log file: /home/osos/Mohamed_Masters_Thesis/DHP_pendulum/training_logs/sac_pendulum_training_20250815_213631.log

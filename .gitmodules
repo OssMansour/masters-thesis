@@ -1,0 +1,3 @@
+[submodule "DHP_drone_updated/gym-pybullet-drones"]
+	path = DHP_drone_updated/gym-pybullet-drones
+	url = https://github.com/OssMansour/gym-pybullet-drones.git

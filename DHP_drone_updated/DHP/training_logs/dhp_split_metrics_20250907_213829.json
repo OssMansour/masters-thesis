@@ -1,0 +1,166 @@
+{
+  "training_session": {
+    "timestamp": "20250907_213829",
+    "total_episodes": 10,
+    "total_time_seconds": 8.818524837493896,
+    "hyperparameters": {
+      "target_pos": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "episode_length": 25.0,
+      "dt": 0.03333333333333333,
+      "use_trajectory": true,
+      "trajectory_type": "spiral",
+      "state_size": 8,
+      "reference_size": 8,
+      "action_size": 4,
+      "hidden_layer_size": [
+        64,
+        64,
+        32
+      ],
+      "lr_critic": 0.01,
+      "lr_actor": 0.005,
+      "lr_decay": 0.9999,
+      "gradient_clip_value": 0.5,
+      "gamma": 0.98,
+      "split": false,
+      "target_network": true,
+      "tau": 0.001,
+      "rls_state_size": 8,
+      "rls_action_size": 4,
+      "rls_gamma": 0.9995,
+      "rls_covariance": 100.0,
+      "predict_delta": false,
+      "num_episodes": 10,
+      "update_cycles": 2,
+      "excitation_steps": 5000,
+      "excitation_amplitude": 0.03,
+      "normalize_states": true,
+      "state_bounds": {
+        "z": [
+          0.0,
+          5.0
+        ],
+        "roll": [
+          -1.5707963267948966,
+          1.5707963267948966
+        ],
+        "pitch": [
+          -1.5707963267948966,
+          1.5707963267948966
+        ],
+        "yaw": [
+          -3.141592653589793,
+          3.141592653589793
+        ],
+        "vz": [
+          -12.0,
+          12.0
+        ],
+        "wx": [
+          -10.0,
+          10.0
+        ],
+        "wy": [
+          -10.0,
+          10.0
+        ],
+        "wz": [
+          -10.0,
+          10.0
+        ]
+      },
+      "log_interval": 10,
+      "save_interval": 50,
+      "gui": false,
+      "record": false,
+      "record_best_episodes": true,
+      "best_episode_gui": false,
+      "recording_fps": 30,
+      "coordination_warmup_episodes": 200,
+      "coordination_strength": 0.15
+    }
+  },
+  "performance_summary": {
+    "best_position_error": 0.37637657597379015,
+    "best_episode": 7,
+    "final_position_error": 0.4751751618654389,
+    "final_reward": 27.57291709269292,
+    "convergent_episodes_count": 3,
+    "convergence_rate": 0.3,
+    "stable_performance_start": -1
+  },
+  "statistics": {
+    "position_errors": {
+      "mean": 3.6104705885257835,
+      "std": 2.0970111413004964,
+      "min": 0.37637657597379015,
+      "max": 5.2457797512283415,
+      "median": 4.894695597511054
+    },
+    "rewards": {
+      "mean": 51.57876390797587,
+      "std": 21.25785510169802,
+      "min": 22.625298313968983,
+      "max": 87.05832823186901
+    },
+    "costs": {
+      "mean": 62.280450548870064,
+      "std": 38.05413701497357,
+      "min": 36.06201456114796,
+      "max": 142.3104650182719
+    }
+  },
+  "time_series_data": {
+    "episode_position_errors": [
+      5.2457797512283415,
+      5.222684222270754,
+      4.919459452609702,
+      4.887278638695678,
+      4.998622752738183,
+      4.68043864476897,
+      4.902112556326432,
+      0.37637657597379015,
+      0.39677812878054536,
+      0.4751751618654389
+    ],
+    "episode_rewards": [
+      87.05832823186901,
+      82.32025748477646,
+      57.00034557281524,
+      46.75295483642039,
+      59.17869454850854,
+      56.54537847151155,
+      52.794440411959684,
+      22.625298313968983,
+      23.939024115235966,
+      27.57291709269292
+    ],
+    "episode_costs": [
+      37.032785279524695,
+      43.81535722512945,
+      41.14507155928869,
+      48.15385423774733,
+      37.167182492271316,
+      48.42936831640427,
+      56.360013324305,
+      142.3104650182719,
+      132.32839347460995,
+      36.06201456114796
+    ],
+    "convergent_episodes": [
+      7,
+      8,
+      9
+    ]
+  },
+  "performance_distribution": {
+    "excellent_episodes": 3,
+    "good_episodes": 0,
+    "acceptable_episodes": 0,
+    "poor_episodes": 7
+  }
+}

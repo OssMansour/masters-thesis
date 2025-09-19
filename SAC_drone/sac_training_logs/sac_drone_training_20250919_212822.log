@@ -1,0 +1,362 @@
+2025-09-19 21:28:22,869 - INFO - ================================================================================
+2025-09-19 21:28:22,869 - INFO - SAC DRONE TRAINING SESSION STARTED
+2025-09-19 21:28:22,869 - INFO - ================================================================================
+2025-09-19 21:28:22,869 - INFO - HYPERPARAMETERS:
+2025-09-19 21:28:22,870 - INFO - ----------------------------------------
+2025-09-19 21:28:22,870 - INFO - action_noise_std         : 0.0
+2025-09-19 21:28:22,870 - INFO - action_size              : 4
+2025-09-19 21:28:22,870 - INFO - batch_size               : 256
+2025-09-19 21:28:22,870 - INFO - buffer_size              : 1000000
+2025-09-19 21:28:22,870 - INFO - dt                       : 0.03333333333333333
+2025-09-19 21:28:22,870 - INFO - ent_coef                 : 0.1
+2025-09-19 21:28:22,870 - INFO - episode_length           : 25.0
+2025-09-19 21:28:22,870 - INFO - gamma                    : 0.99
+2025-09-19 21:28:22,870 - INFO - gradient_steps           : 1
+2025-09-19 21:28:22,870 - INFO - gui                      : True
+2025-09-19 21:28:22,870 - INFO - input_size               : 23
+2025-09-19 21:28:22,870 - INFO - learning_rate            : 0.0001
+2025-09-19 21:28:22,870 - INFO - learning_starts          : 25000
+2025-09-19 21:28:22,870 - INFO - log_interval             : 50
+2025-09-19 21:28:22,870 - INFO - log_path                 : ./sac_training_logs/
+2025-09-19 21:28:22,870 - INFO - model_path               : ./sac_trained_models/
+2025-09-19 21:28:22,870 - INFO - num_envs                 : 4
+2025-09-19 21:28:22,871 - INFO - policy_architecture      : [256, 256]
+2025-09-19 21:28:22,871 - INFO - q_network_architecture   : [256, 256]
+2025-09-19 21:28:22,871 - INFO - randomize_reset          : True
+2025-09-19 21:28:22,871 - INFO - record                   : False
+2025-09-19 21:28:22,871 - INFO - reference_size           : 3
+2025-09-19 21:28:22,871 - INFO - save_interval            : 100
+2025-09-19 21:28:22,871 - INFO - seed                     : 42
+2025-09-19 21:28:22,871 - INFO - state_size               : 20
+2025-09-19 21:28:22,871 - INFO - target_pos               : [0.0, 0.0, 1.0]
+2025-09-19 21:28:22,871 - INFO - target_update_interval   : 1
+2025-09-19 21:28:22,871 - INFO - tau                      : 0.005
+2025-09-19 21:28:22,871 - INFO - total_timesteps          : 500000
+2025-09-19 21:28:22,871 - INFO - train_freq               : 1
+2025-09-19 21:28:22,871 - INFO - trajectory_type          : spiral
+2025-09-19 21:28:22,871 - INFO - use_sde                  : False
+2025-09-19 21:28:22,871 - INFO - use_trajectory           : True
+2025-09-19 21:28:22,871 - INFO - ----------------------------------------
+2025-09-19 21:28:22,871 - INFO - Log file: /home/osos/Mohamed_Masters_Thesis/SAC_drone/sac_training_logs/sac_drone_training_20250919_212822.log
+2025-09-19 21:28:22,871 - INFO - ================================================================================
+2025-09-19 21:28:22,872 - INFO - 
+==================================================
+2025-09-19 21:28:22,872 - INFO - STARTING ROBUST SAC DRONE TRAINING FOR CF2X QUADROTOR
+2025-09-19 21:28:22,872 - INFO - ==================================================
+2025-09-19 21:28:31,833 - INFO - Training Configuration:
+2025-09-19 21:28:31,833 - INFO -   - Total timesteps: 500000 (~666 episodes)
+2025-09-19 21:28:31,833 - INFO -   - Steps per episode: 750
+2025-09-19 21:28:31,833 - INFO -   - Parallel environments: 4
+2025-09-19 21:28:31,834 - INFO -   - Evaluation frequency: 5000 steps
+2025-09-19 21:28:31,834 - INFO -   - Enhanced monitoring and checkpointing enabled
+2025-09-19 21:28:32,019 - INFO - NEW BEST PERFORMANCE! Episode 0: 0.1781m
+2025-09-19 21:28:32,048 - INFO - BEST SAC DRONE MODEL SAVED! Episode 0, Error: 0.1781m
+2025-09-19 21:28:32,048 - INFO - Episode    0 | Reward:   40.38 | Pos Error: 0.1781m | Time:    0.2s
+2025-09-19 21:28:32,189 - INFO - STABLE PERFORMANCE ACHIEVED starting at episode 0
+2025-09-19 21:28:32,716 - INFO - Episode   50 | Reward:   43.21 | Pos Error: 0.7649m | Time:    0.9s
+2025-09-19 21:28:33,190 - INFO - Episode  100 | Reward:   50.06 | Pos Error: 0.7683m | Time:    1.4s
+2025-09-19 21:28:33,686 - INFO - Episode  150 | Reward:   52.42 | Pos Error: 0.3992m | Time:    1.9s
+2025-09-19 21:28:34,103 - INFO - Episode  200 | Reward:   32.66 | Pos Error: 0.5120m | Time:    2.3s
+2025-09-19 21:28:34,560 - INFO - Episode  250 | Reward:   33.69 | Pos Error: 0.6928m | Time:    2.7s
+2025-09-19 21:28:35,022 - INFO - Episode  300 | Reward:   38.33 | Pos Error: 0.9697m | Time:    3.2s
+2025-09-19 21:28:35,418 - INFO - Episode  350 | Reward:   61.81 | Pos Error: 1.2727m | Time:    3.6s
+2025-09-19 21:28:35,787 - INFO - Episode  400 | Reward:  342.79 | Pos Error: 5.0744m | Time:    4.0s
+2025-09-19 21:28:36,369 - INFO - Episode  450 | Reward:   44.00 | Pos Error: 0.4782m | Time:    4.5s
+2025-09-19 21:28:36,874 - INFO - Episode  500 | Reward:   44.90 | Pos Error: 0.5240m | Time:    5.0s
+2025-09-19 21:28:37,273 - INFO - NEW BEST PERFORMANCE! Episode 538: 0.1185m
+2025-09-19 21:28:37,300 - INFO - BEST SAC DRONE MODEL SAVED! Episode 538, Error: 0.1185m
+2025-09-19 21:28:37,366 - INFO - Episode  550 | Reward:   43.08 | Pos Error: 0.1185m | Time:    5.5s
+2025-09-19 21:28:37,989 - INFO - Episode  600 | Reward:   38.68 | Pos Error: 0.5716m | Time:    6.2s
+2025-09-19 21:28:38,498 - INFO - Episode  650 | Reward:   55.66 | Pos Error: 0.7559m | Time:    6.7s
+2025-09-19 21:28:39,067 - INFO - Episode  700 | Reward:   88.15 | Pos Error: 1.2329m | Time:    7.2s
+2025-09-19 21:28:39,504 - INFO - Episode  750 | Reward:   39.19 | Pos Error: 0.1238m | Time:    7.7s
+2025-09-19 21:28:39,918 - INFO - Episode  800 | Reward:   45.53 | Pos Error: 0.6343m | Time:    8.1s
+2025-09-19 21:28:40,307 - INFO - Episode  850 | Reward:  228.28 | Pos Error: 5.1903m | Time:    8.5s
+2025-09-19 21:28:40,882 - INFO - Episode  900 | Reward:   74.71 | Pos Error: 0.6423m | Time:    9.0s
+2025-09-19 21:28:41,517 - INFO - Episode  950 | Reward:   43.74 | Pos Error: 0.4808m | Time:    9.7s
+2025-09-19 21:28:41,919 - INFO - Episode 1000 | Reward:  125.69 | Pos Error: 0.8494m | Time:   10.1s
+2025-09-19 21:28:42,426 - INFO - Episode 1050 | Reward:   51.51 | Pos Error: 1.0362m | Time:   10.6s
+2025-09-19 21:28:42,931 - INFO - Episode 1100 | Reward:  354.82 | Pos Error: 4.9486m | Time:   11.1s
+2025-09-19 21:28:43,456 - INFO - Episode 1150 | Reward:   63.35 | Pos Error: 0.3121m | Time:   11.6s
+2025-09-19 21:28:43,896 - INFO - Episode 1200 | Reward:  496.40 | Pos Error: 5.0630m | Time:   12.1s
+2025-09-19 21:28:44,305 - INFO - Episode 1250 | Reward:   97.03 | Pos Error: 1.3655m | Time:   12.5s
+2025-09-19 21:28:44,808 - INFO - Episode 1300 | Reward:   58.99 | Pos Error: 0.5701m | Time:   13.0s
+2025-09-19 21:28:45,273 - INFO - Episode 1350 | Reward:   63.56 | Pos Error: 1.0417m | Time:   13.4s
+2025-09-19 21:28:45,827 - INFO - Episode 1400 | Reward:   42.63 | Pos Error: 0.5158m | Time:   14.0s
+2025-09-19 21:28:46,440 - INFO - Episode 1450 | Reward:   68.92 | Pos Error: 0.5437m | Time:   14.6s
+2025-09-19 21:28:46,914 - INFO - Episode 1500 | Reward:   59.07 | Pos Error: 0.3859m | Time:   15.1s
+2025-09-19 21:28:47,383 - INFO - Episode 1550 | Reward:   86.85 | Pos Error: 0.5756m | Time:   15.5s
+2025-09-19 21:28:47,915 - INFO - Episode 1600 | Reward:   46.47 | Pos Error: 0.3795m | Time:   16.1s
+2025-09-19 21:28:48,410 - INFO - Episode 1650 | Reward:   48.16 | Pos Error: 0.2720m | Time:   16.6s
+2025-09-19 21:28:49,119 - INFO - Episode 1700 | Reward:   45.75 | Pos Error: 0.7440m | Time:   17.3s
+2025-09-19 21:28:49,553 - INFO - Episode 1750 | Reward:   49.07 | Pos Error: 0.4051m | Time:   17.7s
+2025-09-19 21:28:50,133 - INFO - Episode 1800 | Reward:   44.65 | Pos Error: 0.4788m | Time:   18.3s
+2025-09-19 21:28:50,717 - INFO - Episode 1850 | Reward:  123.22 | Pos Error: 1.5297m | Time:   18.9s
+2025-09-19 21:28:51,381 - INFO - Episode 1900 | Reward:   56.06 | Pos Error: 0.6145m | Time:   19.5s
+2025-09-19 21:28:51,824 - INFO - Episode 1950 | Reward:   41.25 | Pos Error: 0.2537m | Time:   20.0s
+2025-09-19 21:28:52,411 - INFO - Episode 2000 | Reward:   33.52 | Pos Error: 0.2423m | Time:   20.6s
+2025-09-19 21:28:52,854 - INFO - Episode 2050 | Reward:   60.85 | Pos Error: 0.6154m | Time:   21.0s
+2025-09-19 21:28:53,407 - INFO - Episode 2100 | Reward:  534.09 | Pos Error: 4.9167m | Time:   21.6s
+2025-09-19 21:28:53,918 - INFO - Episode 2150 | Reward:   83.96 | Pos Error: 0.5511m | Time:   22.1s
+2025-09-19 21:28:54,346 - INFO - Episode 2200 | Reward:   39.22 | Pos Error: 0.7085m | Time:   22.5s
+2025-09-19 21:28:54,473 - INFO - NEW BEST PERFORMANCE! Episode 2221: 0.1009m
+2025-09-19 21:28:54,486 - INFO - BEST SAC DRONE MODEL SAVED! Episode 2221, Error: 0.1009m
+2025-09-19 21:28:54,891 - INFO - Episode 2250 | Reward:   61.89 | Pos Error: 1.4234m | Time:   23.1s
+2025-09-19 21:28:55,365 - INFO - Episode 2300 | Reward:   56.91 | Pos Error: 0.7770m | Time:   23.5s
+2025-09-19 21:28:55,844 - INFO - Episode 2350 | Reward:   54.87 | Pos Error: 0.8020m | Time:   24.0s
+2025-09-19 21:28:56,447 - INFO - Episode 2400 | Reward:   58.60 | Pos Error: 0.6693m | Time:   24.6s
+2025-09-19 21:28:57,042 - INFO - Episode 2450 | Reward:  171.61 | Pos Error: 1.4324m | Time:   25.2s
+2025-09-19 21:28:57,508 - INFO - Episode 2500 | Reward:   51.94 | Pos Error: 0.4096m | Time:   25.7s
+2025-09-19 21:28:57,912 - INFO - Episode 2550 | Reward:   94.14 | Pos Error: 0.8849m | Time:   26.1s
+2025-09-19 21:28:58,394 - INFO - Episode 2600 | Reward:  142.57 | Pos Error: 2.7213m | Time:   26.6s
+2025-09-19 21:28:58,769 - INFO - Episode 2650 | Reward:  814.70 | Pos Error: 5.4525m | Time:   26.9s
+2025-09-19 21:28:59,157 - INFO - Episode 2700 | Reward:  969.28 | Pos Error: 5.6698m | Time:   27.3s
+2025-09-19 21:28:59,729 - INFO - Episode 2750 | Reward:   71.56 | Pos Error: 0.3528m | Time:   27.9s
+2025-09-19 21:29:00,226 - INFO - Episode 2800 | Reward:   73.37 | Pos Error: 0.3614m | Time:   28.4s
+2025-09-19 21:29:00,796 - INFO - Episode 2850 | Reward:   40.82 | Pos Error: 0.2117m | Time:   29.0s
+2025-09-19 21:29:01,474 - INFO - Episode 2900 | Reward:   36.89 | Pos Error: 0.6584m | Time:   29.6s
+2025-09-19 21:29:01,990 - INFO - Episode 2950 | Reward:  287.09 | Pos Error: 5.1335m | Time:   30.2s
+2025-09-19 21:29:02,498 - INFO - Episode 3000 | Reward:   45.11 | Pos Error: 1.0097m | Time:   30.7s
+2025-09-19 21:29:03,070 - INFO - Episode 3050 | Reward:   40.55 | Pos Error: 0.1705m | Time:   31.2s
+2025-09-19 21:29:03,596 - INFO - Episode 3100 | Reward:   55.89 | Pos Error: 0.3753m | Time:   31.8s
+2025-09-19 21:29:04,217 - INFO - Episode 3150 | Reward:   58.26 | Pos Error: 0.6629m | Time:   32.4s
+2025-09-19 21:29:04,713 - INFO - Episode 3200 | Reward:  110.73 | Pos Error: 2.3414m | Time:   32.9s
+2025-09-19 21:29:05,206 - INFO - Episode 3250 | Reward:   61.21 | Pos Error: 0.6759m | Time:   33.4s
+2025-09-19 21:29:05,758 - INFO - NEW BEST PERFORMANCE! Episode 3287: 0.0944m
+2025-09-19 21:29:05,775 - INFO - BEST SAC DRONE MODEL SAVED! Episode 3287, Error: 0.0944m
+2025-09-19 21:29:05,897 - INFO - Episode 3300 | Reward:   75.50 | Pos Error: 0.5594m | Time:   34.1s
+2025-09-19 21:29:06,306 - INFO - Episode 3350 | Reward:   59.52 | Pos Error: 0.3469m | Time:   34.5s
+2025-09-19 21:29:06,801 - INFO - Episode 3400 | Reward:   41.76 | Pos Error: 0.2761m | Time:   35.0s
+2025-09-19 21:29:07,329 - INFO - Episode 3450 | Reward:  703.19 | Pos Error: 5.0994m | Time:   35.5s
+2025-09-19 21:29:07,749 - INFO - Episode 3500 | Reward:   54.36 | Pos Error: 0.9260m | Time:   35.9s
+2025-09-19 21:29:08,161 - INFO - Episode 3550 | Reward:   57.83 | Pos Error: 0.2603m | Time:   36.3s
+2025-09-19 21:29:08,618 - INFO - Episode 3600 | Reward:  142.99 | Pos Error: 1.3487m | Time:   36.8s
+2025-09-19 21:29:09,146 - INFO - Episode 3650 | Reward:   45.65 | Pos Error: 0.7821m | Time:   37.3s
+2025-09-19 21:29:09,649 - INFO - Episode 3700 | Reward:   45.74 | Pos Error: 0.2031m | Time:   37.8s
+2025-09-19 21:29:09,788 - INFO - NEW BEST PERFORMANCE! Episode 3708: 0.0853m
+2025-09-19 21:29:09,804 - INFO - BEST SAC DRONE MODEL SAVED! Episode 3708, Error: 0.0853m
+2025-09-19 21:29:10,369 - INFO - Episode 3750 | Reward:   47.80 | Pos Error: 0.3468m | Time:   38.5s
+2025-09-19 21:29:11,013 - INFO - Episode 3800 | Reward:   53.35 | Pos Error: 0.5135m | Time:   39.2s
+2025-09-19 21:29:11,554 - INFO - Episode 3850 | Reward:   50.63 | Pos Error: 0.9065m | Time:   39.7s
+2025-09-19 21:29:12,230 - INFO - Episode 3900 | Reward:   40.50 | Pos Error: 0.4051m | Time:   40.4s
+2025-09-19 21:29:12,886 - INFO - Episode 3950 | Reward:   47.70 | Pos Error: 0.0874m | Time:   41.1s
+2025-09-19 21:29:13,486 - INFO - Episode 4000 | Reward:   43.20 | Pos Error: 0.3290m | Time:   41.7s
+2025-09-19 21:29:14,150 - INFO - Episode 4050 | Reward:   86.18 | Pos Error: 0.7960m | Time:   42.3s
+2025-09-19 21:29:14,808 - INFO - Episode 4100 | Reward:   44.92 | Pos Error: 0.4435m | Time:   43.0s
+2025-09-19 21:29:15,350 - INFO - Episode 4150 | Reward:   55.76 | Pos Error: 0.4273m | Time:   43.5s
+2025-09-19 21:29:15,923 - INFO - Episode 4200 | Reward:  138.06 | Pos Error: 1.4729m | Time:   44.1s
+2025-09-19 21:29:16,424 - INFO - Episode 4250 | Reward:   32.21 | Pos Error: 0.5278m | Time:   44.6s
+2025-09-19 21:29:16,890 - INFO - Episode 4300 | Reward:   66.71 | Pos Error: 0.2551m | Time:   45.1s
+2025-09-19 21:29:17,346 - INFO - Episode 4350 | Reward:  508.07 | Pos Error: 5.1188m | Time:   45.5s
+2025-09-19 21:29:17,800 - INFO - Episode 4400 | Reward:   92.50 | Pos Error: 0.5173m | Time:   46.0s
+2025-09-19 21:29:18,270 - INFO - Episode 4450 | Reward:   45.84 | Pos Error: 1.1071m | Time:   46.4s
+2025-09-19 21:29:18,722 - INFO - Episode 4500 | Reward:  180.10 | Pos Error: 5.2263m | Time:   46.9s
+2025-09-19 21:29:19,066 - INFO - Episode 4550 | Reward: 2159.68 | Pos Error: 5.7558m | Time:   47.2s
+2025-09-19 21:29:19,561 - INFO - Episode 4600 | Reward:   47.37 | Pos Error: 1.0349m | Time:   47.7s
+2025-09-19 21:29:19,985 - INFO - Episode 4650 | Reward:   39.46 | Pos Error: 0.6164m | Time:   48.2s
+2025-09-19 21:29:20,446 - INFO - Episode 4700 | Reward:   44.29 | Pos Error: 0.4334m | Time:   48.6s
+2025-09-19 21:29:20,872 - INFO - Episode 4750 | Reward:  311.96 | Pos Error: 5.0061m | Time:   49.0s
+2025-09-19 21:29:21,272 - INFO - Episode 4800 | Reward:   50.41 | Pos Error: 0.7815m | Time:   49.4s
+2025-09-19 21:29:21,585 - INFO - Episode 4850 | Reward:  264.15 | Pos Error: 4.8896m | Time:   49.8s
+2025-09-19 21:29:22,116 - INFO - Episode 4900 | Reward:   58.43 | Pos Error: 0.7885m | Time:   50.3s
+2025-09-19 21:29:22,654 - INFO - Episode 4950 | Reward:   41.01 | Pos Error: 0.8165m | Time:   50.8s
+2025-09-19 21:29:24,054 - INFO - Episode 5000 | Reward:  137.49 | Pos Error: 1.0315m | Time:   52.2s
+2025-09-19 21:29:24,628 - INFO - Episode 5050 | Reward:   33.42 | Pos Error: 0.1023m | Time:   52.8s
+2025-09-19 21:29:25,142 - INFO - Episode 5100 | Reward:   61.48 | Pos Error: 0.6318m | Time:   53.3s
+2025-09-19 21:29:25,661 - INFO - Episode 5150 | Reward:   83.72 | Pos Error: 0.9631m | Time:   53.8s
+2025-09-19 21:29:26,172 - INFO - Episode 5200 | Reward:   81.80 | Pos Error: 0.7229m | Time:   54.3s
+2025-09-19 21:29:26,598 - INFO - Episode 5250 | Reward:  124.49 | Pos Error: 1.1327m | Time:   54.8s
+2025-09-19 21:29:27,177 - INFO - Episode 5300 | Reward:  390.29 | Pos Error: 5.2071m | Time:   55.3s
+2025-09-19 21:29:27,794 - INFO - Episode 5350 | Reward:   71.12 | Pos Error: 1.4638m | Time:   56.0s
+2025-09-19 21:29:28,507 - INFO - Episode 5400 | Reward:   57.78 | Pos Error: 0.5553m | Time:   56.7s
+2025-09-19 21:29:29,234 - INFO - Episode 5450 | Reward:   54.60 | Pos Error: 0.4446m | Time:   57.4s
+2025-09-19 21:29:29,855 - INFO - Episode 5500 | Reward:   51.83 | Pos Error: 0.3475m | Time:   58.0s
+2025-09-19 21:29:30,229 - INFO - Episode 5550 | Reward:   81.73 | Pos Error: 0.2736m | Time:   58.4s
+2025-09-19 21:29:30,657 - INFO - Episode 5600 | Reward:   49.51 | Pos Error: 0.3963m | Time:   58.8s
+2025-09-19 21:29:31,202 - INFO - Episode 5650 | Reward:   37.57 | Pos Error: 0.3735m | Time:   59.4s
+2025-09-19 21:29:31,743 - INFO - Episode 5700 | Reward:   47.99 | Pos Error: 0.7345m | Time:   59.9s
+2025-09-19 21:29:32,308 - INFO - Episode 5750 | Reward:  136.63 | Pos Error: 1.9597m | Time:   60.5s
+2025-09-19 21:29:32,910 - INFO - Episode 5800 | Reward:   70.58 | Pos Error: 0.7410m | Time:   61.1s
+2025-09-19 21:29:33,618 - INFO - Episode 5850 | Reward:   82.06 | Pos Error: 0.7154m | Time:   61.8s
+2025-09-19 21:29:34,193 - INFO - Episode 5900 | Reward:   50.42 | Pos Error: 0.5005m | Time:   62.4s
+2025-09-19 21:29:34,654 - INFO - Episode 5950 | Reward:   54.62 | Pos Error: 0.2814m | Time:   62.8s
+2025-09-19 21:29:35,147 - INFO - Episode 6000 | Reward:   47.34 | Pos Error: 0.9295m | Time:   63.3s
+2025-09-19 21:29:35,653 - INFO - Episode 6050 | Reward:   49.16 | Pos Error: 0.6582m | Time:   63.8s
+2025-09-19 21:29:36,185 - INFO - Episode 6100 | Reward:   47.36 | Pos Error: 0.3051m | Time:   64.4s
+2025-09-19 21:29:36,655 - INFO - Episode 6150 | Reward:   63.37 | Pos Error: 0.6101m | Time:   64.8s
+2025-09-19 21:29:37,193 - INFO - Episode 6200 | Reward:  147.39 | Pos Error: 1.7505m | Time:   65.4s
+2025-09-19 21:29:38,043 - INFO - Episode 6250 | Reward:   58.41 | Pos Error: 0.6579m | Time:   66.2s
+2025-09-19 21:29:39,633 - INFO - Episode 6300 | Reward:   88.12 | Pos Error: 0.4811m | Time:   67.8s
+2025-09-19 21:29:40,998 - INFO - Episode 6350 | Reward:   88.12 | Pos Error: 0.4811m | Time:   69.2s
+2025-09-19 21:29:42,695 - INFO - Episode 6400 | Reward:   54.54 | Pos Error: 0.1811m | Time:   70.9s
+2025-09-19 21:29:44,297 - INFO - Episode 6450 | Reward:   39.27 | Pos Error: 0.1873m | Time:   72.5s
+2025-09-19 21:29:45,984 - INFO - Episode 6500 | Reward:   36.82 | Pos Error: 0.6888m | Time:   74.2s
+2025-09-19 21:29:47,567 - INFO - Episode 6550 | Reward:   49.57 | Pos Error: 0.5866m | Time:   75.7s
+2025-09-19 21:29:49,028 - INFO - Episode 6600 | Reward:   82.12 | Pos Error: 0.9717m | Time:   77.2s
+2025-09-19 21:29:50,437 - INFO - Episode 6650 | Reward:  154.05 | Pos Error: 1.4206m | Time:   78.6s
+2025-09-19 21:29:51,994 - INFO - Episode 6700 | Reward:   71.92 | Pos Error: 1.0444m | Time:   80.2s
+2025-09-19 21:29:53,363 - INFO - Episode 6750 | Reward:  142.63 | Pos Error: 0.4595m | Time:   81.5s
+2025-09-19 21:29:54,651 - INFO - Episode 6800 | Reward:  142.63 | Pos Error: 0.4595m | Time:   82.8s
+2025-09-19 21:29:56,069 - INFO - Episode 6850 | Reward:  664.32 | Pos Error: 4.9544m | Time:   84.2s
+2025-09-19 21:29:57,382 - INFO - Episode 6900 | Reward:  664.32 | Pos Error: 4.9544m | Time:   85.5s
+2025-09-19 21:29:58,671 - INFO - Episode 6950 | Reward:  664.32 | Pos Error: 4.9544m | Time:   86.8s
+2025-09-19 21:30:00,133 - INFO - Episode 7000 | Reward:  930.78 | Pos Error: 4.8023m | Time:   88.3s
+2025-09-19 21:30:01,471 - INFO - Episode 7050 | Reward:  930.78 | Pos Error: 4.8023m | Time:   89.6s
+2025-09-19 21:30:02,788 - INFO - Episode 7100 | Reward:  930.78 | Pos Error: 4.8023m | Time:   91.0s
+2025-09-19 21:30:04,073 - INFO - Episode 7150 | Reward:  930.78 | Pos Error: 4.8023m | Time:   92.2s
+2025-09-19 21:30:05,513 - INFO - Episode 7200 | Reward: 1913.95 | Pos Error: 5.5277m | Time:   93.7s
+2025-09-19 21:30:06,892 - INFO - Episode 7250 | Reward: 1641.21 | Pos Error: 5.8385m | Time:   95.1s
+2025-09-19 21:30:08,405 - INFO - Episode 7300 | Reward: 1641.21 | Pos Error: 5.8385m | Time:   96.6s
+2025-09-19 21:30:09,727 - INFO - Episode 7350 | Reward: 1320.39 | Pos Error: 5.3249m | Time:   97.9s
+2025-09-19 21:30:11,106 - INFO - Episode 7400 | Reward: 3191.25 | Pos Error: 5.1932m | Time:   99.3s
+2025-09-19 21:30:12,469 - INFO - Episode 7450 | Reward: 3191.25 | Pos Error: 5.1932m | Time:  100.6s
+2025-09-19 21:30:13,794 - INFO - Episode 7500 | Reward: 3191.25 | Pos Error: 5.1932m | Time:  102.0s
+2025-09-19 21:30:15,099 - INFO - Episode 7550 | Reward: 3191.25 | Pos Error: 5.1932m | Time:  103.3s
+2025-09-19 21:30:16,470 - INFO - Episode 7600 | Reward: 3191.25 | Pos Error: 5.1932m | Time:  104.6s
+2025-09-19 21:30:17,862 - INFO - Episode 7650 | Reward: 3191.25 | Pos Error: 5.1932m | Time:  106.0s
+2025-09-19 21:30:19,196 - INFO - Episode 7700 | Reward: 3191.25 | Pos Error: 5.1932m | Time:  107.4s
+2025-09-19 21:30:20,546 - INFO - Episode 7750 | Reward: 3191.25 | Pos Error: 5.1932m | Time:  108.7s
+2025-09-19 21:30:21,835 - INFO - Episode 7800 | Reward: 3191.25 | Pos Error: 5.1932m | Time:  110.0s
+2025-09-19 21:30:23,227 - INFO - Episode 7850 | Reward: 2790.84 | Pos Error: 1.6498m | Time:  111.4s
+2025-09-19 21:30:24,600 - INFO - Episode 7900 | Reward: 2703.91 | Pos Error: 2.2985m | Time:  112.8s
+2025-09-19 21:30:25,898 - INFO - Episode 7950 | Reward: 1877.60 | Pos Error: 5.7972m | Time:  114.1s
+2025-09-19 21:30:27,265 - INFO - Episode 8000 | Reward: 2690.56 | Pos Error: 4.0682m | Time:  115.4s
+2025-09-19 21:30:28,569 - INFO - Episode 8050 | Reward: 2690.56 | Pos Error: 4.0682m | Time:  116.7s
+2025-09-19 21:30:29,876 - INFO - Episode 8100 | Reward: 2690.56 | Pos Error: 4.0682m | Time:  118.0s
+2025-09-19 21:30:31,194 - INFO - Episode 8150 | Reward:  727.45 | Pos Error: 5.6892m | Time:  119.4s
+2025-09-19 21:30:32,513 - INFO - Episode 8200 | Reward:  727.45 | Pos Error: 5.6892m | Time:  120.7s
+2025-09-19 21:30:33,867 - INFO - Episode 8250 | Reward: 1032.91 | Pos Error: 6.1906m | Time:  122.0s
+2025-09-19 21:30:35,168 - INFO - Episode 8300 | Reward:  897.60 | Pos Error: 6.0676m | Time:  123.3s
+2025-09-19 21:30:36,475 - INFO - Episode 8350 | Reward:  897.60 | Pos Error: 6.0676m | Time:  124.6s
+2025-09-19 21:30:37,790 - INFO - Episode 8400 | Reward:  897.60 | Pos Error: 6.0676m | Time:  126.0s
+2025-09-19 21:30:39,141 - INFO - Episode 8450 | Reward:  897.60 | Pos Error: 6.0676m | Time:  127.3s
+2025-09-19 21:30:40,470 - INFO - Episode 8500 | Reward:  897.60 | Pos Error: 6.0676m | Time:  128.6s
+2025-09-19 21:30:41,793 - INFO - Episode 8550 | Reward:  897.60 | Pos Error: 6.0676m | Time:  130.0s
+2025-09-19 21:30:43,201 - INFO - Episode 8600 | Reward:  830.06 | Pos Error: 5.9921m | Time:  131.4s
+2025-09-19 21:30:44,585 - INFO - Episode 8650 | Reward:  781.29 | Pos Error: 5.9287m | Time:  132.8s
+2025-09-19 21:30:45,903 - INFO - Episode 8700 | Reward: 1552.81 | Pos Error: 5.4551m | Time:  134.1s
+2025-09-19 21:30:47,247 - INFO - Episode 8750 | Reward: 1552.81 | Pos Error: 5.4551m | Time:  135.4s
+2025-09-19 21:30:48,573 - INFO - Episode 8800 | Reward: 1552.81 | Pos Error: 5.4551m | Time:  136.7s
+2025-09-19 21:30:49,888 - INFO - Episode 8850 | Reward: 1552.81 | Pos Error: 5.4551m | Time:  138.1s
+2025-09-19 21:30:51,279 - INFO - Episode 8900 | Reward:  778.11 | Pos Error: 5.7432m | Time:  139.4s
+2025-09-19 21:30:52,571 - INFO - Episode 8950 | Reward:  580.78 | Pos Error: 5.5471m | Time:  140.7s
+2025-09-19 21:30:53,929 - INFO - Episode 9000 | Reward:  580.78 | Pos Error: 5.5471m | Time:  142.1s
+2025-09-19 21:30:55,242 - INFO - Episode 9050 | Reward:  580.78 | Pos Error: 5.5471m | Time:  143.4s
+2025-09-19 21:30:56,565 - INFO - Episode 9100 | Reward:  580.78 | Pos Error: 5.5471m | Time:  144.7s
+2025-09-19 21:30:57,843 - INFO - Episode 9150 | Reward:  580.78 | Pos Error: 5.5471m | Time:  146.0s
+2025-09-19 21:30:59,201 - INFO - Episode 9200 | Reward:  829.73 | Pos Error: 5.4768m | Time:  147.4s
+2025-09-19 21:31:00,687 - INFO - Episode 9250 | Reward:  659.80 | Pos Error: 4.7723m | Time:  148.9s
+2025-09-19 21:31:01,998 - INFO - Episode 9300 | Reward:  804.41 | Pos Error: 4.5622m | Time:  150.2s
+2025-09-19 21:31:03,351 - INFO - Episode 9350 | Reward:  804.41 | Pos Error: 4.5622m | Time:  151.5s
+2025-09-19 21:31:04,715 - INFO - Episode 9400 | Reward:  804.41 | Pos Error: 4.5622m | Time:  152.9s
+2025-09-19 21:31:06,016 - INFO - Episode 9450 | Reward:  804.41 | Pos Error: 4.5622m | Time:  154.2s
+2025-09-19 21:31:07,372 - INFO - Episode 9500 | Reward:  580.02 | Pos Error: 5.2927m | Time:  155.5s
+2025-09-19 21:31:08,683 - INFO - Episode 9550 | Reward:  830.30 | Pos Error: 4.7032m | Time:  156.8s
+2025-09-19 21:31:10,060 - INFO - Episode 9600 | Reward:  974.37 | Pos Error: 5.4122m | Time:  158.2s
+2025-09-19 21:31:11,362 - INFO - Episode 9650 | Reward:  974.37 | Pos Error: 5.4122m | Time:  159.5s
+2025-09-19 21:31:12,681 - INFO - Episode 9700 | Reward:  974.37 | Pos Error: 5.4122m | Time:  160.8s
+2025-09-19 21:31:14,052 - INFO - Episode 9750 | Reward:  903.34 | Pos Error: 4.4632m | Time:  162.2s
+2025-09-19 21:31:15,356 - INFO - Episode 9800 | Reward:  238.44 | Pos Error: 5.4999m | Time:  163.5s
+2025-09-19 21:31:16,689 - INFO - Episode 9850 | Reward:  238.44 | Pos Error: 5.4999m | Time:  164.9s
+2025-09-19 21:31:18,049 - INFO - Episode 9900 | Reward:  406.74 | Pos Error: 5.5406m | Time:  166.2s
+2025-09-19 21:31:19,442 - INFO - Episode 9950 | Reward:  751.57 | Pos Error: 5.6008m | Time:  167.6s
+2025-09-19 21:31:24,376 - INFO - Episode 10000 | Reward:  751.57 | Pos Error: 5.6008m | Time:  172.5s
+2025-09-19 21:31:25,688 - INFO - Episode 10050 | Reward:  751.57 | Pos Error: 5.6008m | Time:  173.9s
+2025-09-19 21:31:27,098 - INFO - Episode 10100 | Reward:  307.09 | Pos Error: 5.6001m | Time:  175.3s
+2025-09-19 21:31:28,543 - INFO - Episode 10150 | Reward:  347.02 | Pos Error: 5.5796m | Time:  176.7s
+2025-09-19 21:31:29,876 - INFO - Episode 10200 | Reward:  347.02 | Pos Error: 5.5796m | Time:  178.0s
+2025-09-19 21:31:31,215 - INFO - Episode 10250 | Reward:  347.02 | Pos Error: 5.5796m | Time:  179.4s
+2025-09-19 21:31:32,636 - INFO - Episode 10300 | Reward:  242.67 | Pos Error: 5.3723m | Time:  180.8s
+2025-09-19 21:31:33,921 - INFO - Episode 10350 | Reward:  242.67 | Pos Error: 5.3723m | Time:  182.1s
+2025-09-19 21:31:35,397 - INFO - Episode 10400 | Reward:  677.45 | Pos Error: 5.4184m | Time:  183.6s
+2025-09-19 21:31:36,856 - INFO - Episode 10450 | Reward:  290.13 | Pos Error: 4.7744m | Time:  185.0s
+2025-09-19 21:31:38,194 - INFO - Episode 10500 | Reward:  290.13 | Pos Error: 4.7744m | Time:  186.4s
+2025-09-19 21:31:39,567 - INFO - Episode 10550 | Reward:  290.13 | Pos Error: 4.7744m | Time:  187.7s
+2025-09-19 21:31:41,064 - INFO - Episode 10600 | Reward:  433.50 | Pos Error: 5.2423m | Time:  189.2s
+2025-09-19 21:31:42,344 - INFO - Episode 10650 | Reward:  433.50 | Pos Error: 5.2423m | Time:  190.5s
+2025-09-19 21:31:43,812 - INFO - Episode 10700 | Reward:  247.47 | Pos Error: 5.0501m | Time:  192.0s
+2025-09-19 21:31:45,178 - INFO - Episode 10750 | Reward:  390.28 | Pos Error: 5.2062m | Time:  193.3s
+2025-09-19 21:31:46,538 - INFO - Episode 10800 | Reward:  973.37 | Pos Error: 4.3934m | Time:  194.7s
+2025-09-19 21:31:47,947 - INFO - Episode 10850 | Reward:  303.64 | Pos Error: 5.1781m | Time:  196.1s
+2025-09-19 21:31:49,347 - INFO - Episode 10900 | Reward:  220.96 | Pos Error: 5.1299m | Time:  197.5s
+2025-09-19 21:31:50,687 - INFO - Episode 10950 | Reward:  220.96 | Pos Error: 5.1299m | Time:  198.9s
+2025-09-19 21:31:52,151 - INFO - Episode 11000 | Reward:  369.89 | Pos Error: 5.0648m | Time:  200.3s
+2025-09-19 21:31:53,551 - INFO - Episode 11050 | Reward:  247.97 | Pos Error: 5.1885m | Time:  201.7s
+2025-09-19 21:31:54,944 - INFO - Episode 11100 | Reward:  269.51 | Pos Error: 5.0883m | Time:  203.1s
+2025-09-19 21:31:56,307 - INFO - Episode 11150 | Reward:  301.71 | Pos Error: 5.0424m | Time:  204.5s
+2025-09-19 21:31:57,680 - INFO - Episode 11200 | Reward:  312.62 | Pos Error: 5.0876m | Time:  205.8s
+2025-09-19 21:31:59,180 - INFO - Episode 11250 | Reward:  304.36 | Pos Error: 5.1110m | Time:  207.3s
+2025-09-19 21:32:00,722 - INFO - Episode 11300 | Reward:  337.47 | Pos Error: 5.0019m | Time:  208.9s
+2025-09-19 21:32:02,173 - INFO - Episode 11350 | Reward:  246.87 | Pos Error: 5.0717m | Time:  210.3s
+2025-09-19 21:32:03,642 - INFO - Episode 11400 | Reward:  309.01 | Pos Error: 5.1358m | Time:  211.8s
+2025-09-19 21:32:05,134 - INFO - Episode 11450 | Reward:  300.19 | Pos Error: 5.0801m | Time:  213.3s
+2025-09-19 21:32:06,478 - INFO - Episode 11500 | Reward:  267.72 | Pos Error: 5.1826m | Time:  214.6s
+2025-09-19 21:32:07,980 - INFO - Episode 11550 | Reward:  266.28 | Pos Error: 5.0484m | Time:  216.1s
+2025-09-19 21:32:09,297 - INFO - Episode 11600 | Reward:  367.90 | Pos Error: 5.0449m | Time:  217.5s
+2025-09-19 21:32:10,676 - INFO - Episode 11650 | Reward:  276.94 | Pos Error: 5.0325m | Time:  218.8s
+2025-09-19 21:32:12,185 - INFO - Episode 11700 | Reward:  452.77 | Pos Error: 5.1846m | Time:  220.4s
+2025-09-19 21:32:13,609 - INFO - Episode 11750 | Reward:  387.95 | Pos Error: 5.0602m | Time:  221.8s
+2025-09-19 21:32:14,996 - INFO - Episode 11800 | Reward:  344.69 | Pos Error: 5.1368m | Time:  223.2s
+2025-09-19 21:32:16,409 - INFO - Episode 11850 | Reward:  280.56 | Pos Error: 5.0544m | Time:  224.6s
+2025-09-19 21:32:17,852 - INFO - Episode 11900 | Reward:  186.96 | Pos Error: 4.9957m | Time:  226.0s
+2025-09-19 21:32:19,170 - INFO - Episode 11950 | Reward:  286.54 | Pos Error: 5.1425m | Time:  227.3s
+2025-09-19 21:32:20,518 - INFO - Episode 12000 | Reward:  170.21 | Pos Error: 5.0281m | Time:  228.7s
+2025-09-19 21:32:21,942 - INFO - Episode 12050 | Reward:  254.59 | Pos Error: 5.0278m | Time:  230.1s
+2025-09-19 21:32:23,355 - INFO - Episode 12100 | Reward:  245.85 | Pos Error: 5.0484m | Time:  231.5s
+2025-09-19 21:32:24,744 - INFO - Episode 12150 | Reward:  300.65 | Pos Error: 5.0041m | Time:  232.9s
+2025-09-19 21:32:26,225 - INFO - Episode 12200 | Reward:  223.98 | Pos Error: 4.9397m | Time:  234.4s
+2025-09-19 21:32:27,662 - INFO - Episode 12250 | Reward:  296.97 | Pos Error: 5.0509m | Time:  235.8s
+2025-09-19 21:32:29,042 - INFO - Episode 12300 | Reward:  250.07 | Pos Error: 5.0346m | Time:  237.2s
+2025-09-19 21:32:30,512 - INFO - Episode 12350 | Reward:  248.14 | Pos Error: 5.0187m | Time:  238.7s
+2025-09-19 21:32:31,898 - INFO - Episode 12400 | Reward:  239.15 | Pos Error: 5.0730m | Time:  240.1s
+2025-09-19 21:32:33,391 - INFO - Episode 12450 | Reward:  339.80 | Pos Error: 5.2512m | Time:  241.6s
+2025-09-19 21:32:34,786 - INFO - Episode 12500 | Reward:  277.45 | Pos Error: 5.0687m | Time:  243.0s
+2025-09-19 21:32:36,142 - INFO - Episode 12550 | Reward:  215.40 | Pos Error: 5.0647m | Time:  244.3s
+2025-09-19 21:32:37,585 - INFO - Episode 12600 | Reward:  334.78 | Pos Error: 5.1184m | Time:  245.8s
+2025-09-19 21:32:39,067 - INFO - Episode 12650 | Reward:  165.39 | Pos Error: 5.0194m | Time:  247.2s
+2025-09-19 21:32:40,476 - INFO - Episode 12700 | Reward:  233.64 | Pos Error: 5.0527m | Time:  248.6s
+2025-09-19 21:32:41,877 - INFO - Episode 12750 | Reward:  275.86 | Pos Error: 5.1273m | Time:  250.0s
+2025-09-19 21:32:43,300 - INFO - Episode 12800 | Reward:  341.15 | Pos Error: 5.1597m | Time:  251.5s
+2025-09-19 21:32:44,700 - INFO - Episode 12850 | Reward:  277.18 | Pos Error: 5.1469m | Time:  252.9s
+2025-09-19 21:32:46,233 - INFO - Episode 12900 | Reward:  346.03 | Pos Error: 5.2928m | Time:  254.4s
+2025-09-19 21:32:47,612 - INFO - Episode 12950 | Reward:  267.02 | Pos Error: 5.1577m | Time:  255.8s
+2025-09-19 21:32:49,125 - INFO - Episode 13000 | Reward:  178.33 | Pos Error: 5.1118m | Time:  257.3s
+2025-09-19 21:32:50,466 - INFO - Episode 13050 | Reward:   88.75 | Pos Error: 5.0549m | Time:  258.6s
+2025-09-19 21:32:51,940 - INFO - Episode 13100 | Reward:  238.57 | Pos Error: 5.0595m | Time:  260.1s
+2025-09-19 21:32:53,287 - INFO - Episode 13150 | Reward:  242.86 | Pos Error: 5.1013m | Time:  261.5s
+2025-09-19 21:32:54,658 - INFO - Episode 13200 | Reward:  244.07 | Pos Error: 5.1155m | Time:  262.8s
+2025-09-19 21:32:56,064 - INFO - Episode 13250 | Reward:  273.02 | Pos Error: 5.0413m | Time:  264.2s
+2025-09-19 21:32:57,536 - INFO - Episode 13300 | Reward:  240.96 | Pos Error: 5.1169m | Time:  265.7s
+2025-09-19 21:32:58,983 - INFO - Episode 13350 | Reward:  145.92 | Pos Error: 5.0337m | Time:  267.2s
+2025-09-19 21:33:00,406 - INFO - Episode 13400 | Reward:  258.47 | Pos Error: 5.1222m | Time:  268.6s
+2025-09-19 21:33:01,949 - INFO - Episode 13450 | Reward:  280.92 | Pos Error: 5.1358m | Time:  270.1s
+2025-09-19 21:33:03,405 - INFO - Episode 13500 | Reward:  172.13 | Pos Error: 5.1572m | Time:  271.6s
+2025-09-19 21:33:04,775 - INFO - Episode 13550 | Reward:  255.38 | Pos Error: 5.1222m | Time:  272.9s
+2025-09-19 21:33:06,213 - INFO - Episode 13600 | Reward:  304.25 | Pos Error: 5.1622m | Time:  274.4s
+2025-09-19 21:33:07,550 - INFO - Episode 13650 | Reward:  228.04 | Pos Error: 5.0281m | Time:  275.7s
+2025-09-19 21:33:08,954 - INFO - Episode 13700 | Reward:  245.44 | Pos Error: 5.1599m | Time:  277.1s
+2025-09-19 21:33:10,369 - INFO - Episode 13750 | Reward:  153.05 | Pos Error: 5.0949m | Time:  278.5s
+2025-09-19 21:33:11,819 - INFO - Episode 13800 | Reward:  204.57 | Pos Error: 5.0841m | Time:  280.0s
+2025-09-19 21:33:13,268 - INFO - Episode 13850 | Reward:  279.18 | Pos Error: 5.0713m | Time:  281.4s
+2025-09-19 21:33:14,721 - INFO - Episode 13900 | Reward:  347.76 | Pos Error: 5.1804m | Time:  282.9s
+2025-09-19 21:33:16,222 - INFO - Episode 13950 | Reward:  313.88 | Pos Error: 5.1861m | Time:  284.4s
+2025-09-19 21:33:17,646 - INFO - Episode 14000 | Reward:  374.05 | Pos Error: 5.1318m | Time:  285.8s
+2025-09-19 21:33:19,043 - INFO - Episode 14050 | Reward:  637.18 | Pos Error: 5.2295m | Time:  287.2s
+2025-09-19 21:33:20,443 - INFO - Episode 14100 | Reward:  367.30 | Pos Error: 5.1264m | Time:  288.6s
+2025-09-19 21:33:21,863 - INFO - Episode 14150 | Reward:  440.37 | Pos Error: 5.1437m | Time:  290.0s
+2025-09-19 21:33:23,305 - INFO - Episode 14200 | Reward:  325.35 | Pos Error: 5.1820m | Time:  291.5s
+2025-09-19 21:33:24,809 - INFO - Episode 14250 | Reward:  277.39 | Pos Error: 5.1460m | Time:  293.0s
+2025-09-19 21:33:26,170 - INFO - Episode 14300 | Reward:  398.48 | Pos Error: 5.0618m | Time:  294.3s
+2025-09-19 21:33:27,620 - INFO - Episode 14350 | Reward:  375.28 | Pos Error: 5.0697m | Time:  295.8s
+2025-09-19 21:33:29,033 - INFO - Episode 14400 | Reward:  382.92 | Pos Error: 5.1432m | Time:  297.2s
+2025-09-19 21:33:30,525 - INFO - Episode 14450 | Reward:  349.43 | Pos Error: 5.1759m | Time:  298.7s
+2025-09-19 21:33:31,868 - INFO - Episode 14500 | Reward:  349.43 | Pos Error: 5.1759m | Time:  300.0s
+2025-09-19 21:33:33,275 - INFO - Episode 14550 | Reward:  349.29 | Pos Error: 5.0850m | Time:  301.4s
+2025-09-19 21:33:34,637 - INFO - Episode 14600 | Reward:  479.48 | Pos Error: 5.4627m | Time:  302.8s
+2025-09-19 21:33:36,105 - INFO - Episode 14650 | Reward:  568.65 | Pos Error: 5.5663m | Time:  304.3s
+2025-09-19 21:33:37,466 - INFO - Episode 14700 | Reward:  407.47 | Pos Error: 5.2956m | Time:  305.6s
+2025-09-19 21:33:38,895 - INFO - Episode 14750 | Reward:  298.97 | Pos Error: 5.1387m | Time:  307.1s
+2025-09-19 21:33:40,283 - INFO - Episode 14800 | Reward:  477.21 | Pos Error: 5.2391m | Time:  308.4s
+2025-09-19 21:33:41,715 - INFO - Episode 14850 | Reward:  331.15 | Pos Error: 5.0852m | Time:  309.9s
+2025-09-19 21:33:43,048 - INFO - Episode 14900 | Reward:  331.15 | Pos Error: 5.0852m | Time:  311.2s
+2025-09-19 21:33:44,740 - INFO - Episode 14950 | Reward:  504.73 | Pos Error: 5.3697m | Time:  312.9s

@@ -1,0 +1,64 @@
+2025-08-15 21:24:16,519 - INFO - ================================================================================
+2025-08-15 21:24:16,519 - INFO - SAC PENDULUM TRAINING SESSION STARTED
+2025-08-15 21:24:16,519 - INFO - ================================================================================
+2025-08-15 21:24:16,519 - INFO - HYPERPARAMETERS:
+2025-08-15 21:24:16,519 - INFO - ----------------------------------------
+2025-08-15 21:24:16,519 - INFO - batch_size               : 256
+2025-08-15 21:24:16,519 - INFO - buffer_size              : 50000
+2025-08-15 21:24:16,519 - INFO - ent_coef                 : auto
+2025-08-15 21:24:16,519 - INFO - episode_length           : 200
+2025-08-15 21:24:16,519 - INFO - fixed_target             : None
+2025-08-15 21:24:16,519 - INFO - gamma                    : 0.95
+2025-08-15 21:24:16,519 - INFO - gradient_steps           : 1
+2025-08-15 21:24:16,519 - INFO - gui                      : False
+2025-08-15 21:24:16,520 - INFO - learning_rate            : 0.0003
+2025-08-15 21:24:16,520 - INFO - learning_starts          : 1000
+2025-08-15 21:24:16,520 - INFO - log_interval             : 50
+2025-08-15 21:24:16,520 - INFO - max_steps                : 200
+2025-08-15 21:24:16,520 - INFO - normalize_states         : True
+2025-08-15 21:24:16,520 - INFO - policy_layers            : [64, 64]
+2025-08-15 21:24:16,520 - INFO - qf_layers                : [64, 64]
+2025-08-15 21:24:16,520 - INFO - record                   : False
+2025-08-15 21:24:16,520 - INFO - record_best_episodes     : True
+2025-08-15 21:24:16,520 - INFO - recording_fps            : 30
+2025-08-15 21:24:16,520 - INFO - save_interval            : 10000
+2025-08-15 21:24:16,520 - INFO - target_update_interval   : 1
+2025-08-15 21:24:16,520 - INFO - tau                      : 0.005
+2025-08-15 21:24:16,520 - INFO - total_timesteps          : 300000
+2025-08-15 21:24:16,520 - INFO - train_freq               : 1
+2025-08-15 21:24:16,520 - INFO - use_sde                  : False
+2025-08-15 21:24:16,520 - INFO - ----------------------------------------
+2025-08-15 21:24:16,520 - INFO - Log file: /home/osos/Mohamed_Masters_Thesis/DHP_pendulum/training_logs/sac_pendulum_training_20250815_212416.log
+2025-08-15 21:24:16,520 - INFO - ================================================================================
+2025-08-15 21:24:16,520 - INFO - 
+CONFIGURATION OVERRIDES APPLIED:
+2025-08-15 21:24:16,520 - INFO -   total_timesteps: 300000
+2025-08-15 21:24:16,520 - INFO -   episode_length: 200
+2025-08-15 21:24:16,520 - INFO -   max_steps: 200
+2025-08-15 21:24:16,520 - INFO -   log_interval: 50
+2025-08-15 21:24:16,520 - INFO -   save_interval: 10000
+2025-08-15 21:24:16,520 - INFO -   gui: False
+2025-08-15 21:24:16,520 - INFO -   record: False
+2025-08-15 21:24:16,521 - INFO -   normalize_states: True
+2025-08-15 21:24:16,521 - INFO -   record_best_episodes: True
+2025-08-15 21:24:16,521 - INFO -   learning_rate: 0.0003
+2025-08-15 21:24:16,521 - INFO -   buffer_size: 50000
+2025-08-15 21:24:16,521 - INFO -   batch_size: 256
+2025-08-15 21:24:16,521 - INFO -   gamma: 0.95
+2025-08-15 21:24:16,521 - INFO -   tau: 0.005
+2025-08-15 21:24:16,521 - INFO -   ent_coef: auto
+2025-08-15 21:24:16,521 - INFO -   learning_starts: 1000
+2025-08-15 21:24:16,521 - INFO -   policy_layers: [64, 64]
+2025-08-15 21:24:16,521 - INFO -   qf_layers: [64, 64]
+2025-08-15 21:24:16,521 - INFO - 
+==================================================
+2025-08-15 21:24:16,521 - INFO - STARTING SAC TRAINING FOR PENDULUM
+2025-08-15 21:24:16,521 - INFO - ==================================================
+2025-08-15 21:24:16,551 - INFO - 
+Training for 300000 timesteps...
+2025-08-15 21:24:16,551 - INFO - This corresponds to approximately 1500 episodes of 200 steps each
+2025-08-15 21:26:19,422 - INFO - NEW BEST PERFORMANCE! Episode 50: 0.0546 rad
+2025-08-15 21:26:19,439 - INFO - BEST MODEL SAVED! Episode 50, Error: 0.0546 rad
+2025-08-15 21:26:19,439 - INFO - Best model path: /home/osos/Mohamed_Masters_Thesis/DHP_pendulum/trained_models/sac_pendulum_best
+2025-08-15 21:26:19,439 - INFO - CONVERGENCE EPISODE 50: 0.0546 rad
+2025-08-15 21:26:19,439 - INFO -      50 | -108.42 |    8.520 |    0.0546 |   1.000 |  122.9s

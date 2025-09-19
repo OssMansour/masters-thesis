@@ -1,0 +1,19 @@
+2025-09-08 19:44:35,917 - INFO - ================================================================================
+2025-09-08 19:44:35,917 - INFO - DHP SPLIT ARCHITECTURE TRAINING SESSION STARTED
+2025-09-08 19:44:35,917 - INFO - ================================================================================
+2025-09-08 19:44:35,917 - INFO - HYPERPARAMETERS:
+2025-09-08 19:44:35,918 - INFO - ----------------------------------------
+2025-09-08 19:44:35,918 - INFO - dt                       : 0.03333333333333333
+2025-09-08 19:44:35,918 - INFO - episode_length           : 10.0
+2025-09-08 19:44:35,918 - INFO - normalize_states         : True
+2025-09-08 19:44:35,918 - INFO - target_pos               : [0.0, 0.0, 1.0]
+2025-09-08 19:44:35,918 - INFO - trajectory_type          : spiral
+2025-09-08 19:44:35,918 - INFO - use_trajectory           : False
+2025-09-08 19:44:35,918 - INFO - ----------------------------------------
+2025-09-08 19:44:35,918 - INFO - Log file: /home/osos/Mohamed_Masters_Thesis/DHP_drone_updated/DHP/training_logs/dhp_split_training_20250908_194435.log
+2025-09-08 19:44:35,918 - INFO - ================================================================================
+2025-09-08 19:44:35,920 - INFO - Best episode replay data saved: /home/osos/Mohamed_Masters_Thesis/DHP_drone_updated/DHP/best_episode_replays/best_episode_replay_ep42_error0.0500_20250908_194435.pkl
+2025-09-08 19:44:35,920 - INFO -   Episode: 42, Error: 0.0500m
+2025-09-08 19:44:35,920 - INFO -   Action sequence: 150 steps
+2025-09-08 19:44:35,920 - INFO -   Duration: 5.00 seconds
+2025-09-08 19:44:35,920 - INFO -   Control frequency: 30.0 Hz

@@ -1,0 +1,2 @@
+model_checkpoint_path: "/home/osos/Mohamed_Masters_Thesis/DHP_drone_updated/DHP/trained_models/dhp_cf2x_best"
+all_model_checkpoint_paths: "/home/osos/Mohamed_Masters_Thesis/DHP_drone_updated/DHP/trained_models/dhp_cf2x_best"
