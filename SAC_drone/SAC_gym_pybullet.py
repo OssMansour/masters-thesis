@@ -146,9 +146,9 @@ class SaveOnBestTrainingRewardCallback(BaseCallback):
 # -----------------------------------------------------------------------------
 # 5) Setup parameters
 # -----------------------------------------------------------------------------
-TOTAL_TIMESTEPS = 100_000  # Double the training time for better learning
+TOTAL_TIMESTEPS = 4_000_000  # Double the training time for better learning
 NUM_ENVS = 4
-EVAL_FREQ = 10_000
+EVAL_FREQ = 100_000
 N_EVALUATIONS = 1
 
 # reduce physics fidelity for speed
