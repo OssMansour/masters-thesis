@@ -1,0 +1,86 @@
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.pyc
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IDEs
+.idea/
+.vscode/
+*.code-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Training Outputs - Logs and Models
+**/logs/
+**/plots/
+**/trained_models/
+**/checkpoints/
+**/training_logs/
+**/sac_training_logs/
+**/best_episode_recordings/
+**/tensorboard/
+**/runs/
+**/SAC_*/events.out.tfevents.*
+**/best_training_model/
+
+# Generated plots and media
+*.png
+*.gif
+*.mp4
+!README*.png
+!**/doc/**/*.png
+!**/Documentation/**/*.png
+
+# Specific SAC/DHP test outputs
+spiral_test_*.png
+*_test_*.png
+
+# Large model files
+*.zip
+*.pkl
+*.pth
+*.h5
+*.pb
+
+# Data files
+*.npy
+*.npz
+
+# Metric and log files
+*_metrics_*.json
+*_training_*.log
+evaluations.npz
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
+*.log
+
+# BFG Repo Cleaner
+bfg-*.jar
+*.jar
+..bfg-report/
+
+# Keep important config files
+!environment.yml
+!requirements.txt
+!pyproject.toml
+!README.md
+!LICENSE

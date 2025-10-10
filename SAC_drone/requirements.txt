@@ -1,0 +1,43 @@
+# SAC Drone Training Requirements
+# Optimized for Python 3.11 (recommended version)
+# Based on SAC_gym_pybullet.py dependencies and gym-pybullet-drones requirements
+
+# Core scientific computing
+numpy>=1.25.0,<2.0.0
+scipy>=1.11.0,<1.15.0
+matplotlib>=3.8.0,<4.0.0
+
+# Deep Learning Framework
+torch>=2.0.0,<3.0.0
+torchvision>=0.15.0,<1.0.0
+torchaudio>=2.0.0,<3.0.0  # Often useful for complete PyTorch ecosystem
+
+# Reinforcement Learning
+stable-baselines3>=2.2.0,<3.0.0
+gymnasium>=0.29.0,<1.0.0
+
+# PyBullet Physics Simulation
+# pybullet>=3.2.6,<4.0.0
+
+# Gym PyBullet Drones (install from local path or GitHub)
+# gym-pybullet-drones>=2.0.0
+# Note: Install manually with: pip install -e path/to/gym-pybullet-drones
+# Or: pip install git+https://github.com/utiasDSL/gym-pybullet-drones.git
+
+# Required for gym-pybullet-drones
+transforms3d>=0.4.1,<0.5.0
+
+# System utilities
+psutil>=5.9.0,<6.0.0
+tqdm>=4.66.0,<5.0.0
+
+# Development and testing
+pytest>=7.4.0,<8.0.0
+
+# Optional: Enhanced visualization and analysis
+seaborn>=0.13.0,<1.0.0
+pandas>=2.0.0,<3.0.0
+
+# Additional utilities that might be needed
+tensorboard>=2.15.0,<3.0.0  # For enhanced logging and visualization
+# opencv-python>=4.8.0,<5.0.0  # May be needed for rendering/recording

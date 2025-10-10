@@ -1,0 +1,13 @@
+SAC DHP-Compatible Training Summary
+========================================
+
+Training completed: 2025-08-16 20:12:58
+Algorithm: SAC (Soft Actor-Critic)
+Environment: DHP-Compatible Pendulum (SAME as DHP)
+Best position error: 2.1691 rad (124.3°)
+Training timesteps: 300000
+Network architecture: [64, 64]
+State normalization: True
+Physics parameters: m=0.1, L=0.5, g=9.81, b=0.3, Fmax=4.0
+
+Ready for fair comparison with DHP results!

@@ -1,0 +1,13 @@
+DHP Pendulum Training Summary
+========================================
+Date: 2025-08-15 18:31:51
+Episodes trained: 400
+Best episode: 80
+Best position error: 0.000119 rad (0.01°)
+Convergent episodes: 67
+Convergence rate: 16.8%
+State normalization: True
+Hidden layers: [64, 64, 32]
+Learning rates: critic=0.01, actor=0.005
+Training time: 252.1 seconds
+Log file: /home/osos/Mohamed_Masters_Thesis/DHP_pendulum/training_logs/dhp_pendulum_training_20250815_182739.log

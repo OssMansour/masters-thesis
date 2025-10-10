@@ -1,0 +1,38 @@
+name: SAC
+channels:
+  - conda-forge
+  - pytorch
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  # Core scientific computing (install via conda for better performance)
+  - numpy>=1.25.0
+  - scipy>=1.11.0
+  - matplotlib>=3.8.0
+  - pandas>=2.0.0
+  # System utilities
+  - psutil>=5.9.0
+  - tqdm>=4.66.0
+  # PyTorch ecosystem (install via conda for CUDA support)
+  - pytorch>=2.0.0
+  - torchvision>=0.15.0
+  - torchaudio>=2.0.0
+  # Optional visualization
+  - seaborn>=0.13.0
+  # Development tools
+  - pytest>=7.4.0
+  # pip-only dependencies
+  - pip:
+    # Reinforcement Learning (not available via conda)
+    - stable-baselines3>=2.2.0,<3.0.0
+    - gymnasium>=0.29.0,<1.0.0
+    # PyBullet Physics Simulation
+    # - pybullet>=3.2.6,<4.0.0
+    # Required for gym-pybullet-drones
+    - transforms3d>=0.4.1,<0.5.0
+    # Logging and visualization
+    - tensorboard>=2.15.0,<3.0.0
+    # Note: gym-pybullet-drones needs to be installed separately
+    # pip install -e path/to/gym-pybullet-drones
+    # or: pip install git+https://github.com/utiasDSL/gym-pybullet-drones.git
